@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>04. Implementación de Funciones Lógicas | Automatizacion </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Silvia Zeballos" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-23"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Automatizacion</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Presentación</a></li>
+   <li><a href="objetivos.html" class="no-ch">Objetivos</a></li>
+   <li><a href="unidad_1__sistemas_automatizados_evolucin_caractersticas_y_estructura.html" class="daddy">Unidad 1 - Sistemas Automatizados: Evolución, Características y Estructura</a>
+   <ul class="other-section">
+      <li><a href="01_qu_entendemos_por_automatizacin_industrial.html" class="no-ch">01. ¿Qué entendemos por Automatización Industrial?</a></li>
+      <li><a href="02_estructura_de_un_sistema_automatizado.html" class="no-ch">02. Estructura de un Sistema Automatizado</a></li>
+      <li><a href="03_evolucin_de_los_sistemas_automatizados.html" class="no-ch">03. Evolución de los Sistemas Automatizados</a></li>
+      <li><a href="04_tipos_de_sistema_medios_y_seales.html" class="no-ch">04. Tipos de Sistema, Medios y Señales</a></li>
+      <li><a href="05_sensores_industriales.html" class="no-ch">05. Sensores Industriales</a></li>
+   </ul>
+   </li>
+   <li><a href="unidad_2__funciones_digitales_y_fundamentos_del_lgebra_de_boole.html" class="daddy">Unidad 2 - Funciones digitales y fundamentos del Álgebra de Boole</a>
+   <ul class="other-section">
+      <li><a href="01_introduccin.html" class="no-ch">01. Introducción</a></li>
+      <li><a href="02_operaciones_lgicas.html" class="no-ch">02. Operaciones Lógicas</a></li>
+      <li><a href="03_implementacin_neumtica.html" class="no-ch">03. Implementación neumática</a></li>
+      <li><a href="04_sistemas_de_numeracin.html" class="no-ch">04. Sistemas de numeración</a></li>
+      <li><a href="05_aplicaciones_industriales.html" class="no-ch">05. Aplicaciones industriales</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="unidad_3__lgica_cableada_con_rels.html" class="current-page-parent daddy">Unidad 3 - Lógica Cableada con Relés</a>
+   <ul>
+      <li><a href="01_introduccin_a_la_lgica_cableada__componentes.html" class="no-ch">01. Introducción a la Lógica Cableada - Componentes</a></li>
+      <li><a href="02_ventajas_y_desventajas_de_la_lgica_cableada.html" class="no-ch">02. Ventajas y Desventajas de la Lógica Cableada</a></li>
+      <li><a href="03_rels_industriales_y_contactores_como_elementos_de_control.html" class="no-ch">03. Relés Industriales y Contactores como Elementos de Control</a></li>
+      <li id="active"><a href="04_implementacin_de_funciones_lgicas.html" class="active no-ch">04. Implementación de Funciones Lógicas</a></li>
+      <li><a href="05_retencin_o_memoria_elctrica.html" class="no-ch">05. Retención o Memoria Eléctrica</a></li>
+      <li><a href="06_diseo_de_circuitos_de_control_con_rels.html" class="no-ch">06. Diseño de circuitos de control con Relés</a></li>
+      <li><a href="07_aplicacin_cajas_altasbajas.html" class="no-ch">07. Aplicación CAJAS ALTAS/BAJAS</a></li>
+   </ul>
+   </li>
+   <li><a href="unidad_4__lgica_programada_con_plc.html" class="daddy">Unidad 4 - Lógica Programada con PLC</a>
+   <ul class="other-section">
+      <li><a href="01_introduccin_a_la_lgica_programada.html" class="no-ch">01. Introducción a la Lógica Programada</a></li>
+      <li><a href="02_tipos_de_controladores.html" class="no-ch">02. Tipos de Controladores</a></li>
+      <li><a href="03_partes_componentes_y_funcionamiento_de_un_plc.html" class="no-ch">03. Partes, componentes y funcionamiento de un PLC</a></li>
+      <li><a href="04_lenguajes_de_programacin.html" class="no-ch">04. Lenguajes de Programación</a></li>
+      <li><a href="05_lgica_cableada_a_lgica_programada_ladder.html" class="no-ch">05. Lógica cableada a Lógica Programada (ladder)</a></li>
+      <li><a href="06_aplicacin_cajas_altasbajas.html" class="no-ch">06. Aplicación CAJAS ALTAS/BAJAS</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="03_rels_industriales_y_contactores_como_elementos_de_control.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="05_retencin_o_memoria_elctrica.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">04. Implementación de Funciones Lógicas</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id47">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Implementación de Funciones Lógicas</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta47_115_2" class="block iDevice_content">
+<div class="exe-text"><p id="yui_3_18_1_1_1761690343514_134">En el circuito de la figura veíamos cómo se relacionaba el Circuito de Mando y la alimentación de la bobina del relé a través del<span> </span><b>Pulsador A</b>, con el Circuito de Potencia donde se ubicaba el contacto NA del relé, que al cerrarse (por haberse alimentado la bobina K1 en mando) conseguía cerrar el circuito y encender la<span> </span><b>Lámpara Z</b>.</p>
+<p><span lang="ES"><img src="img0.png" width="468" height="484" alt="circuitoFL1" style="display: block; margin-left: auto; margin-right: auto;" /></span><span lang="ES"></span></p>
+<p><span lang="ES"><img src="img1.png" width="505" height="487" alt="circuitoFL2" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p style="text-align: justify;"><span lang="ES">Podemos pensar en una Función donde el Pulsador A que presiona un operario es una señal de entrada, y la carga que es la Lámpara Z la salida.<br />Estamos<span> </span><b> </b></span><img width="58" height="24" src="img2.png" v:shapes="_x0000_i1025" alt="" /><span lang="ES">, que corresponde a la función<span> </span><b>IDENTIDAD</b><span> </span>ó<span> </span><b>SI</b>.<br /></span><span lang="ES"><span class=""></span></span></p>
+<h4 style="text-align: justify;"><span lang="ES"><span class="">¿Cómo implementamos una función<span> </span></span><b><span class="">NOT</span></b><span class="">?</span></span></h4>
+<p style="text-align: justify;"><span lang="ES">Simplemente utilizando en el circuito de potencia un nuevo contacto asociado a la bobina K1, pero esta vez NC.<br />En la figura agregamos una segunda lámpara, llamando Z1 a la lámpara asociada a al contacto NA, y Z2 a la lámpara conectada al contacto NC.<br /><br /></span></p>
+<p style="text-align: justify;"><span lang="ES">Como se ve en el esquema, como el contacto NC cierra la rama del circuito de Z2, la misma inicia encendida aún sin haber presionado el Pulsador A.</span></p>
+<p><span lang="ES"><img src="img3.png" width="613" height="487" alt="circuitoFL3" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span lang="ES">Si presionamos el Pulsador A, los contactos asociados a la bobina cambian su estado: el NA pasa a cerrarse, y el NC pasa a abrirse.<br />Las lámparas cambian de estado, encendiéndose Z1 y apagándose Z2.<br /><br />Conseguimos:</span></p>
+<p><img src="img6.1.png" alt="tbl1" width="150" height="34" role="presentation" class="img-fluid atto_image_button_text-bottom" style="display: block; margin-left: auto; margin-right: auto;" /><b><span lang="ES"></span></b></p>
+<p></p>
+<p><b><span lang="ES"> <img src="https://cenet.inet.edu.ar/pluginfile.php/42917/mod_page/content/5/image.png" alt="" width="300" height="155" role="presentation" class="img-fluid atto_image_button_text-bottom" style="float: left;" /><img src="https://cenet.inet.edu.ar/pluginfile.php/42917/mod_page/content/5/image%20%281%29.png" alt="" width="259" height="100" role="presentation" class="img-fluid atto_image_button_text-bottom" /></span></b></p>
+<p><b><span lang="ES"></span></b></p>
+<p><span lang="ES"> </span></p>
+<h5><span style="font-size: 12pt;"><b><span lang="EN-US" class="">Función AND y NAND </span></b></span><span lang="EN-US"><span class="" style="font-size: 12pt;">(“NOT AND”)</span><b></b></span></h5>
+<p><span lang="ES">Diseñemos nuevos circuitos que nos permitan implementar las funciones básicas estudiadas en la unidad anterior.<br /><br />Si colocamos dos pulsadores en serie A y B, que alimenten la bobina K1, estamos en presencia de un PRODUCTO LÓGICO o función AND para la alimentación de la bobina, y por tanto también de la lámpara Z1.<br /></span></p>
+<p><span lang="ES"><img src="img7.1.png" width="573" height="482" alt="circuitoNA" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span lang="ES"><span>Vemos que Z1 sólo encenderá en caso de presionarse los pulsadores A y B en simultáneo.</span><br /><span>Y como utilizamos un contacto NC de la misma bobina para Z2, dicha lámpara sólo apagará en esas mismas condiciones, permaneciendo encendida en cualquier otro estado.</span></span></p>
+<p><span lang="ES"><span><img src="img8.1.png" width="579" height="495" alt="circuitoNAND2" style="display: block; margin-left: auto; margin-right: auto;" /></span></span></p>
+<p><span lang="ES"><span><img src="img9.1.png" width="373" height="218" alt="tblNANd" style="display: block; margin-left: auto; margin-right: auto;" /></span></span></p>
+<p><span lang="ES">Obtenemos una función AND para Z1, y una función NOT AND ó también llamada NAND para Z2:<br /><br /></span></p>
+<p></p>
+<p><img src="https://cenet.inet.edu.ar/pluginfile.php/42917/mod_page/content/5/image%20%282%29.png" alt="" role="presentation" class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><span lang="ES">En este último caso, la unión de la compuerta AND y la compuerta NOT, se puede representar directamente con una nueva compuerta NAND que representa el mismo funcionamiento:</span></p>
+<p><span lang="ES"> <img src="https://cenet.inet.edu.ar/pluginfile.php/42917/mod_page/content/5/image%20%283%29.png" alt="" role="presentation" class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span lang="ES"> </span></p>
+<h5><span style="font-size: 12pt;"><b><span lang="EN-US" class="">Función OR y NOR </span></b><span lang="EN-US" class="">(“NOT OR”)</span></span></h5>
+<p><span lang="ES">Analicemos lo que sucedería al colocar dos pulsadores esta vez en paralelo alimentando la bobina K1.<br /><img src="img12.1.png" width="696" height="490" alt="circuitoOR" style="display: block; margin-left: auto; margin-right: auto;" /><br /></span></p>
+<p><span lang="ES"><span>Obtenemos una SUMA LÓGICA ó Función OR para la lámpara Z1, ya que con cualquiera de los pulsadores A ó B presionados, alcanza para que Z1 encienda.</span><br /><span>Por su parte, al ser Z2 la negación del estado de la bobina (y en particular de Z1), decimos que Z2 está cumpliendo una función NOT OR, o bien NOR con los pulsadores A y B.</span></span></p>
+<p><span lang="ES"><span><img src="img13.2.png" width="716" height="485" alt="circuitoOR2" style="display: block; margin-left: auto; margin-right: auto;" /></span></span></p>
+<p><span lang="ES"><span><img src="img14.1.png" width="366" height="218" alt="tblOR" style="display: block; margin-left: auto; margin-right: auto;" /></span></span></p>
+<p id="yui_3_18_1_1_1761700773202_150"><img src="https://cenet.inet.edu.ar/pluginfile.php/42917/mod_page/content/5/image%20%284%29.png" alt="" role="presentation" class="img-fluid" id="yui_3_18_1_1_1761700773202_149" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><img src="https://cenet.inet.edu.ar/pluginfile.php/42917/mod_page/content/5/image%20%285%29.png" alt="" role="presentation" class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><span lang="ES"> </span></p>
+<p><span lang="ES"> </span></p>
+<p><span lang="ES">De forma análoga al caso anterior, la unión de la compuerta OR seguida de la compuerta NOT, se puede representar directamente con una nueva compuerta NOR que representa el mismo funcionamiento:</span></p>
+<p></p>
+<p><img src="https://cenet.inet.edu.ar/pluginfile.php/42917/mod_page/content/5/image%20%286%29.png" alt="" role="presentation" class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" /> </p>
+<p></p>
+<p><span lang="ES"> </span><span lang="ES"><span></span></span></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="03_rels_industriales_y_contactores_como_elementos_de_control.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="05_retencin_o_memoria_elctrica.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">© 2026 - Zeballos Silvia</footer></div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>

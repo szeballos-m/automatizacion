@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_lightbox.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>05. Sensores Industriales | Automatizacion </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Silvia Zeballos" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_lightbox.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-12"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Automatizacion</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Presentación</a></li>
+   <li><a href="objetivos.html" class="no-ch">Objetivos</a></li>
+   <li class="current-page-parent"><a href="unidad_1__sistemas_automatizados_evolucin_caractersticas_y_estructura.html" class="current-page-parent daddy">Unidad 1 - Sistemas Automatizados: Evolución, Características y Estructura</a>
+   <ul>
+      <li><a href="01_qu_entendemos_por_automatizacin_industrial.html" class="no-ch">01. ¿Qué entendemos por Automatización Industrial?</a></li>
+      <li><a href="02_estructura_de_un_sistema_automatizado.html" class="no-ch">02. Estructura de un Sistema Automatizado</a></li>
+      <li><a href="03_evolucin_de_los_sistemas_automatizados.html" class="no-ch">03. Evolución de los Sistemas Automatizados</a></li>
+      <li><a href="04_tipos_de_sistema_medios_y_seales.html" class="no-ch">04. Tipos de Sistema, Medios y Señales</a></li>
+      <li id="active"><a href="05_sensores_industriales.html" class="active no-ch">05. Sensores Industriales</a></li>
+   </ul>
+   </li>
+   <li><a href="unidad_2__funciones_digitales_y_fundamentos_del_lgebra_de_boole.html" class="daddy">Unidad 2 - Funciones digitales y fundamentos del Álgebra de Boole</a>
+   <ul class="other-section">
+      <li><a href="01_introduccin.html" class="no-ch">01. Introducción</a></li>
+      <li><a href="02_operaciones_lgicas.html" class="no-ch">02. Operaciones Lógicas</a></li>
+      <li><a href="03_implementacin_neumtica.html" class="no-ch">03. Implementación neumática</a></li>
+      <li><a href="04_sistemas_de_numeracin.html" class="no-ch">04. Sistemas de numeración</a></li>
+      <li><a href="05_aplicaciones_industriales.html" class="no-ch">05. Aplicaciones industriales</a></li>
+   </ul>
+   </li>
+   <li><a href="unidad_3__lgica_cableada_con_rels.html" class="daddy">Unidad 3 - Lógica Cableada con Relés</a>
+   <ul class="other-section">
+      <li><a href="01_introduccin_a_la_lgica_cableada__componentes.html" class="no-ch">01. Introducción a la Lógica Cableada - Componentes</a></li>
+      <li><a href="02_ventajas_y_desventajas_de_la_lgica_cableada.html" class="no-ch">02. Ventajas y Desventajas de la Lógica Cableada</a></li>
+      <li><a href="03_rels_industriales_y_contactores_como_elementos_de_control.html" class="no-ch">03. Relés Industriales y Contactores como Elementos de Control</a></li>
+      <li><a href="04_implementacin_de_funciones_lgicas.html" class="no-ch">04. Implementación de Funciones Lógicas</a></li>
+      <li><a href="05_retencin_o_memoria_elctrica.html" class="no-ch">05. Retención o Memoria Eléctrica</a></li>
+      <li><a href="06_diseo_de_circuitos_de_control_con_rels.html" class="no-ch">06. Diseño de circuitos de control con Relés</a></li>
+      <li><a href="07_aplicacin_cajas_altasbajas.html" class="no-ch">07. Aplicación CAJAS ALTAS/BAJAS</a></li>
+   </ul>
+   </li>
+   <li><a href="unidad_4__lgica_programada_con_plc.html" class="daddy">Unidad 4 - Lógica Programada con PLC</a>
+   <ul class="other-section">
+      <li><a href="01_introduccin_a_la_lgica_programada.html" class="no-ch">01. Introducción a la Lógica Programada</a></li>
+      <li><a href="02_tipos_de_controladores.html" class="no-ch">02. Tipos de Controladores</a></li>
+      <li><a href="03_partes_componentes_y_funcionamiento_de_un_plc.html" class="no-ch">03. Partes, componentes y funcionamiento de un PLC</a></li>
+      <li><a href="04_lenguajes_de_programacin.html" class="no-ch">04. Lenguajes de Programación</a></li>
+      <li><a href="05_lgica_cableada_a_lgica_programada_ladder.html" class="no-ch">05. Lógica cableada a Lógica Programada (ladder)</a></li>
+      <li><a href="06_aplicacin_cajas_altasbajas.html" class="no-ch">06. Aplicación CAJAS ALTAS/BAJAS</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="04_tipos_de_sistema_medios_y_seales.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="unidad_2__funciones_digitales_y_fundamentos_del_lgebra_de_boole.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">05. Sensores Industriales</h1></header>
+<article class="iDevice_wrapper GalleryIdevice em_iDevice" id="id24">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<ul class="exeImageGallery" id="exeImageGallery24">
+<li><a title="" href="5.1.png"><img alt="" width="128" height="128" src="5.1Thumbnail.png" /><span class="tit"></span></a></li>
+<li><a title="" href="5.2.png"><img alt="" width="128" height="128" src="5.2Thumbnail.png" /><span class="tit"></span></a></li>
+<li><a title="" href="5.3.png"><img alt="" width="128" height="128" src="5.3Thumbnail.png" /><span class="tit"></span></a></li>
+<li><a title="" href="5.5.png"><img alt="" width="128" height="128" src="5.5Thumbnail.png" /><span class="tit"></span></a></li>
+</ul>
+<script type="text/javascript">$exe.imageGallery.init("exeImageGallery24");</script>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id25">
+<div class="iDevice emphasis0" >
+<div id="ta25_116_2" class="block iDevice_content">
+<div class="exe-text"><div>
+<figure class="exe-figure exe-media position-center" style="width: 800px;"><iframe width="800" height="400" src="https://www.canva.com/design/DAGjTFyjt48/GzLINy1s7Kzm-j_SMulW0Q/view?embed" data-mce-fragment="1"></iframe>
+<figcaption class="figcaption"><span class="title"><em> </em></span></figcaption>
+</figure>
+<a href="https://www.canva.com/design/DAGjTFyjt48/GzLINy1s7Kzm-j_SMulW0Q/view?utm_content=DAGjTFyjt48&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Diseño</a><span> cenet</span></div></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id17">
+<div class="iDevice emphasis0" >
+<div id="ta17_119_2" class="block iDevice_content">
+<div class="exe-text"><h4><span style="color: #0000ff;"><strong><span lang="ES" class="">Sensores Industriales: Funcionamiento y Aplicaciones en Automatización</span></strong></span></h4>
+<p style="text-align: justify;"><span lang="ES">Un sensor es un dispositivo que detecta cambios en una magnitud física o química y la convierte en una señal eléctrica que puede ser procesada por un sistema de control. Su función principal es actuar como un intermediario entre el mundo físico y los sistemas electrónicos, permitiendo que estos últimos reaccionen de manera automática ante variaciones en el entorno.</span></p>
+<p style="text-align: justify;"><span lang="ES">Los sensores pueden ser activos, cuando requieren una fuente externa de energía para funcionar y generan su propia señal de salida (ej: sensores ultrasónicos que permiten detectar distancias a objetos), o pueden ser pasivos, cuando no re</span><span lang="ES">quieren energía externa, es decir responden directamente a la variable medida (ej:</span> termopares, que con sólo entrar en contacto con altas temperaturas generan una pequeña diferencia de voltaje).</p>
+<p style="text-align: justify;">Según su principio de funcionamiento, los sensores pueden operar a través de efectos físicos como la variación de resistencia, capacitancia, inducción electromagnética o emisión de señales infrarrojas, entre otros.<br />A pesar de estas diferencias, es posible describir el funcionamiento básico de un sensor industrial de acuerdo a las siguientes tres etapas:<br /><br /></p>
+<ol style="text-align: justify;">
+<li><span><span lang="ES"><strong>Captación de la señal</strong></span></span><span lang="ES">:<br />El sensor detecta una variación en la variable física o química de interés mediante un elemento sensible. Este elemento puede ser un termistor para temperatura, una celda de carga para peso, un fotodiodo para luz, entre otros.<br /><br /></span></li>
+<li><strong><span lang="ES">Transformación de la señal</span></strong><span lang="ES">:<br />La información captada se convierte en una señal eléctrica proporcional al fenómeno medido. Esto puede realizarse a través de cambios en la resistencia, voltaje, frecuencia o corriente según el tipo de sensor.<br /><br /></span></li>
+<li><strong><span lang="ES">Salida de la señal</span></strong><span lang="ES">:<br />La señal es enviada a un controlador, como un PLC (Controlador Lógico Programable), que interpreta y utiliza la información para la toma de decisiones en el proceso automatizado. La señal puede ser analógica o digital, dependiendo de la aplicación y del tipo de sensor empleado.<br /><br /></span></li>
+</ol>
+<p style="text-align: justify;"><span lang="ES">Algunos sensores incluyen circuitos de acondicionamiento de señal, que amplifican, filtran o convierten la señal para facilitar su procesamiento y mejorar su precisión.</span></p>
+<h5 style="text-align: justify;"><span lang="ES" class="">Tipos de Sensores en la Automatización Industrial</span></h5>
+<p style="text-align: justify;"><span lang="ES">En los entornos industriales, se utilizan diversos tipos de sensores según la variable que se necesite medir. A continuación, se describen los principales:</span></p>
+<p style="text-align: justify;"><span lang="ES-AR"><strong><br />Sensores de Posición y Desplazamiento</strong></span></p>
+<div class="editor-indent" style="text-align: justify;">
+<p><span><span lang="ES">- <strong>Sensores inductivos</strong></span></span><span lang="ES">: Detectan objetos metálicos sin contacto.<br /></span><span><span lang="ES">- <strong>Sensores capacitivos</strong></span></span><span lang="ES">: Detectan objetos metálicos y no metálicos mediante cambios en la capacitancia.<br /></span><span><span lang="ES">- <strong>Encoders</strong></span></span><span lang="ES">: Miden el movimiento angular o lineal de un eje.</span></p>
+</div>
+<p style="text-align: justify;"><span lang="ES-AR"><strong>Sensores de Temperatura</strong></span></p>
+<div class="editor-indent" style="text-align: justify;">
+<p><span><span lang="ES">-<strong> Termopares</strong></span></span><span lang="ES">: Miden temperatura a través del voltaje generado por la unión de dos metales distintos.<br /></span><span lang="ES">- </span><strong><span lang="ES">RTD (Resistance Temperature Detector)</span></strong><span lang="ES">: Utilizan la variación de la resistencia eléctrica para medir la temperatura.<br /></span><span lang="ES">- </span><strong><span lang="ES">Termistores</span></strong><span lang="ES">: Resistencias que varían con la temperatura, generalmente usadas en aplicaciones de alta sensibilidad.</span></p>
+</div>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;"><span lang="ES-AR"><strong>Sensores de Presión</strong></span></p>
+<div class="editor-indent" style="text-align: justify;">
+<p><span><span lang="ES">-<strong> Manómetros electrónicos</strong></span></span><span lang="ES">: Convierte la presión en una señal eléctrica.<br /></span><span lang="ES">- </span><span lang="ES"><strong>T</strong></span><strong><span lang="ES">ransductores de presión</span></strong><span lang="ES">: Utilizados para medir presión de fluidos en procesos industriales.</span></p>
+</div>
+<p style="text-align: justify;"><span lang="ES-AR"><strong></strong></span></p>
+<p style="text-align: justify;"><span lang="ES-AR"><strong>Sensores de Nivel</strong></span></p>
+<div class="editor-indent" style="text-align: justify;">
+<p><span><span lang="ES">- <strong>Sensores ultrasónicos</strong></span></span><span lang="ES">: Usan ondas sonoras para detectar el nivel de un líquido o sólido en un tanque.<br /></span><span lang="ES">- <strong>Sensores de flotador</strong></span><span lang="ES">: Utilizan un flotador para detectar el nivel de un líquido.<br /></span><span><span lang="ES">- <strong>Sensores capacitivos</strong></span></span><span lang="ES">: Determinan el nivel de líquidos y sólidos granulados según cambios en la capacitancia.</span></p>
+</div>
+<p style="text-align: justify;"><span lang="ES-AR"><strong></strong></span></p>
+<p style="text-align: justify;"><span lang="ES-AR"><strong>Sensores de Flujo</strong></span></p>
+<div class="editor-indent" style="text-align: justify;">
+<p><span><span lang="ES">- <strong>Caudalímetros electromagnéticos</strong></span></span><span lang="ES">: Miden el caudal de líquidos conductivos mediante la ley de Faraday.<br /></span><span lang="ES">- <strong>Sensores de flujo másico</strong></span><span lang="ES">: Utilizados para medir el flujo de gases o líquidos según su masa.</span></p>
+</div>
+<p style="text-align: justify;"><span lang="ES-AR"><strong></strong></span></p>
+<p style="text-align: justify;"><span lang="ES-AR"><strong>Sensores de Proximidad</strong></span></p>
+<div class="editor-indent" style="text-align: justify;">
+<p><span lang="ES">- </span><strong><span lang="ES">Sensores ultrasónicos</span></strong><span lang="ES">: Detectan la cercanía de objetos mediante ondas sonoras.<br /></span><span lang="ES">- <strong>Sensores infrarrojos</strong></span><span lang="ES">: Usan haces de luz para detectar objetos a corta distancia.</span></p>
+</div>
+<p style="text-align: justify;"><span lang="ES-AR"><strong></strong></span></p>
+<p style="text-align: justify;"><span lang="ES-AR"><strong>Sensores de Humedad</strong></span></p>
+<div class="editor-indent" style="text-align: justify;">
+<p><span><span lang="ES">- <strong>Sensores higrómetros</strong></span></span><span lang="ES">: Miden la humedad relativa en el aire o en materiales.<br /></span><span lang="ES">- <strong>Sensores capacitivos de humedad</strong></span><span lang="ES">: Utilizan la variación en la constante dieléctrica del aire para medir humedad.</span></p>
+</div>
+<h5 style="text-align: justify;"><span lang="ES" class=""><span class="">Aplicaciones de los Sensores en la Industria</span><br /></span><span>Los sensores industriales son esenciales para la optimización y control de procesos en diversas industrias, tales como:<br /></span></h5>
+<ul style="text-align: justify;">
+<li><strong><span lang="ES">Industria manufacturera</span></strong><span lang="ES">: Control de calidad, automatización de líneas de producción.<br /></span></li>
+<li><strong><span lang="ES">Industria química</span></strong><span lang="ES">: Monitoreo de temperatura y presión en reacciones químicas.<br /></span></li>
+<li><strong><span lang="ES">Industria alimentaria</span></strong><span lang="ES">: Control de temperatura en refrigeración y procesos de cocción.<br /></span></li>
+<li><strong><span lang="ES">Sector automotriz</span></strong><span lang="ES">: Sensores en robots de ensamblaje y control de motores.</span></li>
+</ul>
+<h5 style="text-align: justify;"><span lang="ES" class="">Los sensores industriales son dispositivos clave en la automatización, permitiendo la supervisión y mejora de procesos en diferentes sectores. La selección del sensor adecuado depende de la variable a medir y de las condiciones del entorno de trabajo. Con el avance de la tecnología, los sensores continúan evolucionando, proporcionando mayor precisión y eficiencia en los sistemas industriales modernos.</span></h5>
+<p style="text-align: justify;"><strong>Video sugerido</strong></p>
+<p style="text-align: center;"><strong><iframe width="560" height="314" src="https://www.youtube.com/embed/YUouJVotGs4" allowfullscreen="allowfullscreen"></iframe><br /></strong></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="04_tipos_de_sistema_medios_y_seales.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="unidad_2__funciones_digitales_y_fundamentos_del_lgebra_de_boole.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">© 2026 - Zeballos Silvia</footer></div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>

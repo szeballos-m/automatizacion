@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>03. Partes, componentes y funcionamiento de un PLC | Automatizacion </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Silvia Zeballos" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-29"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Automatizacion</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Presentación</a></li>
+   <li><a href="objetivos.html" class="no-ch">Objetivos</a></li>
+   <li><a href="unidad_1__sistemas_automatizados_evolucin_caractersticas_y_estructura.html" class="daddy">Unidad 1 - Sistemas Automatizados: Evolución, Características y Estructura</a>
+   <ul class="other-section">
+      <li><a href="01_qu_entendemos_por_automatizacin_industrial.html" class="no-ch">01. ¿Qué entendemos por Automatización Industrial?</a></li>
+      <li><a href="02_estructura_de_un_sistema_automatizado.html" class="no-ch">02. Estructura de un Sistema Automatizado</a></li>
+      <li><a href="03_evolucin_de_los_sistemas_automatizados.html" class="no-ch">03. Evolución de los Sistemas Automatizados</a></li>
+      <li><a href="04_tipos_de_sistema_medios_y_seales.html" class="no-ch">04. Tipos de Sistema, Medios y Señales</a></li>
+      <li><a href="05_sensores_industriales.html" class="no-ch">05. Sensores Industriales</a></li>
+   </ul>
+   </li>
+   <li><a href="unidad_2__funciones_digitales_y_fundamentos_del_lgebra_de_boole.html" class="daddy">Unidad 2 - Funciones digitales y fundamentos del Álgebra de Boole</a>
+   <ul class="other-section">
+      <li><a href="01_introduccin.html" class="no-ch">01. Introducción</a></li>
+      <li><a href="02_operaciones_lgicas.html" class="no-ch">02. Operaciones Lógicas</a></li>
+      <li><a href="03_implementacin_neumtica.html" class="no-ch">03. Implementación neumática</a></li>
+      <li><a href="04_sistemas_de_numeracin.html" class="no-ch">04. Sistemas de numeración</a></li>
+      <li><a href="05_aplicaciones_industriales.html" class="no-ch">05. Aplicaciones industriales</a></li>
+   </ul>
+   </li>
+   <li><a href="unidad_3__lgica_cableada_con_rels.html" class="daddy">Unidad 3 - Lógica Cableada con Relés</a>
+   <ul class="other-section">
+      <li><a href="01_introduccin_a_la_lgica_cableada__componentes.html" class="no-ch">01. Introducción a la Lógica Cableada - Componentes</a></li>
+      <li><a href="02_ventajas_y_desventajas_de_la_lgica_cableada.html" class="no-ch">02. Ventajas y Desventajas de la Lógica Cableada</a></li>
+      <li><a href="03_rels_industriales_y_contactores_como_elementos_de_control.html" class="no-ch">03. Relés Industriales y Contactores como Elementos de Control</a></li>
+      <li><a href="04_implementacin_de_funciones_lgicas.html" class="no-ch">04. Implementación de Funciones Lógicas</a></li>
+      <li><a href="05_retencin_o_memoria_elctrica.html" class="no-ch">05. Retención o Memoria Eléctrica</a></li>
+      <li><a href="06_diseo_de_circuitos_de_control_con_rels.html" class="no-ch">06. Diseño de circuitos de control con Relés</a></li>
+      <li><a href="07_aplicacin_cajas_altasbajas.html" class="no-ch">07. Aplicación CAJAS ALTAS/BAJAS</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="unidad_4__lgica_programada_con_plc.html" class="current-page-parent daddy">Unidad 4 - Lógica Programada con PLC</a>
+   <ul>
+      <li><a href="01_introduccin_a_la_lgica_programada.html" class="no-ch">01. Introducción a la Lógica Programada</a></li>
+      <li><a href="02_tipos_de_controladores.html" class="no-ch">02. Tipos de Controladores</a></li>
+      <li id="active"><a href="03_partes_componentes_y_funcionamiento_de_un_plc.html" class="active no-ch">03. Partes, componentes y funcionamiento de un PLC</a></li>
+      <li><a href="04_lenguajes_de_programacin.html" class="no-ch">04. Lenguajes de Programación</a></li>
+      <li><a href="05_lgica_cableada_a_lgica_programada_ladder.html" class="no-ch">05. Lógica cableada a Lógica Programada (ladder)</a></li>
+      <li><a href="06_aplicacin_cajas_altasbajas.html" class="no-ch">06. Aplicación CAJAS ALTAS/BAJAS</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="02_tipos_de_controladores.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="04_lenguajes_de_programacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">03. Partes, componentes y funcionamiento de un PLC</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id56">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Partes de un PLC</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta56_113_2" class="block iDevice_content">
+<div class="exe-text"><div id="yui_3_18_1_1_1762629713149_161">
+<div id="yui_3_18_1_1_1762629713149_160">
+<p style="text-align: justify;"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Un PLC está compuesto por diferentes </span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">módulos y componentes</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"> que permiten su funcionamiento como cerebro de sistemas de automatización. A continuación, se describen sus principales partes.<br /><br /><br /></span></p>
+<h4><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3" class=""></span></span><img src="https://cenet.inet.edu.ar/pluginfile.php/42929/mod_page/content/8/Copia%20de%20U3_Ejemplo_Tanque%20%282%29.jpg" alt="" role="presentation" class="img-fluid" /></h4>
+<p></p>
+<p><strong>1. Fuente de alimentación</strong></p>
+</div>
+<div>
+<h5><span style="font-size: 12pt;"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Convierte la energía eléctrica de la red (CA) en una tensión adecuada (CC) para alimentar los circuitos internos del PLC.</span> </span></h5>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="73" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1" role="listitem">
+<p paraid="1690425932" paraeid="{51724f02-df44-4449-b447-7d62ff10436a}{66}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Tensión típica de entrada:</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"> 220V CA.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="73" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="3" data-aria-level="1" role="listitem">
+<p paraid="2000740295" paraeid="{51724f02-df44-4449-b447-7d62ff10436a}{74}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Tensión de salida interna:</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>Generalmente 24V CC o 12 CC.</span></p>
+</li>
+</ul>
+</div>
+<div>
+<p><strong><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3" class="">2. Unidad central de procesamiento (CPU)</span></span></strong></p>
+<p><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Es el corazón del PLC. Procesa el programa cargado por el usuario y toma decisiones lógicas.</span></p>
+<p><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Incluye:</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="o" data-font="Courier New" data-listid="74" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Courier New&quot;,&quot;469769242&quot;:[9675],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;o&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="2" role="listitem">
+<p paraid="2036002785" paraeid="{51724f02-df44-4449-b447-7d62ff10436a}{106}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Microprocesador.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="o" data-font="Courier New" data-listid="74" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Courier New&quot;,&quot;469769242&quot;:[9675],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;o&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="2" role="listitem">
+<p paraid="622929735" paraeid="{51724f02-df44-4449-b447-7d62ff10436a}{112}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Memoria ROM/RAM:</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Wingdings" data-listid="74" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:2160,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Wingdings&quot;,&quot;469769242&quot;:[9642],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="3" role="listitem">
+<p paraid="365573862" paraeid="{51724f02-df44-4449-b447-7d62ff10436a}{118}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">ROM: almacena el firmware del fabricante.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Wingdings" data-listid="74" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:2160,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Wingdings&quot;,&quot;469769242&quot;:[9642],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="3" role="listitem">
+<p paraid="1064244974" paraeid="{51724f02-df44-4449-b447-7d62ff10436a}{124}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">RAM: guarda datos temporales y estados de variables.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="o" data-font="Courier New" data-listid="74" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Courier New&quot;,&quot;469769242&quot;:[9675],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;o&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="3" data-aria-level="2" role="listitem">
+<p paraid="2127959769" paraeid="{51724f02-df44-4449-b447-7d62ff10436a}{130}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Memoria EEPROM o Flash:</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>para guardar el programa del usuario.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<p paraid="872468033" paraeid="{51724f02-df44-4449-b447-7d62ff10436a}{138}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"></span></p>
+</div>
+<div>
+<p><strong><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3" class="">3. Módulos de entradas</span></span></strong></p>
+<p><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Reciben señales del entorno para ser interpretadas por la CPU.</span></p>
+<p><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Tipos de señales:</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</div>
+</div>
+<div>
+<div>
+<ul role="list">
+<li data-leveltext="o" data-font="Courier New" data-listid="75" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Courier New&quot;,&quot;469769242&quot;:[9675],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;o&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="2" role="listitem">
+<p paraid="1616581328" paraeid="{51724f02-df44-4449-b447-7d62ff10436a}{162}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Digitales (0 o 1):</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>por ejemplo, pulsadores, sensores de proximidad.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="o" data-font="Courier New" data-listid="75" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Courier New&quot;,&quot;469769242&quot;:[9675],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;o&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="2" role="listitem">
+<p paraid="802695998" paraeid="{51724f02-df44-4449-b447-7d62ff10436a}{170}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Analógicas (variables continuas):</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>como temperatura, presión, nivel (por medio de sensores 4-20 mA o 0-10 V).</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<p paraid="16331" paraeid="{51724f02-df44-4449-b447-7d62ff10436a}{178}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"></span><span data-ccp-props="{&quot;335559738&quot;:120,&quot;335559739&quot;:120}"> </span></p>
+</div>
+<div>
+<p><strong><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3" class="">4. Módulos de salidas</span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;335559738&quot;:281,&quot;335559739&quot;:281}" class=""> </span></strong></p>
+<p><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Ejecutan acciones según las órdenes de la CPU.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+<p><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Tipos de salidas:</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="o" data-font="Courier New" data-listid="76" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Courier New&quot;,&quot;469769242&quot;:[9675],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;o&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="2" role="listitem">
+<p paraid="1454511906" paraeid="{51724f02-df44-4449-b447-7d62ff10436a}{202}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Digitales:</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>activan luces, relés, contactores.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="o" data-font="Courier New" data-listid="76" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Courier New&quot;,&quot;469769242&quot;:[9675],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;o&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="2" role="listitem">
+<p paraid="1097426509" paraeid="{51724f02-df44-4449-b447-7d62ff10436a}{210}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Analógicas:</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>controlan variadores de frecuencia, válvulas proporcionales, etc.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"></span><span data-ccp-props="{&quot;335559738&quot;:120,&quot;335559739&quot;:120}"> </span></div>
+<div>
+<p><strong><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3" class="">5. Módulos de comunicación</span></span></strong></p>
+<p><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Permiten la conexión del PLC con otros dispositivos o redes industriales.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+<p><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Protocolos comunes:</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="o" data-font="Courier New" data-listid="77" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Courier New&quot;,&quot;469769242&quot;:[9675],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;o&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="2" role="listitem">
+<p paraid="46738683" paraeid="{51724f02-df44-4449-b447-7d62ff10436a}{242}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Modbus, Profibus, Ethernet/IP, CANopen, DeviceNet.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="77" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="3" data-aria-level="1" role="listitem">
+<p paraid="467672933" paraeid="{51724f02-df44-4449-b447-7d62ff10436a}{248}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Usos:</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>Comunicación con SCADA, HMI, otros PLCs o dispositivos de campo.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<p paraid="1462300786" paraeid="{3374005e-0616-4299-a886-1447d32218f0}{1}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"></span><span data-ccp-props="{&quot;335559738&quot;:120,&quot;335559739&quot;:120}"> </span></p>
+</div>
+<div>
+<p><strong><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3" class="">6. Interfaces de programación</span></span></strong></p>
+<p><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Permiten conectar el PLC a una computadora para cargar, editar o monitorear el programa.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="78" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1" role="listitem">
+<p paraid="1778125170" paraeid="{3374005e-0616-4299-a886-1447d32218f0}{19}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Conexión:</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>USB, RS-232, Ethernet o wireless (según modelo).</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="78" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="3" data-aria-level="1" role="listitem">
+<p paraid="1293403729" paraeid="{3374005e-0616-4299-a886-1447d32218f0}{27}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Software:</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>Cada marca tiene su propio entorno de programación (ej. TIA Portal, GX Works, Zelio Soft, etc.).</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<p paraid="715726769" paraeid="{3374005e-0616-4299-a886-1447d32218f0}{35}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"></span><span data-ccp-props="{&quot;335559738&quot;:120,&quot;335559739&quot;:120}"> </span></p>
+</div>
+</div>
+<div>
+<div>
+<p><strong><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3" class="">7. Indicadores LED o display</span></span></strong></p>
+<p><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Informan sobre el estado de funcionamiento del PLC.</span></p>
+<p><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Ejemplos:</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="o" data-font="Courier New" data-listid="79" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Courier New&quot;,&quot;469769242&quot;:[9675],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;o&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="2" role="listitem">
+<p paraid="1077778925" paraeid="{3374005e-0616-4299-a886-1447d32218f0}{59}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Indicadores de alimentación.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="o" data-font="Courier New" data-listid="79" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Courier New&quot;,&quot;469769242&quot;:[9675],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;o&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="2" role="listitem">
+<p paraid="1099411886" paraeid="{3374005e-0616-4299-a886-1447d32218f0}{65}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">LEDs de estado de entradas/salidas.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="o" data-font="Courier New" data-listid="79" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Courier New&quot;,&quot;469769242&quot;:[9675],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;o&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="3" data-aria-level="2" role="listitem">
+<p paraid="1627635953" paraeid="{3374005e-0616-4299-a886-1447d32218f0}{71}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Fallas o modo de operación.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<p paraid="230399268" paraeid="{3374005e-0616-4299-a886-1447d32218f0}{77}"><br /><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"></span></p>
+</div>
+<div>
+<h4><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR" class="">Funcionamiento del Ciclo SCAN</span><span data-ccp-props="{&quot;335559738&quot;:120,&quot;335559739&quot;:120}" class=""> </span></h4>
+</div>
+<div>
+<p role="heading" aria-level="3" paraid="1087108562" paraeid="{3374005e-0616-4299-a886-1447d32218f0}{139}" style="text-align: justify;"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3">El Ciclo SCAN es una secuencia de pasos que realiza el PLC repetidamente durante su funcionamiento. Este ciclo permite monitorear las entradas, procesar la lógica del programa y actualizar las salidas de manera continua.</span></span></p>
+<p role="heading" aria-level="3" paraid="1087108562" paraeid="{3374005e-0616-4299-a886-1447d32218f0}{139}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3"> </span></span></p>
+</div>
+<div>
+<p paraid="185313928" paraeid="{3374005e-0616-4299-a886-1447d32218f0}{145}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><img src="https://cenet.inet.edu.ar/pluginfile.php/42929/mod_page/content/8/Copia%20de%20U3_Ejemplo_Tanque%20%283%29.jpg" alt="" role="presentation" class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" /><br /></span></p>
+</div>
+<div>
+<p paraid="718890719" paraeid="{3374005e-0616-4299-a886-1447d32218f0}{159}" style="text-align: justify;"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"></span><br />Básicamente lo que hace un PLC es realizar en un primer momento una lectura del estado de las entradas; esa información la escribe en un espacio de memoria interna; utilizando esos datos procesa el programa que se encuentra corriendo guardando los valores de la salida en otra memoria interna; reproduce esa memoria virtual de salidas al estado real de las salidas del PLC; vuelve a iniciar con la lectura de entradas del primer paso.<br /><br /><strong><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR" style="font-size: 1.05em; text-align: left;"><span data-ccp-parastyle="heading 3" class="">Fases del Ciclo SCAN</span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;335559738&quot;:281,&quot;335559739&quot;:281}" class="" style="font-size: 1.05em; text-align: left;"> </span></strong></p>
+</div>
+<div>
+<p><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR" class=""><strong>Lectura de Entradas (Input Scan)</strong><br /></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">1. El PLC<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">lee el estado de todas las entradas digitales y analógicas</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>(sensores, pulsadores, interruptores, etc.).</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> <br /></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">2. Guarda los valores en una<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">memoria interna de imagen de entradas</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</div>
+</div>
+<div>
+<div><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">3. Esta lectura<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">no es en tiempo real</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">: se mantiene fija durante ese ciclo.<br /><br /></span></div>
+<div><strong><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR" class=""><br />Ejecución del Programa (Program Execution)</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}" class=""> </span></strong></div>
+<div><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">4. El PLC<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">ejecuta las instrucciones del programa</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>línea por línea (según el lenguaje de programación usado).</span></div>
+<div><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">5. Utiliza los valores de la memoria de entradas y<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">actualiza una memoria de salidas internas</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">.</span></div>
+<div><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"> </span></div>
+<div><strong><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR" class="">Actualización de Salidas (Output Scan)</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}" class=""> </span></strong></div>
+<div><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">6. Los resultados de la ejecución se<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">envían a las salidas físicas</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>del PLC (relés, luces, motores, válvulas, etc.). </span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Esta acción también se refleja en la<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">imagen de salidas.</span></div>
+<div><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">7. Tareas de Comunicación / Autodiagnóstico: </span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">El PLC realiza operaciones de comunicación con otros dispositivos, autodiagnóstico, temporizaciones, y otras tareas internas si están configuradas.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></div>
+<div><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></div>
+<div><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></div>
+<div>
+<h4><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3" class="">Velocidad del Ciclo SCAN</span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;335559738&quot;:281,&quot;335559739&quot;:281}" class=""> </span></h4>
+<p style="text-align: justify;"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">El Ciclo SCAN se<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">repite continuamente</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">, miles de veces por segundo.<br /></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">La<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">duración del ciclo</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>depende de l</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">a cantidad de entradas y salidas, de la </span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">complejidad del programa, y del modelo y las características de cada </span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">PLC.<br /></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Según la aplicación, un Ciclo SCAN puede durar desde 1 milisegundo hasta más de 100 milisegundos.<br /></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</div>
+</div>
+<div>
+<div>
+<table border="1" data-tablestyle="MsoNormalTable" data-tablelook="1696" aria-rowcount="9" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr role="row" aria-rowindex="1">
+<th scope="col">
+<div>
+<div>
+<p paraid="1082465958" paraeid="{46594e77-3237-4c68-8d52-dc63127bccad}{122}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Parte del PLC</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335551550&quot;:2,&quot;335551620&quot;:2,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</th>
+<th scope="col">
+<div>
+<div>
+<p paraid="1696943393" paraeid="{46594e77-3237-4c68-8d52-dc63127bccad}{129}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Función principal</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335551550&quot;:2,&quot;335551620&quot;:2,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</th>
+</tr>
+<tr role="row" aria-rowindex="2">
+<td role="rowheader" data-celllook="0">
+<div>
+<div>
+<p paraid="2008618058" paraeid="{46594e77-3237-4c68-8d52-dc63127bccad}{137}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Fuente de alimentación</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+<td data-celllook="0">
+<div>
+<div>
+<p paraid="302482158" paraeid="{46594e77-3237-4c68-8d52-dc63127bccad}{144}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Proporciona energía al sistema</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+</tr>
+<tr role="row" aria-rowindex="3">
+<td role="rowheader" data-celllook="0">
+<div>
+<div>
+<p paraid="1458320290" paraeid="{46594e77-3237-4c68-8d52-dc63127bccad}{152}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">CPU</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+<td data-celllook="0">
+<div>
+<div>
+<p paraid="1909317073" paraeid="{46594e77-3237-4c68-8d52-dc63127bccad}{159}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Procesa el programa</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+</tr>
+<tr role="row" aria-rowindex="4">
+<td role="rowheader" data-celllook="0">
+<div>
+<div>
+<p paraid="370736276" paraeid="{46594e77-3237-4c68-8d52-dc63127bccad}{167}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Módulos de entrada</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+<td data-celllook="0">
+<div>
+<div>
+<p paraid="245332288" paraeid="{46594e77-3237-4c68-8d52-dc63127bccad}{174}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Reciben señales del entorno</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+</tr>
+<tr role="row" aria-rowindex="5">
+<td role="rowheader" data-celllook="0">
+<div>
+<div>
+<p paraid="2136310973" paraeid="{46594e77-3237-4c68-8d52-dc63127bccad}{182}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Módulos de salida</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+<td data-celllook="0">
+<div>
+<div>
+<p paraid="1736925778" paraeid="{46594e77-3237-4c68-8d52-dc63127bccad}{189}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Ejecutan acciones sobre el entorno</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+</tr>
+<tr role="row" aria-rowindex="6">
+<td role="rowheader" data-celllook="0">
+<div>
+<div>
+<p paraid="444647431" paraeid="{46594e77-3237-4c68-8d52-dc63127bccad}{197}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Módulos de comunicación</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+<td data-celllook="0">
+<div>
+<div>
+<p paraid="1763314213" paraeid="{46594e77-3237-4c68-8d52-dc63127bccad}{204}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Interconectan con redes o dispositivos</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+</tr>
+<tr role="row" aria-rowindex="7">
+<td role="rowheader" data-celllook="0">
+<div>
+<div>
+<p paraid="2137435196" paraeid="{46594e77-3237-4c68-8d52-dc63127bccad}{212}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Interfaz de programación</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+<td data-celllook="0">
+<div>
+<div>
+<p paraid="839520311" paraeid="{46594e77-3237-4c68-8d52-dc63127bccad}{219}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Permite cargar y monitorear programas</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+</tr>
+<tr role="row" aria-rowindex="8">
+<td role="rowheader" data-celllook="0">
+<div>
+<div>
+<p paraid="726590691" paraeid="{46594e77-3237-4c68-8d52-dc63127bccad}{227}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">LEDs/Display</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+<td data-celllook="0">
+<div>
+<div>
+<p paraid="2018780115" paraeid="{46594e77-3237-4c68-8d52-dc63127bccad}{234}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Informan el estado del sistema</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+</tr>
+<tr role="row" aria-rowindex="9">
+<td role="rowheader" data-celllook="0">
+<div>
+<div>
+<p paraid="1034338418" paraeid="{46594e77-3237-4c68-8d52-dc63127bccad}{242}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Chasis o bastidor</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+<td data-celllook="0">
+<div>
+<div>
+<p paraid="1637625342" paraeid="{46594e77-3237-4c68-8d52-dc63127bccad}{249}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Montaje e interconexión de módulos</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<p paraid="1288885560" paraeid="{06e40adb-f3b1-45a9-a2b4-0b569b3b1c29}{4}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"></span><span data-ccp-props="{&quot;335559738&quot;:120,&quot;335559739&quot;:120}"> </span></p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="02_tipos_de_controladores.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="04_lenguajes_de_programacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">© 2026 - Zeballos Silvia</footer></div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>

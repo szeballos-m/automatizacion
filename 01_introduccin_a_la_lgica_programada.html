@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>01. Introducción a la Lógica Programada | Automatizacion </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Silvia Zeballos" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-27"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Automatizacion</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Presentación</a></li>
+   <li><a href="objetivos.html" class="no-ch">Objetivos</a></li>
+   <li><a href="unidad_1__sistemas_automatizados_evolucin_caractersticas_y_estructura.html" class="daddy">Unidad 1 - Sistemas Automatizados: Evolución, Características y Estructura</a>
+   <ul class="other-section">
+      <li><a href="01_qu_entendemos_por_automatizacin_industrial.html" class="no-ch">01. ¿Qué entendemos por Automatización Industrial?</a></li>
+      <li><a href="02_estructura_de_un_sistema_automatizado.html" class="no-ch">02. Estructura de un Sistema Automatizado</a></li>
+      <li><a href="03_evolucin_de_los_sistemas_automatizados.html" class="no-ch">03. Evolución de los Sistemas Automatizados</a></li>
+      <li><a href="04_tipos_de_sistema_medios_y_seales.html" class="no-ch">04. Tipos de Sistema, Medios y Señales</a></li>
+      <li><a href="05_sensores_industriales.html" class="no-ch">05. Sensores Industriales</a></li>
+   </ul>
+   </li>
+   <li><a href="unidad_2__funciones_digitales_y_fundamentos_del_lgebra_de_boole.html" class="daddy">Unidad 2 - Funciones digitales y fundamentos del Álgebra de Boole</a>
+   <ul class="other-section">
+      <li><a href="01_introduccin.html" class="no-ch">01. Introducción</a></li>
+      <li><a href="02_operaciones_lgicas.html" class="no-ch">02. Operaciones Lógicas</a></li>
+      <li><a href="03_implementacin_neumtica.html" class="no-ch">03. Implementación neumática</a></li>
+      <li><a href="04_sistemas_de_numeracin.html" class="no-ch">04. Sistemas de numeración</a></li>
+      <li><a href="05_aplicaciones_industriales.html" class="no-ch">05. Aplicaciones industriales</a></li>
+   </ul>
+   </li>
+   <li><a href="unidad_3__lgica_cableada_con_rels.html" class="daddy">Unidad 3 - Lógica Cableada con Relés</a>
+   <ul class="other-section">
+      <li><a href="01_introduccin_a_la_lgica_cableada__componentes.html" class="no-ch">01. Introducción a la Lógica Cableada - Componentes</a></li>
+      <li><a href="02_ventajas_y_desventajas_de_la_lgica_cableada.html" class="no-ch">02. Ventajas y Desventajas de la Lógica Cableada</a></li>
+      <li><a href="03_rels_industriales_y_contactores_como_elementos_de_control.html" class="no-ch">03. Relés Industriales y Contactores como Elementos de Control</a></li>
+      <li><a href="04_implementacin_de_funciones_lgicas.html" class="no-ch">04. Implementación de Funciones Lógicas</a></li>
+      <li><a href="05_retencin_o_memoria_elctrica.html" class="no-ch">05. Retención o Memoria Eléctrica</a></li>
+      <li><a href="06_diseo_de_circuitos_de_control_con_rels.html" class="no-ch">06. Diseño de circuitos de control con Relés</a></li>
+      <li><a href="07_aplicacin_cajas_altasbajas.html" class="no-ch">07. Aplicación CAJAS ALTAS/BAJAS</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="unidad_4__lgica_programada_con_plc.html" class="current-page-parent daddy">Unidad 4 - Lógica Programada con PLC</a>
+   <ul>
+      <li id="active"><a href="01_introduccin_a_la_lgica_programada.html" class="active no-ch">01. Introducción a la Lógica Programada</a></li>
+      <li><a href="02_tipos_de_controladores.html" class="no-ch">02. Tipos de Controladores</a></li>
+      <li><a href="03_partes_componentes_y_funcionamiento_de_un_plc.html" class="no-ch">03. Partes, componentes y funcionamiento de un PLC</a></li>
+      <li><a href="04_lenguajes_de_programacin.html" class="no-ch">04. Lenguajes de Programación</a></li>
+      <li><a href="05_lgica_cableada_a_lgica_programada_ladder.html" class="no-ch">05. Lógica cableada a Lógica Programada (ladder)</a></li>
+      <li><a href="06_aplicacin_cajas_altasbajas.html" class="no-ch">06. Aplicación CAJAS ALTAS/BAJAS</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="unidad_4__lgica_programada_con_plc.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="02_tipos_de_controladores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">01. Introducción a la Lógica Programada</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id54">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Introducción a la Lógica Programada</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta54_111_2" class="block iDevice_content">
+<div class="exe-text"><div id="page-content" class="row ">
+<div id="region-main-box" class="col-xs-12 col-12 px-0">
+<section id="region-main" class="mx-15">
+<div role="main" id="yui_3_18_1_1_1762627471246_164">
+<div class="box py-3 generalbox center clearfix" id="yui_3_18_1_1_1762627471246_163">
+<div class="no-overflow" id="yui_3_18_1_1_1762627471246_162">
+<div id="yui_3_18_1_1_1762627471246_161">
+<div>
+<p paraid="1759208128" paraeid="{f4b746e1-fee2-4d13-b3eb-2e263c822e6f}{109}" style="text-align: justify;"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">La automatización industrial ha transformado radicalmente la manera en que se producen bienes, se controlan procesos y se gestionan recursos en el entorno productivo. </span> </p>
+</div>
+<div style="text-align: justify;">
+<p paraid="1429719152" paraeid="{f4b746e1-fee2-4d13-b3eb-2e263c822e6f}{113}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"></span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">En la unidad anterior estudiamos lo que se conoce como Lógica Cableada, donde los circuitos eléctricos y la forma en la que se conectan los componentes (relés, contactores, contactos auxiliares, etc) son los que determinan la lógica de control. Para cambiar el proceso, es necesario </span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">modificar físicamente</span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"> el cableado de los circuitos.<br /></span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">La Lógica Cableada se utilizaba en sistemas antiguos, o bien actualmente en sistemas de baja complejidad ó simple ejecución.</span></p>
+<p paraid="1429719152" paraeid="{f4b746e1-fee2-4d13-b3eb-2e263c822e6f}{113}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">Por el contrario, la Lógica Programable, introducida con los PLC (Controladores Lógicos Programables), permite modificar el sistema mediante programación por software, sin necesidad de modificar hardware.<br />Los PLC se han convertido en uno de los pilares fundamentales de la industria moderna. </span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559738&quot;:120,&quot;335559739&quot;:120,&quot;335559740&quot;:240}"> </span></p>
+</div>
+<div>
+<p paraid="1281069206" paraeid="{f4b746e1-fee2-4d13-b3eb-2e263c822e6f}{133}" style="text-align: justify;"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"></span> <br /><span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">Comparemos a grandes rasgos las características de ambos sistemas:</span> </span></p>
+</div>
+</div>
+<div>
+<div>
+<div id="{49da6cc8-f775-4dbb-b25e-96900c6fb829}{12}" aria-hidden="true"></div>
+<table border="1" data-tablestyle="MsoTableGrid" data-tablelook="1184" aria-rowcount="5">
+<tbody>
+<tr role="row" aria-rowindex="1">
+<th scope="col">
+<div>
+<div>
+<p paraid="2036527307" paraeid="{f4b746e1-fee2-4d13-b3eb-2e263c822e6f}{139}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"></span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;335551550&quot;:2,&quot;335551620&quot;:2,&quot;335559738&quot;:120,&quot;335559739&quot;:120}"> </span></p>
+</div>
+</div>
+</th>
+<th scope="col">
+<div>
+<div>
+<p paraid="214102655" paraeid="{f4b746e1-fee2-4d13-b3eb-2e263c822e6f}{144}"><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES" class="">Lógica Cableada</span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;335551550&quot;:2,&quot;335551620&quot;:2,&quot;335559738&quot;:120,&quot;335559739&quot;:120}" class=""> </span></p>
+</div>
+</div>
+</th>
+<th scope="col">
+<div>
+<div>
+<p paraid="1615961062" paraeid="{f4b746e1-fee2-4d13-b3eb-2e263c822e6f}{151}"><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES" class="">Lógica Programable</span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;335551550&quot;:2,&quot;335551620&quot;:2,&quot;335559738&quot;:120,&quot;335559739&quot;:120}" class=""> </span></p>
+</div>
+</div>
+</th>
+</tr>
+<tr role="row" aria-rowindex="2">
+<td role="rowheader" data-celllook="4096">
+<div>
+<div>
+<p paraid="1159892517" paraeid="{f4b746e1-fee2-4d13-b3eb-2e263c822e6f}{159}"><strong><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES">Flexibilidad</span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;335551550&quot;:2,&quot;335551620&quot;:2,&quot;335559738&quot;:120,&quot;335559739&quot;:120}"> </span></strong></p>
+</div>
+</div>
+</td>
+<td data-celllook="0">
+<div>
+<div>
+<p paraid="297380532" paraeid="{f4b746e1-fee2-4d13-b3eb-2e263c822e6f}{166}"></p>
+<p><strong><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES">BAJA</span><span> </span></strong></p>
+<p><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES">Para realizar modificaciones en el proceso debemos recablear y cambiar o agregar componentes</span><span> </span></p>
+<p></p>
+</div>
+</div>
+</td>
+<td data-celllook="16">
+<div>
+<div>
+<p paraid="636315584" paraeid="{f4b746e1-fee2-4d13-b3eb-2e263c822e6f}{175}"></p>
+<p><strong><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES">ALTA</span><span> </span></strong></p>
+<p><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES">Las modificaciones se realizan cambiando la programación, incorporando bloques de función especiales</span><span> </span></p>
+<p></p>
+</div>
+</div>
+</td>
+</tr>
+<tr role="row" aria-rowindex="3">
+<td role="rowheader" data-celllook="4096">
+<div>
+<div>
+<p paraid="1393137724" paraeid="{f4b746e1-fee2-4d13-b3eb-2e263c822e6f}{185}"><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><strong>Mantenimiento</strong></span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;335551550&quot;:2,&quot;335551620&quot;:2,&quot;335559738&quot;:120,&quot;335559739&quot;:120}"> </span></p>
+</div>
+</div>
+</td>
+<td data-celllook="0">
+<div>
+<div>
+<p paraid="2141098233" paraeid="{f4b746e1-fee2-4d13-b3eb-2e263c822e6f}{192}"></p>
+<p><strong><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES">COMPLEJO</span><span> </span></strong></p>
+<p><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES">La búsqueda y detección de fallas demanda mucho tiempo</span><span> </span></p>
+<p></p>
+</div>
+</div>
+</td>
+<td data-celllook="16">
+<div>
+<div>
+<p paraid="1390161875" paraeid="{f4b746e1-fee2-4d13-b3eb-2e263c822e6f}{201}"></p>
+<p><span> </span><strong><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES">SENCILLO</span><span> </span></strong></p>
+<p><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES">La depuración del programa la realiza el programador por software</span><span> </span><span> </span></p>
+<p></p>
+</div>
+</div>
+</td>
+</tr>
+<tr role="row" aria-rowindex="4">
+<td role="rowheader" data-celllook="4096">
+<div>
+<div>
+<p paraid="1941143636" paraeid="{f4b746e1-fee2-4d13-b3eb-2e263c822e6f}{211}"><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><strong>Reconfiguración</strong></span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;335551550&quot;:2,&quot;335551620&quot;:2,&quot;335559738&quot;:120,&quot;335559739&quot;:120}"> </span></p>
+</div>
+</div>
+</td>
+<td data-celllook="0">
+<div>
+<div>
+<p paraid="2082219553" paraeid="{f4b746e1-fee2-4d13-b3eb-2e263c822e6f}{218}"></p>
+<p><span> </span><strong><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES">MANUAL</span><span> </span></strong></p>
+<p></p>
+</div>
+</div>
+</td>
+<td data-celllook="16">
+<div>
+<div>
+<p paraid="1419511568" paraeid="{f4b746e1-fee2-4d13-b3eb-2e263c822e6f}{225}"><strong><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES">POR SOFTWARE</span></strong></p>
+</div>
+</div>
+</td>
+</tr>
+<tr role="row" aria-rowindex="5">
+<td role="rowheader" data-celllook="4352">
+<div>
+<div>
+<p paraid="844195555" paraeid="{f4b746e1-fee2-4d13-b3eb-2e263c822e6f}{233}"><strong><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES">Espacio Físico</span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;335551550&quot;:2,&quot;335551620&quot;:2,&quot;335559738&quot;:120,&quot;335559739&quot;:120}"> </span></strong></p>
+</div>
+</div>
+</td>
+<td data-celllook="256">
+<div>
+<div>
+<p paraid="1649356120" paraeid="{f4b746e1-fee2-4d13-b3eb-2e263c822e6f}{240}"></p>
+<p><strong><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES">GRANDE</span><span> </span></strong></p>
+<p><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES">Cuánto más complejo es el proceso, más componentes cableados requieren disponerse en tablero (relés, temporizadores, contadores) </span><span> </span></p>
+<p></p>
+</div>
+</div>
+</td>
+<td data-celllook="272">
+<div>
+<div>
+<p paraid="508540884" paraeid="{f4b746e1-fee2-4d13-b3eb-2e263c822e6f}{249}"></p>
+<p><strong><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES">COMPACTO</span><span> </span></strong></p>
+<p><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES">El PLC ocupa un espacio reducido, y si fue correctamente seleccionado no requiere agregados en caso de procesos complejos</span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;335551550&quot;:2,&quot;335551620&quot;:2,&quot;335559738&quot;:120,&quot;335559739&quot;:120}"> </span></p>
+<p></p>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<p paraid="1274876061" paraeid="{6c558ae1-7563-48d5-b0fb-b2efed46d9cd}{6}"><span data-contrast="none" xml:lang="ES-AR" lang="ES-AR"></span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559738&quot;:120,&quot;335559739&quot;:120,&quot;335559740&quot;:240}"><br /> </span><strong style="font-size: 1.05em;"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES" class="">¿Qué es un PLC?</span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559738&quot;:120,&quot;335559739&quot;:120,&quot;335559740&quot;:240}" class=""> </span></strong></p>
+</div>
+<div>
+<p paraid="1524961487" paraeid="{6c558ae1-7563-48d5-b0fb-b2efed46d9cd}{28}" style="text-align: justify;"><span data-contrast="none" xml:lang="ES-AR" lang="ES-AR"></span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">Un </span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">PLC (Programmable Logic Controller)</span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"> es un dispositivo electrónico utilizado para </span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">automatizar procesos </span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">en entornos industriales. Se trata de un tipo de computadora robusta, diseñada para operar en condiciones adversas (temperaturas extremas, vibraciones, humedad, interferencias electromagnéticas), cuya función principal es </span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">leer entradas, ejecutar lógicas de control y activar salidas</span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"> en función del programa cargado.</span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559738&quot;:120,&quot;335559739&quot;:120,&quot;335559740&quot;:240}"> </span></p>
+</div>
+<div>
+<p paraid="257557207" paraeid="{6c558ae1-7563-48d5-b0fb-b2efed46d9cd}{50}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">A diferencia de una computadora convencional, un PLC está optimizado para controlar máquinas, líneas de producción, sistemas de transporte, y procesos industriales continuos o discretos.</span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559738&quot;:120,&quot;335559739&quot;:120,&quot;335559740&quot;:240}"> <br /><br /></span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559738&quot;:120,&quot;335559739&quot;:120,&quot;335559740&quot;:240}"><img src="https://cenet.inet.edu.ar/pluginfile.php/42927/mod_page/content/13/Copia%20de%20U3_Ejemplo_Tanque%20%2816%29.jpg" alt="" role="presentation" class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" /><br /></span></p>
+</div>
+<div>
+<p paraid="1917765784" paraeid="{6c558ae1-7563-48d5-b0fb-b2efed46d9cd}{60}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"></span> <br /><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><strong><span class="">Breve Historia y Evolución</span></strong></span></p>
+</div>
+<div>
+<p paraid="1004670702" paraeid="{6c558ae1-7563-48d5-b0fb-b2efed46d9cd}{66}" style="text-align: justify;"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">Los PLC nacieron en la década de 1960 como una solución a la complejidad de los sistemas de control por relés electromecánicos, que eran difíciles de mantener, poco flexibles y ocupaban mucho espacio. Permitieron reducir drásticamente el elevado costo que significaba la localización de fallas en circuitos de lógica cableada, la corrección de problemas, las modificaciones de circuitos, y por ende la cantidad de horas que se destinaban a este tipo de tareas.</span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559738&quot;:120,&quot;335559739&quot;:120,&quot;335559740&quot;:240}"> </span></p>
+</div>
+<div>
+<p paraid="377822467" paraeid="{6c558ae1-7563-48d5-b0fb-b2efed46d9cd}{72}" style="text-align: justify;"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">Nacen como respuesta a la necesidad creciente de implementar un dispositivo flexible a las modificaciones en procesos, que sea resistente a la contaminación ambiental, a la humedad, vibraciones y temperaturas extremas.</span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559738&quot;:120,&quot;335559739&quot;:120,&quot;335559740&quot;:240}"> <br /><br /></span></p>
+</div>
+<div>
+<p paraid="865628012" paraeid="{6c558ae1-7563-48d5-b0fb-b2efed46d9cd}{82}"><img src="https://gozarian.net/images/084_modicon.png" alt="El equipo Modicom con el PLC 084." width="646" height="435" class="atto_image_button_text-bottom" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+</div>
+<div>
+<p paraid="871735644" paraeid="{6c558ae1-7563-48d5-b0fb-b2efed46d9cd}{110}" style="text-align: justify;"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">La empresa Bedford Associates, con el desarrollo del primer PLC Modicon 084, sentó las bases de esta tecnología.</span> <br /><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">Desde entonces, los PLC han evolucionado significativamente:</span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559738&quot;:120,&quot;335559739&quot;:120,&quot;335559740&quot;:240}"> </span></p>
+</div>
+<div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="62" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1" role="listitem">
+<p paraid="780301864" paraeid="{6c558ae1-7563-48d5-b0fb-b2efed46d9cd}{118}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">Se han vuelto </span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">más compactos, rápidos y potentes</span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">.</span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559738&quot;:120,&quot;335559739&quot;:120,&quot;335559740&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="62" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1" role="listitem">
+<p paraid="2136522984" paraeid="{6c558ae1-7563-48d5-b0fb-b2efed46d9cd}{128}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">Soportan </span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">lenguajes de programación estandarizados</span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"> (según IEC 61131-3).</span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559738&quot;:120,&quot;335559739&quot;:120,&quot;335559740&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="62" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" aria-setsize="-1" data-aria-posinset="3" data-aria-level="1" role="listitem">
+<p paraid="1931824519" paraeid="{6c558ae1-7563-48d5-b0fb-b2efed46d9cd}{138}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">Permiten </span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">comunicación en red</span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"> con otros dispositivos industriales (SCADA, HMI, sensores inteligentes).</span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559738&quot;:120,&quot;335559739&quot;:120,&quot;335559740&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="62" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" aria-setsize="-1" data-aria-posinset="4" data-aria-level="1" role="listitem">
+<p paraid="1175687478" paraeid="{6c558ae1-7563-48d5-b0fb-b2efed46d9cd}{148}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">Incorporan funciones avanzadas como </span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">control PID, temporización, contadores, y diagnósticos en tiempo real</span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">.</span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559738&quot;:120,&quot;335559739&quot;:120,&quot;335559740&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<p paraid="15909783" paraeid="{6c558ae1-7563-48d5-b0fb-b2efed46d9cd}{158}" style="text-align: justify;"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES" style="font-size: 1.05em;">Otros de los factores que influyeron en su aceptación en el mercado fueron su facilidad de programación y contar con un lenguaje conocido y familiar para los electricistas de esa época, ya que estaba basado en diagramas de escalera (ó lenguaje ladder) y símbolos eléctricos comunes para ellos.</span><span style="font-size: 1.05em;"> </span><br /><span data-contrast="none" xml:lang="ES-AR" lang="ES-AR"></span></p>
+</div>
+<div>
+<p paraid="1589705851" paraeid="{6c558ae1-7563-48d5-b0fb-b2efed46d9cd}{162}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"></span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">Características de un PLC utilizado como controlador de un sistema </span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559738&quot;:120,&quot;335559739&quot;:120,&quot;335559740&quot;:240}"> </span></p>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="63" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1" role="listitem">
+<p paraid="1923631137" paraeid="{6c558ae1-7563-48d5-b0fb-b2efed46d9cd}{170}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">Flexibilidad</span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">: se pueden reprogramar fácilmente ante cambios en el proceso.</span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559738&quot;:120,&quot;335559739&quot;:120,&quot;335559740&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="63" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1" role="listitem">
+<p paraid="2087905177" paraeid="{6c558ae1-7563-48d5-b0fb-b2efed46d9cd}{178}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">Confiabilidad</span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">: operan de forma continua sin errores durante largos períodos.</span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559738&quot;:120,&quot;335559739&quot;:120,&quot;335559740&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="63" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" aria-setsize="-1" data-aria-posinset="3" data-aria-level="1" role="listitem">
+<p paraid="1688225908" paraeid="{6c558ae1-7563-48d5-b0fb-b2efed46d9cd}{186}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">Escalabilidad</span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">: pueden ampliarse o integrarse con nuevos sistemas.</span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559738&quot;:120,&quot;335559739&quot;:120,&quot;335559740&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="63" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" aria-setsize="-1" data-aria-posinset="4" data-aria-level="1" role="listitem">
+<p paraid="646713423" paraeid="{6c558ae1-7563-48d5-b0fb-b2efed46d9cd}{194}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">Seguridad</span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">: permiten implementar lógicas de seguridad funcional.</span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559738&quot;:120,&quot;335559739&quot;:120,&quot;335559740&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="63" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" aria-setsize="-1" data-aria-posinset="5" data-aria-level="1" role="listitem">
+<p paraid="1160695661" paraeid="{6c558ae1-7563-48d5-b0fb-b2efed46d9cd}{202}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">Interoperabilidad</span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">: se integran con redes industriales y sistemas de supervisión.</span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:0,&quot;335559738&quot;:120,&quot;335559739&quot;:120,&quot;335559740&quot;:240}"> </span></p>
+</li>
+</ul>
+<h4><span class="">Ventajas y Desventajas comparando Lógica Cableada y Programada<br /></span></h4>
+<table data-start="103" data-end="1466" width="855" height="257" style="height: 214px; border-style: double; width: 855px; border-color: #000000; margin-left: auto; margin-right: auto;" cellspacing="0.5">
+<thead data-start="103" data-end="238">
+<tr data-start="103" data-end="238" style="height: 22px;">
+<th data-start="103" data-end="130" scope="col" style="width: 177.594px; height: 22px;">Aspecto</th>
+<th data-start="130" data-end="183" scope="col" style="width: 321.547px; height: 22px;">Lógica Programada</th>
+<th data-start="183" data-end="238" scope="col" style="width: 341.859px; height: 22px;">Lógica Cableada</th>
+</tr>
+</thead>
+<tbody data-start="376" data-end="1466">
+<tr data-start="376" data-end="511" style="height: 24px;">
+<td data-start="376" data-end="404" style="width: 177.594px; height: 24px;"></td>
+<td data-start="404" data-end="457" style="width: 321.547px; height: 24px;"></td>
+<td data-start="457" data-end="511" style="width: 341.859px; height: 24px;"></td>
+</tr>
+<tr data-start="512" data-end="647" style="height: 24px;">
+<td data-start="512" data-end="540" style="width: 177.594px; height: 24px;"><strong data-start="514" data-end="530">Definición</strong></td>
+<td data-start="540" data-end="593" style="width: 321.547px; height: 24px;">Funcionalidad determinada por software</td>
+<td data-start="593" data-end="647" style="width: 341.859px; height: 24px;">Funcionalidad determinada por conexiones físicas</td>
+</tr>
+<tr data-start="648" data-end="784" style="height: 24px;">
+<td data-start="648" data-end="676" style="width: 177.594px; height: 24px;"><strong data-start="514" data-end="530">Flexibilidad</strong></td>
+<td data-start="676" data-end="729" style="width: 321.547px; height: 24px;">Alta: se puede cambiar el programa fácilmente</td>
+<td data-start="729" data-end="784" style="width: 341.859px; height: 24px;">Baja: cambios requieren modificar el hardware</td>
+</tr>
+<tr data-start="785" data-end="920" style="height: 24px;">
+<td data-start="785" data-end="813" style="width: 177.594px; height: 24px;"><strong data-start="787" data-end="804">Costo inicial</strong></td>
+<td data-start="813" data-end="866" style="width: 321.547px; height: 24px;">Más bajo (reprogramar es barato)</td>
+<td data-start="866" data-end="920" style="width: 341.859px; height: 24px;">Más alto (diseñar y construir hardware específico)</td>
+</tr>
+<tr data-start="921" data-end="1056" style="height: 24px;">
+<td data-start="921" data-end="949" style="width: 177.594px; height: 24px;"><strong data-start="923" data-end="940">Mantenimiento</strong></td>
+<td data-start="949" data-end="1002" style="width: 321.547px; height: 24px;">Más sencillo (actualizaciones de software)</td>
+<td data-start="1002" data-end="1056" style="width: 341.859px; height: 24px;">Más complejo (requiere intervención física)</td>
+</tr>
+<tr data-start="1057" data-end="1192" style="height: 24px;">
+<td data-start="1057" data-end="1085" style="width: 177.594px; height: 24px;"><strong data-start="1059" data-end="1085">Complejidad del diseño</strong></td>
+<td data-start="1085" data-end="1138" style="width: 321.547px; height: 24px;">Más sencillo (modular, escalable)</td>
+<td data-start="1138" data-end="1192" style="width: 341.859px; height: 24px;">Más complicado (circuitos fijos)</td>
+</tr>
+<tr data-start="1193" data-end="1329" style="height: 24px;">
+<td data-start="1193" data-end="1221" style="width: 177.594px; height: 24px;"><strong data-start="1195" data-end="1212">Confiabilidad</strong></td>
+<td data-start="1221" data-end="1274" style="width: 321.547px; height: 24px;">Depende de la calidad del software y hardware</td>
+<td data-start="1274" data-end="1329" style="width: 341.859px; height: 24px;">Muy alta (menos puntos de falla si bien diseñada)</td>
+</tr>
+<tr data-start="1330" data-end="1466" style="height: 24px;">
+<td data-start="1330" data-end="1359" style="width: 177.594px; height: 24px;"><strong data-start="1332" data-end="1352">Ejemplos típicos</strong></td>
+<td data-start="1359" data-end="1412" style="width: 321.547px; height: 24px;">Microcontroladores, PLCs programables</td>
+<td data-start="1412" data-end="1466" style="width: 341.859px; height: 24px;">Circuitos de control industrial fijos</td>
+</tr>
+</tbody>
+</table>
+<br />
+<p></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<footer id="page-footer" class="lambda-page-footer">
+<div class="footer-blocks">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-3">
+<section data-region="footer-left" class="hidden-print">
+<aside id="block-region-footer-left" class="block-region" data-blockregion="footer-left" data-droptarget="1"></aside>
+</section>
+</div>
+</div>
+</div>
+</div>
+</footer></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="unidad_4__lgica_programada_con_plc.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="02_tipos_de_controladores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">© 2026 - Zeballos Silvia</footer></div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>

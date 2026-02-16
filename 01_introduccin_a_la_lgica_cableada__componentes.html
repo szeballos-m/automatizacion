@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>01. Introducción a la Lógica Cableada - Componentes | Automatizacion </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Silvia Zeballos" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-18"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Automatizacion</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Presentación</a></li>
+   <li><a href="objetivos.html" class="no-ch">Objetivos</a></li>
+   <li><a href="unidad_1__sistemas_automatizados_evolucin_caractersticas_y_estructura.html" class="daddy">Unidad 1 - Sistemas Automatizados: Evolución, Características y Estructura</a>
+   <ul class="other-section">
+      <li><a href="01_qu_entendemos_por_automatizacin_industrial.html" class="no-ch">01. ¿Qué entendemos por Automatización Industrial?</a></li>
+      <li><a href="02_estructura_de_un_sistema_automatizado.html" class="no-ch">02. Estructura de un Sistema Automatizado</a></li>
+      <li><a href="03_evolucin_de_los_sistemas_automatizados.html" class="no-ch">03. Evolución de los Sistemas Automatizados</a></li>
+      <li><a href="04_tipos_de_sistema_medios_y_seales.html" class="no-ch">04. Tipos de Sistema, Medios y Señales</a></li>
+      <li><a href="05_sensores_industriales.html" class="no-ch">05. Sensores Industriales</a></li>
+   </ul>
+   </li>
+   <li><a href="unidad_2__funciones_digitales_y_fundamentos_del_lgebra_de_boole.html" class="daddy">Unidad 2 - Funciones digitales y fundamentos del Álgebra de Boole</a>
+   <ul class="other-section">
+      <li><a href="01_introduccin.html" class="no-ch">01. Introducción</a></li>
+      <li><a href="02_operaciones_lgicas.html" class="no-ch">02. Operaciones Lógicas</a></li>
+      <li><a href="03_implementacin_neumtica.html" class="no-ch">03. Implementación neumática</a></li>
+      <li><a href="04_sistemas_de_numeracin.html" class="no-ch">04. Sistemas de numeración</a></li>
+      <li><a href="05_aplicaciones_industriales.html" class="no-ch">05. Aplicaciones industriales</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="unidad_3__lgica_cableada_con_rels.html" class="current-page-parent daddy">Unidad 3 - Lógica Cableada con Relés</a>
+   <ul>
+      <li id="active"><a href="01_introduccin_a_la_lgica_cableada__componentes.html" class="active no-ch">01. Introducción a la Lógica Cableada - Componentes</a></li>
+      <li><a href="02_ventajas_y_desventajas_de_la_lgica_cableada.html" class="no-ch">02. Ventajas y Desventajas de la Lógica Cableada</a></li>
+      <li><a href="03_rels_industriales_y_contactores_como_elementos_de_control.html" class="no-ch">03. Relés Industriales y Contactores como Elementos de Control</a></li>
+      <li><a href="04_implementacin_de_funciones_lgicas.html" class="no-ch">04. Implementación de Funciones Lógicas</a></li>
+      <li><a href="05_retencin_o_memoria_elctrica.html" class="no-ch">05. Retención o Memoria Eléctrica</a></li>
+      <li><a href="06_diseo_de_circuitos_de_control_con_rels.html" class="no-ch">06. Diseño de circuitos de control con Relés</a></li>
+      <li><a href="07_aplicacin_cajas_altasbajas.html" class="no-ch">07. Aplicación CAJAS ALTAS/BAJAS</a></li>
+   </ul>
+   </li>
+   <li><a href="unidad_4__lgica_programada_con_plc.html" class="daddy">Unidad 4 - Lógica Programada con PLC</a>
+   <ul class="other-section">
+      <li><a href="01_introduccin_a_la_lgica_programada.html" class="no-ch">01. Introducción a la Lógica Programada</a></li>
+      <li><a href="02_tipos_de_controladores.html" class="no-ch">02. Tipos de Controladores</a></li>
+      <li><a href="03_partes_componentes_y_funcionamiento_de_un_plc.html" class="no-ch">03. Partes, componentes y funcionamiento de un PLC</a></li>
+      <li><a href="04_lenguajes_de_programacin.html" class="no-ch">04. Lenguajes de Programación</a></li>
+      <li><a href="05_lgica_cableada_a_lgica_programada_ladder.html" class="no-ch">05. Lógica cableada a Lógica Programada (ladder)</a></li>
+      <li><a href="06_aplicacin_cajas_altasbajas.html" class="no-ch">06. Aplicación CAJAS ALTAS/BAJAS</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="unidad_3__lgica_cableada_con_rels.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="02_ventajas_y_desventajas_de_la_lgica_cableada.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">01. Introducción a la Lógica Cableada - Componentes</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id44">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Lógica Cableada</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta44_112_2" class="block iDevice_content">
+<div class="exe-text"><div>
+<div>
+<p paraid="566584783" paraeid="{02f09b42-302f-41e5-9ec6-5a0c303f6d3d}{13}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="Subtitle" class="">¿Qué es la lógica</span><span data-ccp-parastyle="Subtitle" class=""><span> </span>cableada</span><span data-ccp-parastyle="Subtitle" class="">?</span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;335559738&quot;:280,&quot;335559739&quot;:80}" class=""> </span></p>
+</div>
+<div>
+<p paraid="930566974" paraeid="{02f09b42-302f-41e5-9ec6-5a0c303f6d3d}{31}" style="text-align: justify;"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">La<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">lógica cableada</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>es un sistema de automatización industrial en el que las funciones de control (como arranques, paradas, enclavamientos, temporizaciones, etc) se realizan<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">mediante conexiones físicas entre dispositivos eléctricos</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">, sin usar programación.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</div>
+<div>
+<p paraid="408050958" paraeid="{02f09b42-302f-41e5-9ec6-5a0c303f6d3d}{45}" style="text-align: justify;"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">En vez de usar un PLC o un software, la lógica se arma conectando<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><strong>contactores, relés, pulsadores, finales de carrera y temporizadores</strong></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>mediante<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">cables</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">. Cada conexión representa una instrucción lógica, como un<span> </span><strong>AND</strong>,<strong><span> </span>OR</strong>,<strong><span> </span></strong>ó<strong><span> </span>NOT</strong>.</span></p>
+</div>
+<div>
+<p paraid="2063330325" paraeid="{02f09b42-302f-41e5-9ec6-5a0c303f6d3d}{59}" style="text-align: justify;"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Por ejemplo: un sistema que enciende una luz cuando se presionan dos botones a la vez (</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><strong>AND</strong></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">) hecho con puertas lógicas físicas. Si quisieras cambiar esa lógica, tendrías que<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">reconectar cables</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>o<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">reemplazar componentes</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">.</span><span data-ccp-props="{&quot;335559738&quot;:120,&quot;335559739&quot;:120}"> </span></p>
+<p paraid="2063330325" paraeid="{02f09b42-302f-41e5-9ec6-5a0c303f6d3d}{59}"><span data-ccp-props="{&quot;335559738&quot;:120,&quot;335559739&quot;:120}"> </span></p>
+</div>
+<div>
+<h5><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="Subtitle" class="">Componentes de lógica cableada</span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;335559738&quot;:280,&quot;335559739&quot;:80}" class=""> </span></h5>
+<p><em><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">La<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">lógica cableada</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>se compone de<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">elementos físicos</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>que implementan funciones lógicas básicas y combinacionales.</span><span data-ccp-props="{&quot;335559738&quot;:120,&quot;335559739&quot;:120}"> </span></em></p>
+</div>
+<div>
+<p paraid="1132312816" paraeid="{02f09b42-302f-41e5-9ec6-5a0c303f6d3d}{97}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">La lógica cableada cuenta con diversos componentes entre los que destacan son:</span><span data-ccp-props="{&quot;335559738&quot;:120,&quot;335559739&quot;:120}"> </span></p>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="42" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1" role="listitem">
+<p paraid="1393151731" paraeid="{02f09b42-302f-41e5-9ec6-5a0c303f6d3d}{109}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Relés</span><span data-ccp-props="{&quot;335559738&quot;:120,&quot;335559739&quot;:120}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="42" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1" role="listitem">
+<p paraid="337736521" paraeid="{02f09b42-302f-41e5-9ec6-5a0c303f6d3d}{115}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Contactores</span><span data-ccp-props="{&quot;335559738&quot;:120,&quot;335559739&quot;:120}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="42" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="3" data-aria-level="1" role="listitem">
+<p paraid="274751363" paraeid="{02f09b42-302f-41e5-9ec6-5a0c303f6d3d}{121}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Pulsadores</span><span data-ccp-props="{&quot;335559738&quot;:120,&quot;335559739&quot;:120}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="42" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="4" data-aria-level="1" role="listitem">
+<p paraid="1990940346" paraeid="{02f09b42-302f-41e5-9ec6-5a0c303f6d3d}{127}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Finales de carrera</span><span data-ccp-props="{&quot;335559738&quot;:120,&quot;335559739&quot;:120}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="42" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="5" data-aria-level="1" role="listitem">
+<p paraid="1071090365" paraeid="{02f09b42-302f-41e5-9ec6-5a0c303f6d3d}{133}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Sensores</span><span data-ccp-props="{&quot;335559738&quot;:120,&quot;335559739&quot;:120}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="42" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="6" data-aria-level="1" role="listitem">
+<p paraid="1646686471" paraeid="{02f09b42-302f-41e5-9ec6-5a0c303f6d3d}{139}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Temporizadores</span></p>
+</li>
+</ul>
+<p></p>
+</div>
+<div>
+<h5><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3"><span class="">Contactores</span></span></span></h5>
+<p style="text-align: justify;"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Un<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">contactor</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>es un dispositivo electromecánico que permite<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">conectar o desconectar circuitos eléctricos de potencia</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>(como motores, bombas, resistencias, etc.) a través de una señal de baja potencia proveniente del circuito de control.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</div>
+<div style="text-align: justify;">
+<p paraid="845199313" paraeid="{02f09b42-302f-41e5-9ec6-5a0c303f6d3d}{165}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Funciona mediante una<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">bobina</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">, que al energizarse genera un campo magnético capaz de atraer un núcleo móvil, cerrando (o abriendo) los<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">contactos principales</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">. Estos contactos permiten o interrumpen el paso de corriente hacia la carga.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</div>
+<div>
+<p paraid="386070753" paraeid="{02f09b42-302f-41e5-9ec6-5a0c303f6d3d}{179}" style="text-align: justify;"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Además, los contactores suelen tener<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">contactos auxiliares</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>(NA o NC) que no manejan potencia, pero se usan para lógica de enclavamiento, señales o retroalimentación.</span></p>
+<p paraid="386070753" paraeid="{02f09b42-302f-41e5-9ec6-5a0c303f6d3d}{179}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"> </span></p>
+<p paraid="386070753" paraeid="{02f09b42-302f-41e5-9ec6-5a0c303f6d3d}{179}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><img src="https://emacstores.com/wp-content/uploads/2021/09/bobina-1024x630.jpg" alt="Tipos de contactor | ¡Descubré los tipos y características principales!" width="500" height="630" class="img-fluid atto_image_button_text-bottom" style="display: block; margin-left: auto; margin-right: auto;" /><br /></span></p>
+<p paraid="386070753" paraeid="{02f09b42-302f-41e5-9ec6-5a0c303f6d3d}{179}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"> </span></p>
+</div>
+</div>
+<div>
+<div>
+<p paraid="618648555" paraeid="{02f09b42-302f-41e5-9ec6-5a0c303f6d3d}{189}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Se caracterizan por:</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="43" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1" role="listitem">
+<p paraid="1552702184" paraeid="{02f09b42-302f-41e5-9ec6-5a0c303f6d3d}{195}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Soportar<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">altas corrientes y tensiones</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="43" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1" role="listitem">
+<p paraid="1683720633" paraeid="{02f09b42-302f-41e5-9ec6-5a0c303f6d3d}{205}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Permitir<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">maniobras frecuentes</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>sin dañarse.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="43" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="3" data-aria-level="1" role="listitem">
+<p paraid="1450827459" paraeid="{02f09b42-302f-41e5-9ec6-5a0c303f6d3d}{215}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Tener una vida útil elevada en condiciones industriales.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<p paraid="913323867" paraeid="{02f09b42-302f-41e5-9ec6-5a0c303f6d3d}{221}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"></span><span data-ccp-props="{&quot;335559738&quot;:120,&quot;335559739&quot;:120}"> </span></p>
+</div>
+<div>
+<h5><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3" class="">Relés</span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;335559738&quot;:281,&quot;335559739&quot;:281}" class=""> </span></h5>
+<p style="text-align: justify;"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Un<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">relé</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>es un dispositivo de control electromecánico, similar a un contactor, pero<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">más pequeño</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>y pensado para manejar<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">señales o cargas de baja potencia</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>(como luces, alarmas, balizas, bobinas auxiliares, etc.).</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</div>
+<div>
+<p paraid="291529035" paraeid="{02f09b42-302f-41e5-9ec6-5a0c303f6d3d}{249}" style="text-align: justify;"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Al igual que un contactor, tiene una bobina que al activarse<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">cambia el estado de uno o varios contactos</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">. Estos pueden ser normalmente abiertos (NA) o normalmente cerrados (NC).</span></p>
+<p paraid="291529035" paraeid="{02f09b42-302f-41e5-9ec6-5a0c303f6d3d}{249}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><img src="https://th.bing.com/th/id/OIP.42VcctvNugUWF0VQO0kWYAHaDO?rs=1&amp;pid=ImgDetMain" alt="Blog Mecánicos: El relé" style="display: block; margin-left: auto; margin-right: auto;" /><br /></span></p>
+</div>
+<div>
+<p paraid="355801502" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{4}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"> </span></p>
+<p paraid="355801502" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{4}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Se usan para:</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="44" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1" role="listitem">
+<p paraid="621411357" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{10}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Separar circuitos de potencia de los de control.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="44" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1" role="listitem">
+<p paraid="1722506881" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{16}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Realizar funciones lógicas simples.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="44" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="3" data-aria-level="1" role="listitem">
+<p paraid="1860461467" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{22}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Multiplicar contactos a partir de una sola señal de entrada.</span></p>
+</li>
+</ul>
+<p></p>
+</div>
+<div>
+<h5><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3" class="">Pulsadores</span></span></h5>
+<p style="text-align: justify;"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Los<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">pulsadores</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>son interruptores de mando manual que<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">permiten el paso de corriente solo mientras están siendo presionados</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">. Una vez que se sueltan, vuelven a su estado original.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="45" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1" role="listitem">
+<p paraid="2143252377" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{54}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Pulsadores NA (Normalmente Abierto):</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>el contacto está abierto en reposo, y se cierra al presionar. Se usa para señales de “Marcha” o encendido.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="45" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1" role="listitem">
+<p paraid="376944090" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{62}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Pulsadores NC (Normalmente Cerrado):</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>el contacto está cerrado en reposo, y se abre al presionar. Se usa para funciones de “Paro” o seguridad.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> <br /><br /></span></p>
+</li>
+</ul>
+</div>
+<div>
+<p paraid="1103214289" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{70}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">También existen pulsadores con doble contacto (uno NA y uno NC), con iluminación, o con funciones especiales.</span></p>
+<p paraid="1103214289" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{70}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><img src="https://cloudtec.pe/940-thickbox_default/pulsador-np2-verde.jpg" alt="Pulsador Eléctrico Verde - CHINT - Cloudtec Perú ️" width="500" height="646" class="img-fluid atto_image_button_text-bottom" style="display: block; margin-left: auto; margin-right: auto;" /><br /></span></p>
+</div>
+<div>
+<h5><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3" class=""><br />Temporizadores (</span><span data-ccp-parastyle="heading 3" class="">Timers</span><span data-ccp-parastyle="heading 3" class="">)</span></span></h5>
+<p style="text-align: justify;"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Los<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">temporizadores</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>son dispositivos que permiten agregar una<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">función de tiempo al circuito de control</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">. Pueden activar o desactivar contactos<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">después de cierto retardo</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>desde que reciben o pierden una señal.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</div>
+</div>
+<div>
+<div>
+<p paraid="1133871423" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{100}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Los tipos más comunes son:</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="46" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1" role="listitem">
+<p paraid="447059823" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{106}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><strong>TON</strong> ó<span> </span><strong>Temporizador con retardo a la conexión</strong>:</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>cuando se activa la bobina, el contacto cambia de estado luego de un tiempo predeterminado.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="46" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1" role="listitem">
+<p paraid="1546969499" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{114}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><strong>TOFF<span> </span></strong>ó<strong> </strong><strong>Temporizador con retardo a la desconexión</strong>:</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>cuando se corta la señal de la bobina, el contacto permanece en su estado durante un tiempo antes de volver a la posición inicial.<br /><br /></span></p>
+</li>
+</ul>
+</div>
+<div>
+<p paraid="31287964" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{122}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Se usan para:</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="47" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1" role="listitem">
+<p paraid="1534321256" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{128}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Secuencias de arranque y parada.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="47" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1" role="listitem">
+<p paraid="1810622323" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{134}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Retardos de seguridad.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="47" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="3" data-aria-level="1" role="listitem">
+<p paraid="393272896" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{140}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Automatismos que requieren intervalos temporizados.</span></p>
+</li>
+</ul>
+<p></p>
+<p><img src="https://http2.mlstatic.com/temporizador-programable-digital-timer-220v-25-amp-D_NQ_NP_845945-MPE26527605439_122017-F.jpg" alt="Temporizador Programable Digital Timer 220v 25 Amp - S/ 63,00 en ..." width="500" height="1200" class="img-fluid atto_image_button_text-bottom" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+</div>
+<div>
+<p paraid="81308140" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{146}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"></span><span data-ccp-props="{&quot;335559738&quot;:120,&quot;335559739&quot;:120}"> </span></p>
+</div>
+<div>
+<h5><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3" class="">Finales de carrera</span></span></h5>
+<p style="text-align: justify;"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Los<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">finales de carrera</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>son dispositivos mecánicos que<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">detectan el movimiento o la posición de una parte móvil</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>de una máquina. Al ser activados (por ejemplo, por una pieza que toca el actuador),<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">abren o cierran contactos eléctricos</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>que afectan la lógica del circuito.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> <br /><br /></span></p>
+</div>
+<div>
+<p paraid="1067970304" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{174}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Tipos comunes:</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="48" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1" role="listitem">
+<p paraid="1504102616" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{180}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Con actuador de rodillo.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="48" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1" role="listitem">
+<p paraid="477497969" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{186}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">De émbolo.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="48" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="3" data-aria-level="1" role="listitem">
+<p paraid="2009862905" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{192}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Giratorios (palanca con rodillo).</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> <br /><br /></span></p>
+</li>
+</ul>
+</div>
+<div>
+<p paraid="1068592074" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{198}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Se utilizan para:</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="49" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1" role="listitem">
+<p paraid="1409650044" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{204}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Detener motores cuando una pieza llega a una posición.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="49" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1" role="listitem">
+<p paraid="1354043112" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{210}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Cambiar el sentido de movimiento.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="49" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="3" data-aria-level="1" role="listitem">
+<p paraid="1721043156" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{216}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Aumentar la seguridad al evitar sobrecarreras.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<p paraid="1945556252" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{222}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"></span><span data-ccp-props="{&quot;335559738&quot;:120,&quot;335559739&quot;:120}"> <img src="https://www.webdosb.com/4560-thickbox_default/final-de-carrera-externo-para-cualquier-uso-con-micro-doble-contacto.jpg" alt="Final de Carrera Externo para cualquier uso con micro doble contacto" width="500" height="1422" class="img-fluid atto_image_button_text-bottom" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+</div>
+<div>
+<h5><strong><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="Subtitle" class="">Luces piloto y balizas</span></span></strong></h5>
+<p style="text-align: justify;"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Son dispositivos de<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">señalización visual</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>usados para indicar el estado del sistema. Se montan en tableros de control o estructuras visibles para el operario.<br /></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><br />La utilización de los colores es la siguiente:</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</div>
+</div>
+<div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="52" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1" role="listitem">
+<p paraid="59134976" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{248}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">🟢 Verde: sistema en marcha.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="52" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1" role="listitem">
+<p paraid="2033952060" paraeid="{65e696eb-473c-48ac-ab94-66ddc706ef6a}{254}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">🔴 Rojo: sistema detenido o falla.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="52" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="3" data-aria-level="1" role="listitem">
+<p paraid="1273548014" paraeid="{6a695433-8661-4b8b-baf4-e1222058bd7d}{5}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">🟡 Amarillo: advertencia, modo automático, o precaución.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="52" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="4" data-aria-level="1" role="listitem">
+<p paraid="1241549028" paraeid="{6a695433-8661-4b8b-baf4-e1222058bd7d}{11}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">🔵 Azul o blanco: señales especiales (aire comprimido, iluminación, etc.).</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> <br /><br /></span></p>
+</li>
+</ul>
+</div>
+<div>
+<p paraid="1321798615" paraeid="{6a695433-8661-4b8b-baf4-e1222058bd7d}{17}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Pueden estar alimentadas en diferentes tensiones, y ser fijas o intermitentes.</span></p>
+<p paraid="1321798615" paraeid="{6a695433-8661-4b8b-baf4-e1222058bd7d}{17}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><img src="https://www.la-pantalla.com.ar/wp-content/uploads/que-son-las-luces-piloto-para-tableros-electricos.webp" alt="Iluminación Para Tableros Eléctricos | La Pantalla" width="500" height="850" class="img-fluid atto_image_button_text-bottom" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p paraid="1321798615" paraeid="{6a695433-8661-4b8b-baf4-e1222058bd7d}{17}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"></span></p>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="unidad_3__lgica_cableada_con_rels.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="02_ventajas_y_desventajas_de_la_lgica_cableada.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">© 2026 - Zeballos Silvia</footer></div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>

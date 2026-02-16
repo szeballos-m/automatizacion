@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>03. Implementación neumática | Automatizacion </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Silvia Zeballos" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-14"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Automatizacion</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Presentación</a></li>
+   <li><a href="objetivos.html" class="no-ch">Objetivos</a></li>
+   <li><a href="unidad_1__sistemas_automatizados_evolucin_caractersticas_y_estructura.html" class="daddy">Unidad 1 - Sistemas Automatizados: Evolución, Características y Estructura</a>
+   <ul class="other-section">
+      <li><a href="01_qu_entendemos_por_automatizacin_industrial.html" class="no-ch">01. ¿Qué entendemos por Automatización Industrial?</a></li>
+      <li><a href="02_estructura_de_un_sistema_automatizado.html" class="no-ch">02. Estructura de un Sistema Automatizado</a></li>
+      <li><a href="03_evolucin_de_los_sistemas_automatizados.html" class="no-ch">03. Evolución de los Sistemas Automatizados</a></li>
+      <li><a href="04_tipos_de_sistema_medios_y_seales.html" class="no-ch">04. Tipos de Sistema, Medios y Señales</a></li>
+      <li><a href="05_sensores_industriales.html" class="no-ch">05. Sensores Industriales</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="unidad_2__funciones_digitales_y_fundamentos_del_lgebra_de_boole.html" class="current-page-parent daddy">Unidad 2 - Funciones digitales y fundamentos del Álgebra de Boole</a>
+   <ul>
+      <li><a href="01_introduccin.html" class="no-ch">01. Introducción</a></li>
+      <li><a href="02_operaciones_lgicas.html" class="no-ch">02. Operaciones Lógicas</a></li>
+      <li id="active"><a href="03_implementacin_neumtica.html" class="active no-ch">03. Implementación neumática</a></li>
+      <li><a href="04_sistemas_de_numeracin.html" class="no-ch">04. Sistemas de numeración</a></li>
+      <li><a href="05_aplicaciones_industriales.html" class="no-ch">05. Aplicaciones industriales</a></li>
+   </ul>
+   </li>
+   <li><a href="unidad_3__lgica_cableada_con_rels.html" class="daddy">Unidad 3 - Lógica Cableada con Relés</a>
+   <ul class="other-section">
+      <li><a href="01_introduccin_a_la_lgica_cableada__componentes.html" class="no-ch">01. Introducción a la Lógica Cableada - Componentes</a></li>
+      <li><a href="02_ventajas_y_desventajas_de_la_lgica_cableada.html" class="no-ch">02. Ventajas y Desventajas de la Lógica Cableada</a></li>
+      <li><a href="03_rels_industriales_y_contactores_como_elementos_de_control.html" class="no-ch">03. Relés Industriales y Contactores como Elementos de Control</a></li>
+      <li><a href="04_implementacin_de_funciones_lgicas.html" class="no-ch">04. Implementación de Funciones Lógicas</a></li>
+      <li><a href="05_retencin_o_memoria_elctrica.html" class="no-ch">05. Retención o Memoria Eléctrica</a></li>
+      <li><a href="06_diseo_de_circuitos_de_control_con_rels.html" class="no-ch">06. Diseño de circuitos de control con Relés</a></li>
+      <li><a href="07_aplicacin_cajas_altasbajas.html" class="no-ch">07. Aplicación CAJAS ALTAS/BAJAS</a></li>
+   </ul>
+   </li>
+   <li><a href="unidad_4__lgica_programada_con_plc.html" class="daddy">Unidad 4 - Lógica Programada con PLC</a>
+   <ul class="other-section">
+      <li><a href="01_introduccin_a_la_lgica_programada.html" class="no-ch">01. Introducción a la Lógica Programada</a></li>
+      <li><a href="02_tipos_de_controladores.html" class="no-ch">02. Tipos de Controladores</a></li>
+      <li><a href="03_partes_componentes_y_funcionamiento_de_un_plc.html" class="no-ch">03. Partes, componentes y funcionamiento de un PLC</a></li>
+      <li><a href="04_lenguajes_de_programacin.html" class="no-ch">04. Lenguajes de Programación</a></li>
+      <li><a href="05_lgica_cableada_a_lgica_programada_ladder.html" class="no-ch">05. Lógica cableada a Lógica Programada (ladder)</a></li>
+      <li><a href="06_aplicacin_cajas_altasbajas.html" class="no-ch">06. Aplicación CAJAS ALTAS/BAJAS</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="02_operaciones_lgicas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="04_sistemas_de_numeracin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">03. Implementación neumática</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id36">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">IMPLEMENTACIÓN NEUMÁTICA</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta36_109_2" class="block iDevice_content">
+<div class="exe-text"><h4 id="yui_3_18_1_1_1761607792731_129"><strong id="yui_3_18_1_1_1761607792731_137"><span lang="ES" id="yui_3_18_1_1_1761607792731_136"><span class="" id="yui_3_18_1_1_1761607792731_135">Operaciones lógicas en circuitos neumáticos</span></span></strong></h4>
+<p><span lang="ES">Las operaciones y funciones lógicas, junto con el Álgebra de Boole como herramienta matemática para expresarlas y formalizarlas, pueden implementarse en distintas tecnologías.<br /><br /></span></p>
+<p><span lang="ES">En la sección anterior presentamos las funciones lógicas básicas a partir de su implementación en circuitos eléctricos:</span></p>
+<p><span lang="ES">-       <span> </span></span><strong><span lang="ES">OR</span></strong><span lang="ES"><span> </span>ó<span> </span><strong>SUMA LÓGICA</strong></span></p>
+<p><span lang="ES">-       <span> </span></span><strong><span lang="ES">AND</span></strong><span lang="ES"><span> </span>ó<span> </span><strong>PRODUCTO LÓGICO</strong></span></p>
+<p><span lang="ES">-       <span> </span></span><strong><span lang="EN-US">NOT</span></strong><span lang="EN-US"><span> </span>ó<span> </span><strong>NEGACIÓN<br /><br /></strong></span><span lang="ES"></span></p>
+<p style="text-align: justify;"><span lang="ES">A continuación, veremos cómo estas mismas funciones pueden implementarse en otra tecnología: la<span> </span><strong>Neumática</strong>.</span></p>
+<p style="text-align: justify;"><span lang="ES">La neumática utiliza aire comprimido para accionar actuadores que realizan un trabajo mecánico. Para conducir, regular y direccionar este fluido se emplean<span> </span><strong>válvulas neumáticas</strong>. Dentro del amplio espectro de válvulas y actuadores disponibles, nos centraremos en los casos más sencillos, poniendo el foco al igual que en la sección anterior, exclusivamente en su<span> </span><strong>comportamiento funcional o lógico</strong>.</span></p>
+<p style="text-align: justify;"><span lang="ES"><br /></span><span lang="ES">Comencemos por presentar los componentes básicos de un circuito neumático.</span></p>
+<h5><strong><span lang="ES" class="">ACTUADOR LINEAL DE SIMPLE EFECTO</span></strong></h5>
+<p><span lang="ES">Se trata de un cilindro que contiene un émbolo en su interior. Cuando se aplica presión de aire en la cámara del cilindro, el émbolo avanza por efecto de la fuerza ejercida por el aire comprimido.</span></p>
+<p><span lang="ES">Al cesar la presión y despresurizar la cámara, un<span> </span><strong>resorte interno</strong><span> </span>empuja el émbolo hacia su posición inicial de reposo o cierre.</span></p>
+<p><span lang="ES"><img src="img11.1.png" width="401" height="186" alt="actuadorlinealSE" /><img src="img12.png" width="392" height="187" alt="actuadorlineal2" /></span></p>
+<p><span lang="ES"><img src="img13.1.png" /></span></p>
+<p><span lang="ES"><span>En las imágenes se representa un actuador de simple efecto en estado de reposo (cerrado por la fuerza que ejerce el resorte interno), y en estado de avance al ingresar aire a presión y empujar hacia adelante el émbolo.</span></span></p>
+<h5><strong><span lang="ES" class="">VÁLVULA DIRECCIONAL CON ACCIONAMIENTO MANUAL POR PULSADOR</span></strong></h5>
+<p><span lang="ES">La válvula que utilizaremos en los ejemplos es una válvula direccional que permite direccionar el flujo de aire comprimido. Se denomina<span> </span><strong>válvula 3/2</strong>, ya que posee<span> </span><strong>tres conexiones neumáticas</strong><span> </span>y<span> </span><strong>dos posiciones de operación</strong>.</span></p>
+<p><span lang="ES">En las siguientes figuras se muestra su funcionamiento:</span></p>
+<p><span lang="ES"><img src="https://cenet.inet.edu.ar/pluginfile.php/42905/mod_page/content/4/image.png" alt="" role="presentation" class="img-fluid" /><br /></span></p>
+<p><span lang="ES"></span></p>
+<p><span lang="ES">En esta primera imagen, que corresponde a la<span> </span><strong>primera posición de la válvula</strong>, la<span> </span><strong>conexión 1</strong><span> </span>(entrada de aire comprimido) se encuentra obstruida, mientras que la<span> </span><strong>conexión 2</strong><span> </span>(salida hacia el actuador) se comunica internamente con la<span> </span><strong>conexión 3</strong><span> </span>(escape a la atmósfera). En esta posición, el actuador queda despresurizado y por tanto<span> </span><strong>cerrado</strong>.<br /><br /><br /></span></p>
+<p><img src="https://cenet.inet.edu.ar/pluginfile.php/42905/mod_page/content/4/image%20%281%29.png" alt="" role="presentation" class="img-fluid" /></p>
+<p><span lang="ES">En la segunda imagen, se observa que al<span> </span><strong>accionar manualmente el pulsador de la válvula</strong>, la<span> </span><strong>conexión 1</strong><span> </span>(entrada de aire) se vincula con la<span> </span><strong>conexión 2</strong>, enviando aire comprimido hacia el actuador. De este modo, se presuriza la cámara del actuador, generando una fuerza sobre el émbolo que supera la resistencia del resorte interno, provocando el movimiento del actuador hacia su<span> </span><strong>posición activa o extendida</strong>.</span></p>
+<p><span lang="ES"> </span></p>
+<p><span lang="ES"><img src="https://cenet.inet.edu.ar/pluginfile.php/42905/mod_page/content/4/image%20%282%29.png" alt="" role="presentation" class="img-fluid" /><br /></span></p>
+<p><span lang="ES">Este sencillo circuito neumático sería el análogo al circuito eléctrico elemental de un pulsador y una lámpara estudiado en la sección anterior.</span></p>
+<p><span lang="ES"><img src="https://cenet.inet.edu.ar/pluginfile.php/42905/mod_page/content/4/image%20%283%29.png" alt="" role="presentation" class="img-fluid" /><br /></span></p>
+<p><span lang="ES"></span></p>
+<p><span lang="ES"> </span></p>
+<p><span lang="ES">Donde “<strong>a</strong>” es la válvula 3/2 que se comporta como variable independiente con dos estados posibles, y “<strong>z</strong>” es el actuador neumático que se comporta como variable dependiente.<br /><br /></span><span lang="ES"></span></p>
+<p><span lang="ES">Para el<span> </span><strong>actuador “z”</strong>:</span><span lang="ES"></span></p>
+<p>·       <span> </span><strong><span lang="ES">Estado 1: </span></strong><span lang="ES"> Actuador <strong>CERRADO</strong>   <strong>=</strong>  <strong>" 0 "</strong></span></p>
+<p>·       <span> </span><strong><span lang="ES">Estado 2:</span></strong>  Actuador<span> </span><strong>ABIERTO</strong>   <strong>=</strong>  <strong>" 1 "</strong></p>
+<p><span lang="ES"> </span></p>
+<p><span lang="ES">Para el <strong>válvula 3/2 neumática “a”</strong>:</span><span lang="ES"></span></p>
+<p>·       <span> </span><strong><span lang="ES">Estado 1: </span></strong><span lang="ES"> Válvula<span> </span><strong>SIN PRESIONAR (VÁLVULA CERRADA)</strong><span> </span>  <strong>=</strong>  <strong>" 0 "</strong></span></p>
+<p>·       <span> </span><strong><span lang="ES">Estado 2: </span></strong><strong><span lang="ES"> </span></strong><span lang="ES">Válvula<span> </span><strong>PRESIONADA (VÁLVULA ABIERTA)</strong></span>    <strong>=</strong>  <strong>" 1 "</strong></p>
+<p><span lang="ES"><br /><br /><em>Nota:</em><br />Observar cómo se modifican los estados ACTIVO e INACTIVO de los componentes según la implementación tecnológica.<br />Como ejemplo, recordemos que al pulsador eléctrico lo consideramos INACTIVO al estar abierto, pero por el contrario a esta válvula neumática la estamos considerando INACTIVA al estar “cerrada” y no permitir la llegada de aire al actuador (lo opuesto sucede para el caso de ACTIVACIÓN).</span></p>
+<p></p>
+<p><span><span lang="ES"><em><strong>¿Cómo sería la implementación de las funciones OR, AND y NOT en este circuito neumático?<br /><br /></strong></em></span></span></p>
+<h5><strong><span lang="ES" class="">OR<span> </span></span></strong><span lang="ES"><span class="">ó</span><strong><span class=""><span> </span>SUMA LÓGICA:</span></strong></span></h5>
+<p><span lang="ES">Queremos diseñar un circuito neumático que cumpla con la tabla de verdad característica de una función lógica OR ó SUMA LÓGICA:<br /></span>Para lograrlo, tal como hicimos en la implementación eléctrica, un primer circuito tentativo sería colocar dos válvulas 3/2 en paralelo conectadas al actuador lineal.</p>
+<p></p>
+<p><span lang="ES"><img src="https://cenet.inet.edu.ar/pluginfile.php/42905/mod_page/content/4/image%20%284%29.png" alt="" role="presentation" class="img-fluid" /><br /></span></p>
+<p><span style="font-size: 1.05em;">Esta solución parece en principio funcionar correctamente, sin embargo, se debe tener en cuenta que al presionar sólo una de las válvulas a ó b, el aire encuentra un camino para fugar a atmósfera a través de la conexión 3 de escape de la otra válvula, dejando sin presión la entrada del actuador que permanece sin moverse.</span><br /><span lang="ES"></span></p>
+<p><span lang="ES"> </span></p>
+<p><span lang="ES"><img src="https://cenet.inet.edu.ar/pluginfile.php/42905/mod_page/content/4/image%20%285%29.png" alt="" role="presentation" class="img-fluid" /><br /></span></p>
+<p><span lang="ES"> </span></p>
+<p><span lang="ES"><span><em>La implementación neumática exige para esta función lógica la incorporación de un elemento adicional que no era necesario en la implementación eléctrica.</em></span><br /></span></p>
+<p><span lang="ES"><span><em> </em></span></span></p>
+<p><img src="https://cenet.inet.edu.ar/pluginfile.php/42905/mod_page/content/4/image%20%286%29.png" alt="" role="presentation" class="img-fluid" />}</p>
+<p></p>
+<p><span lang="ES">Necesitamos una válvula especial denominada “válvula de selectividad” ó “válvula lógica OR”, cuya función es precisamente bloquear el paso de aire de un lado a otro según desde donde se alimente.</span></p>
+<p><span lang="ES"> </span></p>
+<h5><strong><span lang="ES" class="">AND<span> </span></span></strong><span lang="ES"><span class="">ó</span><strong><span class=""><span> </span>PRODUCTO LÓGICO:</span></strong></span></h5>
+<p>Para esta función alcanza, de forma análoga a la implementación eléctrica, con colocar dos válvulas 3/2 en serie con el actuador neumático.</p>
+<p><img src="https://cenet.inet.edu.ar/pluginfile.php/42905/mod_page/content/4/image%20%287%29.png" alt="" role="presentation" class="img-fluid" /></p>
+<h5><strong><span lang="ES" class="">NEGACIÓN:</span></strong></h5>
+<p><span lang="ES">Para que el actuador neumático inicie extendido y cierre al presionarse la el válvula 3/2 de mando, podemos utilizar otra válvula 3/2 auxiliar que tenga la particularidad de ser NA (normal abierta) y accionada por una señal de aire:</span></p>
+<p></p>
+<p><span lang="ES"><img src="https://cenet.inet.edu.ar/pluginfile.php/42905/mod_page/content/4/image%20%288%29.png" alt="" role="presentation" class="img-fluid" /><br /><br /></span></p>
+<p><span lang="ES">En el esquema, la válvula auxiliar NA funciona como “<span> </span></span><img width="9" height="19" src="img13.1.png" v:shapes="_x0000_i1025" alt="actuadorlineal3" /><span lang="ES"> ”.<br />De esta manera, el actuador inicia con presión de aire y permanece abierto mientras no se presione la válvula “a” de mando.<br />Al presionarse, conmuta la válvula auxiliar, despresurizando el actuador y logrando que cierre por la fuerza que ejerce el resorte interno.</span></p>
+<p><span lang="ES"> </span></p>
+<p><span lang="ES"><img src="https://cenet.inet.edu.ar/pluginfile.php/42905/mod_page/content/4/image%20%289%29.png" alt="" role="presentation" class="img-fluid" /></span></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="02_operaciones_lgicas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="04_sistemas_de_numeracin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">© 2026 - Zeballos Silvia</footer></div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>

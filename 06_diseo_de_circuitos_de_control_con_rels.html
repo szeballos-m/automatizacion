@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>06. Diseño de circuitos de control con Relés | Automatizacion </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Silvia Zeballos" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-25"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Automatizacion</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Presentación</a></li>
+   <li><a href="objetivos.html" class="no-ch">Objetivos</a></li>
+   <li><a href="unidad_1__sistemas_automatizados_evolucin_caractersticas_y_estructura.html" class="daddy">Unidad 1 - Sistemas Automatizados: Evolución, Características y Estructura</a>
+   <ul class="other-section">
+      <li><a href="01_qu_entendemos_por_automatizacin_industrial.html" class="no-ch">01. ¿Qué entendemos por Automatización Industrial?</a></li>
+      <li><a href="02_estructura_de_un_sistema_automatizado.html" class="no-ch">02. Estructura de un Sistema Automatizado</a></li>
+      <li><a href="03_evolucin_de_los_sistemas_automatizados.html" class="no-ch">03. Evolución de los Sistemas Automatizados</a></li>
+      <li><a href="04_tipos_de_sistema_medios_y_seales.html" class="no-ch">04. Tipos de Sistema, Medios y Señales</a></li>
+      <li><a href="05_sensores_industriales.html" class="no-ch">05. Sensores Industriales</a></li>
+   </ul>
+   </li>
+   <li><a href="unidad_2__funciones_digitales_y_fundamentos_del_lgebra_de_boole.html" class="daddy">Unidad 2 - Funciones digitales y fundamentos del Álgebra de Boole</a>
+   <ul class="other-section">
+      <li><a href="01_introduccin.html" class="no-ch">01. Introducción</a></li>
+      <li><a href="02_operaciones_lgicas.html" class="no-ch">02. Operaciones Lógicas</a></li>
+      <li><a href="03_implementacin_neumtica.html" class="no-ch">03. Implementación neumática</a></li>
+      <li><a href="04_sistemas_de_numeracin.html" class="no-ch">04. Sistemas de numeración</a></li>
+      <li><a href="05_aplicaciones_industriales.html" class="no-ch">05. Aplicaciones industriales</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="unidad_3__lgica_cableada_con_rels.html" class="current-page-parent daddy">Unidad 3 - Lógica Cableada con Relés</a>
+   <ul>
+      <li><a href="01_introduccin_a_la_lgica_cableada__componentes.html" class="no-ch">01. Introducción a la Lógica Cableada - Componentes</a></li>
+      <li><a href="02_ventajas_y_desventajas_de_la_lgica_cableada.html" class="no-ch">02. Ventajas y Desventajas de la Lógica Cableada</a></li>
+      <li><a href="03_rels_industriales_y_contactores_como_elementos_de_control.html" class="no-ch">03. Relés Industriales y Contactores como Elementos de Control</a></li>
+      <li><a href="04_implementacin_de_funciones_lgicas.html" class="no-ch">04. Implementación de Funciones Lógicas</a></li>
+      <li><a href="05_retencin_o_memoria_elctrica.html" class="no-ch">05. Retención o Memoria Eléctrica</a></li>
+      <li id="active"><a href="06_diseo_de_circuitos_de_control_con_rels.html" class="active no-ch">06. Diseño de circuitos de control con Relés</a></li>
+      <li><a href="07_aplicacin_cajas_altasbajas.html" class="no-ch">07. Aplicación CAJAS ALTAS/BAJAS</a></li>
+   </ul>
+   </li>
+   <li><a href="unidad_4__lgica_programada_con_plc.html" class="daddy">Unidad 4 - Lógica Programada con PLC</a>
+   <ul class="other-section">
+      <li><a href="01_introduccin_a_la_lgica_programada.html" class="no-ch">01. Introducción a la Lógica Programada</a></li>
+      <li><a href="02_tipos_de_controladores.html" class="no-ch">02. Tipos de Controladores</a></li>
+      <li><a href="03_partes_componentes_y_funcionamiento_de_un_plc.html" class="no-ch">03. Partes, componentes y funcionamiento de un PLC</a></li>
+      <li><a href="04_lenguajes_de_programacin.html" class="no-ch">04. Lenguajes de Programación</a></li>
+      <li><a href="05_lgica_cableada_a_lgica_programada_ladder.html" class="no-ch">05. Lógica cableada a Lógica Programada (ladder)</a></li>
+      <li><a href="06_aplicacin_cajas_altasbajas.html" class="no-ch">06. Aplicación CAJAS ALTAS/BAJAS</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="05_retencin_o_memoria_elctrica.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="07_aplicacin_cajas_altasbajas.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">06. Diseño de circuitos de control con Relés</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id49">
+<div class="iDevice emphasis0" >
+<div id="ta49_117_2" class="block iDevice_content">
+<div class="exe-text"><div id="yui_3_18_1_1_1761701816443_142">
+<div id="yui_3_18_1_1_1761701816443_141">
+<h3 id="yui_3_18_1_1_1761701816443_140"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR" id="yui_3_18_1_1_1761701816443_139"><span data-ccp-parastyle="heading 2" class="" id="yui_3_18_1_1_1761701816443_138"><strong id="yui_3_18_1_1_1761701816443_137">Diseño de circuitos de control con relés</strong></span></span></h3>
+<p><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Los<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">circuitos de control con relés</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>permiten gobernar el funcionamiento de sistemas eléctricos e industriales a través de señales de mando, sin necesidad de actuar directamente sobre la carga. Se utilizan para automatizar operaciones como arranques, detenciones, enclavamientos, alarmas, inversiones de giro, entre otras.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</div>
+<div>
+<p paraid="227092297" paraeid="{7e599ec4-6328-484a-81b2-cf74a2f6364d}{62}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">La lógica del circuito se implementa mediante<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">contactos normalmente abiertos (NA)</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>o<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">normalmente cerrados (NC)</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">, que pueden corresponder a<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">botones pulsadores, finales de carrera, sensores, contactos auxiliares de relés o contactores</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">, etc.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</div>
+<div>
+<p paraid="862403374" paraeid="{7e599ec4-6328-484a-81b2-cf74a2f6364d}{80}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"></span><span data-ccp-props="{&quot;335559738&quot;:120,&quot;335559739&quot;:120}"> </span><strong style="color: #97afb2; font-size: 1.35em; letter-spacing: 0.5px;"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3" class="">AUTOMÁTICO DE TANQUE  </span></span></strong><strong style="color: #97afb2; font-size: 1.35em; letter-spacing: 0.5px;"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3" class="">(control de nivel con flotador y Relé)</span></span></strong></p>
+</div>
+</div>
+<div>
+<div>
+<h5><span style="font-size: 12pt;"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 4" class="">Objetivo</span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;335559738&quot;:319,&quot;335559739&quot;:319}" class=""> </span></span></h5>
+</div>
+<div>
+<p paraid="2074318009" paraeid="{7e599ec4-6328-484a-81b2-cf74a2f6364d}{220}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Controlar una<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">bomba de agua</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>que se activa automáticamente cuando el nivel del tanque es bajo y se apaga al llegar al nivel alto.<br /><br /></span></p>
+</div>
+<div>
+<h5><span style="font-size: 12pt;"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 4" class="">Elementos</span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;335559738&quot;:319,&quot;335559739&quot;:319}" class=""> </span></span></h5>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="53" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1" role="listitem">
+<p paraid="2035144002" paraeid="{7e599ec4-6328-484a-81b2-cf74a2f6364d}{236}">Automático de tanque</p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="53" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1" role="listitem">
+<p paraid="345320397" paraeid="{7e599ec4-6328-484a-81b2-cf74a2f6364d}{242}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Relé o contactor</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="53" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="3" data-aria-level="1" role="listitem">
+<p paraid="1838093403" paraeid="{7e599ec4-6328-484a-81b2-cf74a2f6364d}{248}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Contactos auxiliares</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="53" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="4" data-aria-level="1" role="listitem">
+<p paraid="56314808" paraeid="{7e599ec4-6328-484a-81b2-cf74a2f6364d}{254}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Bobina de mando</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="53" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="5" data-aria-level="1" role="listitem">
+<p paraid="9579197" paraeid="{3b0dd9b7-5d3a-4ce7-ac8a-e2a07b088f47}{5}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Pulsadores (opcional, para modo manual)</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="53" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="6" data-aria-level="1" role="listitem">
+<p paraid="2065778550" paraeid="{3b0dd9b7-5d3a-4ce7-ac8a-e2a07b088f47}{11}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Protección térmica</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="53" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="7" data-aria-level="1" role="listitem">
+<p paraid="1748624554" paraeid="{3b0dd9b7-5d3a-4ce7-ac8a-e2a07b088f47}{17}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Bomba</span></p>
+</li>
+</ul>
+<p></p>
+</div>
+<div>
+<h5><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 4" class=""><span style="font-size: 12pt;">Funcionamiento</span></span></span></h5>
+</div>
+<div>
+<figure class="exe-figure exe-media position-center" style="width: 800px;"><iframe width="800" height="400" src="https://www.canva.com/design/DAGkjAmtBn4/L_p2QAq9y6UUPWYXi09GNA/view?embed" data-mce-fragment="1"></iframe>
+<figcaption class="figcaption"><span class="title"><em> </em></span></figcaption>
+</figure>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="54" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1" role="listitem">
+<p paraid="936647720" paraeid="{3b0dd9b7-5d3a-4ce7-ac8a-e2a07b088f47}{29}">Cuando el tanque se encuentra vacío, dentro del "automático de tanque" se cierra el circuito, lo que energiza la bobina del contactor, lo que permite encender el motor.</p>
+</li>
+<li data-leveltext="" data-font="Symbol" data-listid="54" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1" role="listitem">
+<p paraid="936647720" paraeid="{3b0dd9b7-5d3a-4ce7-ac8a-e2a07b088f47}{29}">Una vez que el tanque se llena, se abre el circuito y se desenergiza la bobina, lo que permite que el motor se detenga.</p>
+</li>
+</ul>
+<p></p>
+</div>
+<div>
+<h4><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3" class="">ARRANQUE DE MOTOR TRIFÁSICO CON RETENCIÓN<br /></span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 4" class=""><br /><span>Objetivo</span></span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;335559738&quot;:319,&quot;335559739&quot;:319}" class=""> </span></h4>
+</div>
+<div>
+<p paraid="797776789" paraeid="{3b0dd9b7-5d3a-4ce7-ac8a-e2a07b088f47}{71}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Permitir el arranque y parada de un motor trifásico utilizando botones de marcha y parada; y un contactor.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> <br /><br /></span></p>
+</div>
+<div>
+<h5><span style="font-size: 12pt;"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 4" class="">Elementos</span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;335559738&quot;:319,&quot;335559739&quot;:319}" class=""> </span></span></h5>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="55" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1" role="listitem">
+<p paraid="1298161028" paraeid="{3b0dd9b7-5d3a-4ce7-ac8a-e2a07b088f47}{83}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Pulsador de marcha (NA)</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+</div>
+<div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="55" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1" role="listitem">
+<p paraid="907900777" paraeid="{3b0dd9b7-5d3a-4ce7-ac8a-e2a07b088f47}{89}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Pulsador de parada (NC)</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="55" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="3" data-aria-level="1" role="listitem">
+<p paraid="1314937369" paraeid="{3b0dd9b7-5d3a-4ce7-ac8a-e2a07b088f47}{95}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Contactor trifásico</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="55" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="4" data-aria-level="1" role="listitem">
+<p paraid="1450508349" paraeid="{3b0dd9b7-5d3a-4ce7-ac8a-e2a07b088f47}{101}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Contacto auxiliar del contactor</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="55" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="6" data-aria-level="1" role="listitem">
+<p paraid="1640833010" paraeid="{3b0dd9b7-5d3a-4ce7-ac8a-e2a07b088f47}{113}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Motor trifásico</span></p>
+</li>
+</ul>
+<h5><strong><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR" style="font-size: 12pt;"><span data-ccp-parastyle="heading 4" class="">Funcionamiento</span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;335559738&quot;:319,&quot;335559739&quot;:319}" class="" style="font-size: 12pt;"> </span></strong></h5>
+</div>
+<div>
+<figure class="exe-figure exe-media position-center" style="width: 800px;"><iframe width="800" height="400" src="https://www.canva.com/design/DAGkjUFNBms/IJnXfmiX3W9TuUZufC9Mzw/view?embed" data-mce-fragment="1"></iframe>
+<figcaption class="figcaption"><span class="title"><em> </em></span></figcaption>
+</figure>
+</div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="56" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1" role="listitem">
+<p paraid="977214296" paraeid="{3b0dd9b7-5d3a-4ce7-ac8a-e2a07b088f47}{125}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Al pulsar el botón de marcha, se energiza la bobina del contactor, cerrando los contactos principales que alimentan el motor.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="56" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1" role="listitem">
+<p paraid="1385209017" paraeid="{3b0dd9b7-5d3a-4ce7-ac8a-e2a07b088f47}{131}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">El contacto auxiliar NA (Normal Abierto ó Normal Open) del contactor se conecta en paralelo con el botón de marcha para mantener la<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">retención</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="56" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="3" data-aria-level="1" role="listitem">
+<p paraid="1006057205" paraeid="{3b0dd9b7-5d3a-4ce7-ac8a-e2a07b088f47}{141}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Al pulsar el botón de parada o ante un disparo del relé térmico (por sobrecorriente), se interrumpe el circuito de mando y el contactor se desactiva, deteniendo el motor.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<p paraid="1152726578" paraeid="{3b0dd9b7-5d3a-4ce7-ac8a-e2a07b088f47}{147}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"></span><span data-ccp-props="{&quot;335559738&quot;:120,&quot;335559739&quot;:120}"> </span></p>
+</div></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="05_retencin_o_memoria_elctrica.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="07_aplicacin_cajas_altasbajas.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">© 2026 - Zeballos Silvia</footer></div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>

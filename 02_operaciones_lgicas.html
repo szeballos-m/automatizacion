@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>02. Operaciones Lógicas | Automatizacion </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Silvia Zeballos" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.5.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-13"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Automatizacion</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Presentación</a></li>
+   <li><a href="objetivos.html" class="no-ch">Objetivos</a></li>
+   <li><a href="unidad_1__sistemas_automatizados_evolucin_caractersticas_y_estructura.html" class="daddy">Unidad 1 - Sistemas Automatizados: Evolución, Características y Estructura</a>
+   <ul class="other-section">
+      <li><a href="01_qu_entendemos_por_automatizacin_industrial.html" class="no-ch">01. ¿Qué entendemos por Automatización Industrial?</a></li>
+      <li><a href="02_estructura_de_un_sistema_automatizado.html" class="no-ch">02. Estructura de un Sistema Automatizado</a></li>
+      <li><a href="03_evolucin_de_los_sistemas_automatizados.html" class="no-ch">03. Evolución de los Sistemas Automatizados</a></li>
+      <li><a href="04_tipos_de_sistema_medios_y_seales.html" class="no-ch">04. Tipos de Sistema, Medios y Señales</a></li>
+      <li><a href="05_sensores_industriales.html" class="no-ch">05. Sensores Industriales</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="unidad_2__funciones_digitales_y_fundamentos_del_lgebra_de_boole.html" class="current-page-parent daddy">Unidad 2 - Funciones digitales y fundamentos del Álgebra de Boole</a>
+   <ul>
+      <li><a href="01_introduccin.html" class="no-ch">01. Introducción</a></li>
+      <li id="active"><a href="02_operaciones_lgicas.html" class="active no-ch">02. Operaciones Lógicas</a></li>
+      <li><a href="03_implementacin_neumtica.html" class="no-ch">03. Implementación neumática</a></li>
+      <li><a href="04_sistemas_de_numeracin.html" class="no-ch">04. Sistemas de numeración</a></li>
+      <li><a href="05_aplicaciones_industriales.html" class="no-ch">05. Aplicaciones industriales</a></li>
+   </ul>
+   </li>
+   <li><a href="unidad_3__lgica_cableada_con_rels.html" class="daddy">Unidad 3 - Lógica Cableada con Relés</a>
+   <ul class="other-section">
+      <li><a href="01_introduccin_a_la_lgica_cableada__componentes.html" class="no-ch">01. Introducción a la Lógica Cableada - Componentes</a></li>
+      <li><a href="02_ventajas_y_desventajas_de_la_lgica_cableada.html" class="no-ch">02. Ventajas y Desventajas de la Lógica Cableada</a></li>
+      <li><a href="03_rels_industriales_y_contactores_como_elementos_de_control.html" class="no-ch">03. Relés Industriales y Contactores como Elementos de Control</a></li>
+      <li><a href="04_implementacin_de_funciones_lgicas.html" class="no-ch">04. Implementación de Funciones Lógicas</a></li>
+      <li><a href="05_retencin_o_memoria_elctrica.html" class="no-ch">05. Retención o Memoria Eléctrica</a></li>
+      <li><a href="06_diseo_de_circuitos_de_control_con_rels.html" class="no-ch">06. Diseño de circuitos de control con Relés</a></li>
+      <li><a href="07_aplicacin_cajas_altasbajas.html" class="no-ch">07. Aplicación CAJAS ALTAS/BAJAS</a></li>
+   </ul>
+   </li>
+   <li><a href="unidad_4__lgica_programada_con_plc.html" class="daddy">Unidad 4 - Lógica Programada con PLC</a>
+   <ul class="other-section">
+      <li><a href="01_introduccin_a_la_lgica_programada.html" class="no-ch">01. Introducción a la Lógica Programada</a></li>
+      <li><a href="02_tipos_de_controladores.html" class="no-ch">02. Tipos de Controladores</a></li>
+      <li><a href="03_partes_componentes_y_funcionamiento_de_un_plc.html" class="no-ch">03. Partes, componentes y funcionamiento de un PLC</a></li>
+      <li><a href="04_lenguajes_de_programacin.html" class="no-ch">04. Lenguajes de Programación</a></li>
+      <li><a href="05_lgica_cableada_a_lgica_programada_ladder.html" class="no-ch">05. Lógica cableada a Lógica Programada (ladder)</a></li>
+      <li><a href="06_aplicacin_cajas_altasbajas.html" class="no-ch">06. Aplicación CAJAS ALTAS/BAJAS</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="01_introduccin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="03_implementacin_neumtica.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">02. Operaciones Lógicas</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id35">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Implementación en circuitos eléctricos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta35_126_2" class="block iDevice_content">
+<div class="exe-text"><div>
+<div>
+<h5 style="text-align: justify;"><span style="color: #333333; font-size: 1.05em;">Para iniciarnos en la</span><span style="color: #333333; font-size: 1.05em;"> lógica de contactos y la lógica de funciones</span><span style="color: #333333; font-size: 1.05em;">, comenzaremos analizando circuitos simples que nos permitan introducir definiciones y conceptos básicos. Esto nos servirá como base para, más adelante, poder analizar y comprender</span><span style="color: #333333; font-size: 1.05em;"> </span><span style="color: #333333; font-size: 1.05em;">sistemas más complejos.</span></h5>
+</div>
+<div>
+<p paraid="1479151268" paraeid="{55f0cae5-465d-4b6a-87cd-0c0122377cb5}{168}">En esta etapa, no nos enfocaremos en el comportamiento<span> </span><span>físico o eléctrico</span><span> </span>de los circuitos, sino únicamente en su<span> </span><span>comportamiento lógico o funcional</span>. Es decir,<span> </span><span>no realizaremos cálculos</span><span> </span>ni análisis de magnitudes eléctricas como tensiones, corrientes o potencias.</p>
+<p><span lang="ES"><span>Utilizaremos el Álgebra de Boole como herramienta matemática para estudiar y formalizar el comportamiento lógico de estos sistemas, ya sean eléctricos, neumáticos, mecánicos, u otros.<br /></span></span></p>
+<p><span lang="ES"><span> </span></span><span lang="ES">Comencemos por el<span> </span><span>circuito elemental</span><span> </span>que se muestra en la figura:</span></p>
+</div>
+<div><img src="img32.png" alt="circuito1" width="403" height="319" style="display: block; margin-left: auto; margin-right: auto;" /></div>
+<div>
+<div id="yui_3_18_1_1_1761525160693_115">
+<div>
+<p paraid="2101748020" paraeid="{55f0cae5-465d-4b6a-87cd-0c0122377cb5}{242}" style="text-align: justify;"><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Normal (Web)">En este circuito eléctrico encontramos una fuente de tensión de corriente continua <strong> </strong></span></span><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-charstyle="Strong"><strong>V</strong></span></span><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Normal (Web)">, un pulsador  </span></span><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-charstyle="Strong"><strong>a</strong></span></span><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Normal (Web)">  y una lámpara  </span></span><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-charstyle="Strong"><strong>z</strong></span></span><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Normal (Web)">. La simbología que se presenta de los componentes corresponde a la utilizada en normativa eléctrica.</span></span> <br /><br /></p>
+</div>
+<div>
+<p paraid="108318999" paraeid="{c0357ea9-c231-49cd-9f37-fca89d78a692}{5}" style="text-align: justify;"><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Normal (Web)">E</span><span data-ccp-parastyle="Normal (Web)">n este sistema, tanto la lámpara como el pulsador tienen dos posibles estados de funcionamiento, que llamaremos </span></span><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-charstyle="Strong"><strong>estados lógico</strong><strong>s</strong></span></span><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Normal (Web)">:</span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;201341983&quot;:0,&quot;335557856&quot;:16777215,&quot;335559738&quot;:0,&quot;335559739&quot;:240,&quot;335559740&quot;:240}"> </span></p>
+</div>
+<div>
+<p paraid="1250296562" paraeid="{c0357ea9-c231-49cd-9f37-fca89d78a692}{17}"><span data-contrast="auto" xml:lang="EN-US" lang="EN-US"></span> <br /><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Normal (Web)">Para la </span></span><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-charstyle="Strong">lámpara <strong>z</strong></span></span><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Normal (Web)">:</span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;201341983&quot;:0,&quot;335557856&quot;:16777215,&quot;335559738&quot;:0,&quot;335559739&quot;:150,&quot;335559740&quot;:240}"> </span></p>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="25" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1" role="listitem">
+<p paraid="304865913" paraeid="{c0357ea9-c231-49cd-9f37-fca89d78a692}{27}"><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-charstyle="Strong">Estado 1:</span></span><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES">  Lámpara </span><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-charstyle="Strong">APAGADA</span></span><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES">   </span><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-charstyle="Strong">=</span></span><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES">  </span><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-charstyle="Strong">" 0 "</span></span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:2,&quot;335557856&quot;:16777215,&quot;335559685&quot;:375,&quot;335559740&quot;:300}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="25" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1" role="listitem">
+<p paraid="949741131" paraeid="{c0357ea9-c231-49cd-9f37-fca89d78a692}{45}"><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-charstyle="Strong">Estado 2:</span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">  Lámpara </span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-charstyle="Strong">ENCENDIDA</span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">   </span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-charstyle="Strong">=</span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">  </span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-charstyle="Strong">"</span><span data-ccp-charstyle="Strong"> 1 "</span></span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:2,&quot;335557856&quot;:16777215,&quot;335559685&quot;:375,&quot;335559740&quot;:300}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<p paraid="1339987654" paraeid="{c0357ea9-c231-49cd-9f37-fca89d78a692}{63}"><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES" style="font-size: 1.05em;"><span data-ccp-parastyle="Normal (Web)">Para el </span></span><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES" style="font-size: 1.05em;"><span data-ccp-charstyle="Strong">pulsador  <strong>a</strong></span></span><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES" style="font-size: 1.05em;"><span data-ccp-parastyle="Normal (Web)">:</span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;201341983&quot;:0,&quot;335557856&quot;:16777215,&quot;335559738&quot;:0,&quot;335559739&quot;:150,&quot;335559740&quot;:240}" style="font-size: 1.05em;"> </span></p>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="26" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1" role="listitem">
+<p paraid="1046898696" paraeid="{c0357ea9-c231-49cd-9f37-fca89d78a692}{77}"><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-charstyle="Strong">Estado 1:</span></span><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES">  Pulsador </span><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-charstyle="Strong">ABIERTO</span></span><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES">    </span><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-charstyle="Strong">=</span></span><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES">  </span><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-charstyle="Strong">" 0 "</span></span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:2,&quot;335557856&quot;:16777215,&quot;335559685&quot;:375,&quot;335559740&quot;:300}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="26" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1" role="listitem">
+<p paraid="2041695820" paraeid="{c0357ea9-c231-49cd-9f37-fca89d78a692}{95}"><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-charstyle="Strong">Estado 2:</span></span><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-charstyle="Strong">  </span></span><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-charstyle="Strong">Pulsador</span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"> <span data-ccp-charstyle="Strong">CERRADO</span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">    </span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-charstyle="Strong">=</span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">  </span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-charstyle="Strong">"</span><span data-ccp-charstyle="Strong"> 1 "</span></span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;201341983&quot;:2,&quot;335557856&quot;:16777215,&quot;335559685&quot;:375,&quot;335559740&quot;:300}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<p paraid="893665326" paraeid="{c0357ea9-c231-49cd-9f37-fca89d78a692}{117}"><span style="font-size: 12pt;"> Hemos asignado un símbolo numérico a cada uno de los estados del pulsador y la lámpara. El estado 0 representa a los componentes en su estado INACTIVO, mientras que el estado 1 indica que se encuentran en su estado ACTIVO.</span></p>
+</div>
+</div>
+<div>
+<div>
+<p data-start="172" data-end="414"><span>Estos componentes, cuyo comportamiento puede representarse con dos estados posibles, se denominan variables lógicas del sistema: s</span>on "<span data-start="561" data-end="574">variables"</span>, porque pueden<span> </span><span data-start="590" data-end="611">cambiar de estado, y son "</span><span data-start="621" data-end="632">lógicas"</span>, porque sus estados posibles son<span> </span><span data-start="666" data-end="684">únicamente dos</span>: 0 ó 1 / INACTIVO ó ACTIVO.</p>
+<p data-start="694" data-end="795"><span>Además, diferenciamos estas variables en variables independientes y variables dependientes.<br />En nuestro caso:</span></p>
+<ul data-start="796" data-end="922">
+<li data-start="796" data-end="863">
+<p data-start="798" data-end="863"><span>El pulsador será nuestra variable lógica independiente.</span></p>
+</li>
+<li data-start="864" data-end="922">
+<p data-start="866" data-end="922"><span>La lámpara, nuestra variable lógica dependiente.</span></p>
+</li>
+</ul>
+<p data-start="866" data-end="922"><span></span><span><span style="color: #333333; font-size: 1.05em;">A continuación, construiremos una</span><span style="color: #333333; font-size: 1.05em;"> </span><span style="color: #333333; font-size: 1.05em;">tabla</span><span style="color: #333333; font-size: 1.05em;"> </span><span style="color: #333333; font-size: 1.05em;">que muestre la relación entre ambas variables.</span><br /></span></p>
+<p data-start="924" data-end="1108"><span>La tabla simplificada que aparece a la derecha se denomina <strong>tabla de verdad</strong> del sistema.</span></p>
+</div>
+</div>
+</div>
+<div>
+<p paraid="1671887007" paraeid="{55f0cae5-465d-4b6a-87cd-0c0122377cb5}{224}"><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Normal (Web)"> </span></span><span style="font-size: 1.05em;">Esta tabla describe el comportamiento de la</span><span style="font-size: 1.05em;"> </span><span style="font-size: 1.05em;">variable lógica dependiente </span><em data-start="204" data-end="207" style="font-size: 1.05em;">z</em><span style="font-size: 1.05em;"> </span><span style="font-size: 1.05em;">en función de los posibles estados de la</span><span style="font-size: 1.05em;"> variable lógica independiente </span><strong><em data-start="283" data-end="286" style="font-size: 1.05em;">a</em></strong><span style="font-size: 1.05em;">.</span></p>
+<div id="yui_3_18_1_1_1761525160693_129">
+<p data-start="128" data-end="287">Desde el<span> </span><span>Álgebra de Boole, podemos formular una expresión algebraica lógica </span>que representa esta relación:</p>
+<p data-start="404" data-end="454"><span data-start="404" data-end="416">z(a) = a</span><br data-start="416" data-end="419" />o, de forma simplificada:<span> </span><span data-start="445" data-end="454">z = a</span></p>
+<p data-start="456" data-end="711" id="yui_3_18_1_1_1761525160693_132" style="text-align: justify;">Esta fórmula, o<span> </span><span data-start="472" data-end="492">expresión lógica</span>, indica que el estado de la lámpara (<em data-start="530" data-end="533">z</em>), definido como<span id="yui_3_18_1_1_1761525160693_131"><span> </span><span data-start="550" data-end="588" id="yui_3_18_1_1_1761525160693_130">1 cuando la lámpara está encendida</span>,</span><span> </span><span>depende directamente </span>del estado del pulsador (<em data-start="640" data-end="643">a</em>), definido como<span> </span><span data-start="660" data-end="710">1 cuando el pulsador está presionado y cerrado</span>.</p>
+</div>
+<div>
+<p paraid="1969846959" paraeid="{c0357ea9-c231-49cd-9f37-fca89d78a692}{216}"><img src="img33.png" alt="tabla1" width="382" height="160" style="font-size: 1.05em; display: block; margin-left: auto; margin-right: auto;" /></p>
+<div>
+<h5><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES" class="">Definiciones:</span><span data-ccp-props="{}" class=""> </span></h5>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="27" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1" role="listitem">
+<p role="heading" aria-level="5" paraid="2052551361" paraeid="{bd460702-f07d-404a-ab0f-52be3cebbc1c}{41}"><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="heading 5"><strong>Variables lógicas independientes:</strong></span></span> <br /><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="heading 5">Se utilizan para representan a cualquier dispositivo o elemento, generalmente de mando, que no dependen de otras variables, como pueden ser pulsadores, llaves, sensores, finales de carrera, etc. y que tiene sólo dos estados lógicos posibles.</span></span> <br /><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="heading 5">A estas variables las indicamos con letras (a, b, c…)</span></span> <br /><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="heading 5">También se las denomina variables d</span><span data-ccp-parastyle="heading 5">e entrada de la función lógica.</span></span><span data-ccp-props="{&quot;134233117&quot;:true,&quot;134233118&quot;:true,&quot;134245418&quot;:false,&quot;134245529&quot;:false,&quot;201341983&quot;:2,&quot;335557856&quot;:16777215,&quot;335559685&quot;:375,&quot;335559738&quot;:40,&quot;335559739&quot;:0,&quot;335559740&quot;:300}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="28" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1" role="listitem">
+<p role="heading" aria-level="5" paraid="131743416" paraeid="{bd460702-f07d-404a-ab0f-52be3cebbc1c}{55}"><strong><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="heading 5">Variables lógicas dependientes </span><span data-ccp-parastyle="heading 5">ó</span><span data-ccp-parastyle="heading 5"> funciones lógicas:</span></span> </strong><br /><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="heading 5">Se utilizan para representar a cualquier dispositivo o elemento que dependa de otras variables lógicas, como podrían ser lámparas, leds, motores, etc. y que tiene sólo dos estados lógicos posibles. </span></span><span data-ccp-props="{&quot;134245418&quot;:false,&quot;134245529&quot;:false,&quot;201341983&quot;:2,&quot;335557856&quot;:16777215,&quot;335559685&quot;:375,&quot;335559738&quot;:0,&quot;335559739&quot;:150,&quot;335559740&quot;:300}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="29" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1" role="listitem">
+<p role="heading" aria-level="5" paraid="1520745429" paraeid="{bd460702-f07d-404a-ab0f-52be3cebbc1c}{63}"><strong><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="heading 5">Tabla de verdad:</span></span> </strong><br /><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="heading 5">En una tabla de verdad se indica para cada combinación posible de estados de las variables lógicas independientes (pulsadores, llaves, etc.) el estado lógico de las variables dependientes (led, lámpara, etc.). </span></span><span data-ccp-props="{&quot;134245418&quot;:false,&quot;134245529&quot;:false,&quot;201341983&quot;:2,&quot;335557856&quot;:16777215,&quot;335559685&quot;:375,&quot;335559738&quot;:0,&quot;335559739&quot;:150,&quot;335559740&quot;:300}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="30" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1" role="listitem">
+<p role="heading" aria-level="5" paraid="2093405161" paraeid="{bd460702-f07d-404a-ab0f-52be3cebbc1c}{71}"><strong><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="heading 5">Expresión algebraica lógica:</span></span> </strong><br /><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="heading 5">Es una “fórmula” que indica cómo y de qué variables lógicas independientes depende una variable dependiente o función lógica.</span></span> </p>
+</li>
+</ul>
+<div id="yui_3_18_1_1_1761525160693_124">
+<div>
+<h3><span><strong><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES" style="color: #0000ff;"><span data-ccp-parastyle="Default" class="">OPERACIONES LÓGICAS</span></span></strong><span class=""><strong><span style="color: #0000ff;"> </span></strong><br /></span></span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default" class=""></span></span></h3>
+<h3><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES" style="color: #0000ff;"><span data-ccp-parastyle="Default" class="">SUMA LÓGICA:</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}" class=""> </span></h3>
+<p style="text-align: justify;"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES" style="font-size: 1.05em;"><span data-ccp-parastyle="Default">En el circuito de la figura </span><span data-ccp-parastyle="Default">disponemos </span><span data-ccp-parastyle="Default">ahora </span><span data-ccp-parastyle="Default">de </span><span data-ccp-parastyle="Default">una </span><span data-ccp-parastyle="Default">l</span><span data-ccp-parastyle="Default">ámpara </span></span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES" style="font-size: 1.05em;"><span data-ccp-parastyle="Default">z</span></span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES" style="font-size: 1.05em;"><span data-ccp-parastyle="Default"> </span><span data-ccp-parastyle="Default">(variable lógica dependiente) y </span><span data-ccp-parastyle="Default">de </span><span data-ccp-parastyle="Default">dos pulsadores </span></span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES" style="font-size: 1.05em;"><span data-ccp-parastyle="Default">a</span></span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES" style="font-size: 1.05em;"><span data-ccp-parastyle="Default"> y </span></span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES" style="font-size: 1.05em;"><span data-ccp-parastyle="Default">b</span></span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES" style="font-size: 1.05em;"><span data-ccp-parastyle="Default"> </span><span data-ccp-parastyle="Default">como elementos de mando (variables ló</span><span data-ccp-parastyle="Default">gicas independientes).</span></span><span style="font-size: 1.05em;"> </span></p>
+</div>
+</div>
+<div>
+<p paraid="907878212" paraeid="{bd460702-f07d-404a-ab0f-52be3cebbc1c}{97}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">Los pulsadores son independientes entre sí</span><span data-ccp-parastyle="Default">, y</span><span data-ccp-parastyle="Default"> están conectados en </span><span data-ccp-parastyle="Default">“</span><span data-ccp-parastyle="Default">paralelo</span><span data-ccp-parastyle="Default">”. A su vez </span><span data-ccp-parastyle="Default">ambos pulsadores </span><span data-ccp-parastyle="Default">se encuentran en “</span><span data-ccp-parastyle="Default">serie</span><span data-ccp-parastyle="Default">”</span><span data-ccp-parastyle="Default"> con la lámpara</span><span data-ccp-parastyle="Default"> z.</span></span> <br /><span data-contrast="none" xml:lang="EN-US" lang="EN-US"></span> <img src="img34.png" alt="circuito2" width="580" height="319" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p paraid="907878212" paraeid="{bd460702-f07d-404a-ab0f-52be3cebbc1c}{97}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">¿Cuántas estados posibles existen teniendo en cuenta ambos pulsadores?</span></span><span> </span><br /><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES" id="yui_3_18_1_1_1761525160693_138"><span data-ccp-parastyle="Default" id="yui_3_18_1_1_1761525160693_137">Tenemos<span> </span></span><span data-ccp-parastyle="Default">4 posibles combinaciones de las variables independientes (pulsadores a y b)</span><span data-ccp-parastyle="Default">, ya que,</span><span data-ccp-parastyle="Default"> para cada uno de </span><span data-ccp-parastyle="Default">los </span><span data-ccp-parastyle="Default">posibles valores o estados de uno </span><span data-ccp-parastyle="Default">de ellos, </span><span data-ccp-parastyle="Default">hay 2 posibles estados para el otro:</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"> </span><br /><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"> <img src="img35.png" alt="imagen2" width="781" height="205" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<div>
+<p paraid="454963171" paraeid="{bd460702-f07d-404a-ab0f-52be3cebbc1c}{209}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">Matemáticamente, la cantidad de combinaciones posibles </span><span data-ccp-parastyle="Default">se calcula como:</span></span> <br /><span data-contrast="none" xml:lang="EN-US" lang="EN-US"></span><span contenteditable="false"></span></p>
+<div><span style="font-size: 12pt;"><em><span id="MathJax-Element-1-Frame" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo&gt;&amp;#xA0;&lt;/mo&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;msup&gt;&lt;mrow&gt;&lt;mi&gt;E&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mo&gt;&amp;#xA0;&lt;/mo&gt;&lt;mo fence=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo&gt;&amp;#xA0;&lt;/mo&gt;&lt;mi&gt;v&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mo&gt;&amp;#xA0;&lt;/mo&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;p&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mo fence=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/math&gt;" role="presentation" style="box-sizing: border-box;" tabindex="0"><span role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi><span style="font-family: 'Encode Sans', Arial, Helvetica, sans-serif;">cant combinaciones = Estados <sup>(cant variables independientes)</sup></span></mi></math></span></span></em></span></div>
+</div>
+<div>
+<p paraid="303917611" paraeid="{bd460702-f07d-404a-ab0f-52be3cebbc1c}{222}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">Donde la base corresponde a la cantidad de estados posibles </span><span data-ccp-parastyle="Default">(</span><span data-ccp-parastyle="Default">siempre es 2 para variables lógicas</span><span data-ccp-parastyle="Default">)</span><span data-ccp-parastyle="Default">, y el exponente indica </span><span data-ccp-parastyle="Default">la cantidad de variables independientes (en nuestro </span><span data-ccp-parastyle="Default">caso </span><span data-ccp-parastyle="Default">los pulsadores a y b)</span><span data-ccp-parastyle="Default">.</span></span> <br /><span data-contrast="none" xml:lang="EN-US" lang="EN-US"></span> <br /><span data-contrast="none" xml:lang="EN-US" lang="EN-US"></span><span contenteditable="false"></span></p>
+<p paraid="303917611" paraeid="{bd460702-f07d-404a-ab0f-52be3cebbc1c}{222}"><span id="MathJax-Element-1-Frame" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo&gt;&amp;#xA0;&lt;/mo&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;msup&gt;&lt;mrow&gt;&lt;mi&gt;E&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mo&gt;&amp;#xA0;&lt;/mo&gt;&lt;mo fence=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo&gt;&amp;#xA0;&lt;/mo&gt;&lt;mi&gt;v&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mo&gt;&amp;#xA0;&lt;/mo&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;p&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mo fence=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/math&gt;" role="presentation" style="box-sizing: border-box; font-size: 12pt;" tabindex="0"><span role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi><span style="font-family: 'Encode Sans', Arial, Helvetica, sans-serif;">cant  combinaciones = 2 <sup>(cant variables independientes)</sup></span></mi></math></span></span></p>
+<div><span id="MathJax-Element-2-Frame" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo&gt;&amp;#xA0;&lt;/mo&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;msup&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mrow&gt;&lt;mo&gt;&amp;#xA0;&lt;/mo&gt;&lt;mo fence=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo&gt;&amp;#xA0;&lt;/mo&gt;&lt;mi&gt;v&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mo&gt;&amp;#xA0;&lt;/mo&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;p&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mo fence=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/math&gt;" role="presentation" style="box-sizing: border-box;" tabindex="0"><span role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi><span style="font-family: 'Encode Sans', Arial, Helvetica, sans-serif; font-size: 1.05em;"> </span></mi></math></span></span></div>
+</div>
+<div>
+<div><span id="MathJax-Element-3-Frame" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo&gt;&amp;#xA0;&lt;/mo&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;msup&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mrow&gt;&lt;mo&gt;&amp;#xA0;&lt;/mo&gt;&lt;mo fence=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mo fence=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="box-sizing: border-box;" tabindex="0"><span role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>cant  combinaciones</mi><mo>=</mo><msup><mn>2</mn><mrow><mo> </mo><mo fence="false">(</mo><mn>2</mn><mo fence="false">)</mo></mrow></msup><mo>=</mo><mn>4</mn></math></span></span></div>
+<span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335551550&quot;:2,&quot;335551620&quot;:2,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"> </span>
+<p><strong><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">Tabla de verdad:</span></span> </strong><br /><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">La </span><span data-ccp-parastyle="Default">lámpara sólo se encuentra apagada si los dos pulsadores permanecen abiertos. Con sólo cerrar alguno de los pulsadores la lámpara enciende.</span><span data-ccp-parastyle="Default"> La tabla de verdad que describe este comportamiento es:</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"> </span></p>
+<p><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"><img src="img36.png" alt="tabla2" width="518" height="240" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+</div>
+<div>
+<p paraid="1375868811" paraeid="{bd460702-f07d-404a-ab0f-52be3cebbc1c}{250}"><strong><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">Expresión algebraica:</span></span> </strong><br /><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">Definimos esta conexión de pulsadores como </span></span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">suma lógica</span></span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default"> y para representarla a</span><span data-ccp-parastyle="Default">lgebraicamente elegimos el signo u operador suma “+”: </span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"> </span></p>
+<p paraid="1375868811" paraeid="{bd460702-f07d-404a-ab0f-52be3cebbc1c}{250}"><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"><img src="img5.png" alt="formula" width="189" height="79" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p paraid="1375868811" paraeid="{bd460702-f07d-404a-ab0f-52be3cebbc1c}{250}"><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">Nota importante: <br /></span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">No confundir la “suma lógica” con la “suma aritmética”.</span> </span></p>
+<p paraid="1375868811" paraeid="{bd460702-f07d-404a-ab0f-52be3cebbc1c}{250}"><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"><img src="img6.png" alt="tabla3" width="281" height="287" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<div id="yui_3_18_1_1_1761525160693_179">
+<p paraid="1739569742" paraeid="{3b13577b-11df-4c6a-8559-63431d7fd97a}{84}" id="yui_3_18_1_1_1761525160693_178"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">Nótese que “1 + 1 =</span><span data-ccp-parastyle="Default"> 1”.</span></span> <br /><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">Esto es porque los dígitos 0 y 1 los utilizamos para </span></span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">representar estados</span></span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default"> y</span><span data-ccp-parastyle="Default"> no cantidades</span><span data-ccp-parastyle="Default">.</span></span>  <span data-contrast="none" xml:lang="ES-ES" lang="ES-ES" id="yui_3_18_1_1_1761525160693_181"><span data-ccp-parastyle="Default">En el álgebra de Boole, </span><span data-ccp-parastyle="Default" id="yui_3_18_1_1_1761525160693_180">sólo existen el<span> </span></span><span data-ccp-parastyle="Default">0</span><span data-ccp-parastyle="Default"> y el</span><span data-ccp-parastyle="Default"> 1, y por tanto el</span><span data-ccp-parastyle="Default"> resultado de t</span><span data-ccp-parastyle="Default">oda operación lógica será 0 </span><span data-ccp-parastyle="Default">ó</span><span data-ccp-parastyle="Default"> 1.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"> </span></p>
+</div>
+<div>
+<p paraid="95430109" paraeid="{3b13577b-11df-4c6a-8559-63431d7fd97a}{120}"><b style="font-size: 1.05em;">Compuerta Lógica:</b></p>
+<div>
+<p xml:lang="ES-ES" lang="ES-ES" paraid="91510483" paraeid="{d74945e0-91f0-4fa2-a87b-41540b09c75e}{54}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Para la SUMA LÓGICA de dos variables de nuestro ejemplo, la<span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">COMPUERTA</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span></span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">LÓGICA OR</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"><span> </span>que se utiliza es:</span> </p>
+</div>
+</div>
+<div>
+<p paraid="1687531128" paraeid="{3b13577b-11df-4c6a-8559-63431d7fd97a}{136}" style="text-align: center;"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"></span> <img src="img7.png" alt="circuito3" width="263" height="105" /><img src="img8.png" alt="tabla4" width="358" height="176" /></p>
+<div id="yui_3_18_1_1_1761525160693_167">
+<div>
+<p paraid="967455077" paraeid="{3b13577b-11df-4c6a-8559-63431d7fd97a}{170}"><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Normal (Web)">Tenemos hasta ahora 4 formas de definir o expresar una función lógica:</span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;201341983&quot;:0,&quot;335557856&quot;:16777215,&quot;335559738&quot;:0,&quot;335559739&quot;:150,&quot;335559740&quot;:240}"> </span></p>
+</div>
+<div>
+<ol role="list" start="1">
+<li data-leveltext="%3." data-font="Calibri" data-listid="29" data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559685&quot;:2310,&quot;335559991&quot;:510,&quot;469769242&quot;:[65533,0],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%3.&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="3" role="listitem">
+<p paraid="1362481490" paraeid="{3b13577b-11df-4c6a-8559-63431d7fd97a}{176}"><em><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Normal (Web)">Circuito eléctrico.</span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;201341983&quot;:0,&quot;335557856&quot;:16777215,&quot;335559685&quot;:993,&quot;335559738&quot;:0,&quot;335559739&quot;:150,&quot;335559740&quot;:240}"> </span></em></p>
+</li>
+</ol>
+</div>
+<div>
+<ol role="list" start="2">
+<li data-leveltext="%3." data-font="Calibri" data-listid="29" data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559685&quot;:2310,&quot;335559991&quot;:510,&quot;469769242&quot;:[65533,0],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%3.&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="3" role="listitem">
+<p paraid="413936290" paraeid="{3b13577b-11df-4c6a-8559-63431d7fd97a}{182}"><em><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Normal (Web)">Tabla de verdad.</span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;201341983&quot;:0,&quot;335557856&quot;:16777215,&quot;335559685&quot;:993,&quot;335559738&quot;:0,&quot;335559739&quot;:150,&quot;335559740&quot;:240}"> </span></em></p>
+</li>
+</ol>
+</div>
+</div>
+<div>
+<div>
+<ol role="list" start="3">
+<li data-leveltext="%3." data-font="Calibri" data-listid="29" data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559685&quot;:2310,&quot;335559991&quot;:510,&quot;469769242&quot;:[65533,0],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%3.&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" aria-setsize="-1" data-aria-posinset="3" data-aria-level="3" role="listitem">
+<p paraid="535573833" paraeid="{3b13577b-11df-4c6a-8559-63431d7fd97a}{188}"><em><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Normal (Web)">Expresión algebraica lógica.</span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;201341983&quot;:0,&quot;335557856&quot;:16777215,&quot;335559685&quot;:993,&quot;335559738&quot;:0,&quot;335559739&quot;:150,&quot;335559740&quot;:240}"> </span></em></p>
+</li>
+</ol>
+</div>
+<div>
+<ol role="list" start="4">
+<li data-leveltext="%3." data-font="" data-listid="29" data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559685&quot;:2310,&quot;335559991&quot;:510,&quot;469769242&quot;:[65533,0],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%3.&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" aria-setsize="-1" data-aria-posinset="4" data-aria-level="3" role="listitem">
+<p paraid="2007698714" paraeid="{3b13577b-11df-4c6a-8559-63431d7fd97a}{194}"><em><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Normal (Web)">Representación con compuertas</span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;201341983&quot;:0,&quot;335557856&quot;:16777215,&quot;335559685&quot;:993,&quot;335559738&quot;:0,&quot;335559739&quot;:150,&quot;335559740&quot;:240}"> </span></em><em></em></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div>
+<h4><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES" class="">PRODUCTO LÓGICO:</span><span data-ccp-props="{}" class=""> </span></h4>
+</div>
+<div>
+<p paraid="653176162" paraeid="{3b13577b-11df-4c6a-8559-63431d7fd97a}{216}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">En este caso los pulsadores y la lá</span><span data-ccp-parastyle="Default">mpara están conectados en serie.</span></span> <br /><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">La lámpara sólo puede </span><span data-ccp-parastyle="Default">encender si ambos pulsadores están presionados.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"> </span></p>
+</div>
+<p role="heading" aria-level="3" xml:lang="ES-ES" lang="ES-ES" paraid="1653592640" paraeid="{d74945e0-91f0-4fa2-a87b-41540b09c75e}{215}"><span data-contrast="none" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3"><img src="img9.png" alt="circuito5" width="674" height="352" style="display: block; margin-left: auto; margin-right: auto;" /></span></span></p>
+<p role="heading" aria-level="3" xml:lang="ES-ES" lang="ES-ES" paraid="1653592640" paraeid="{d74945e0-91f0-4fa2-a87b-41540b09c75e}{215}"><span data-contrast="none" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3"><strong id="yui_3_18_1_1_1761525160693_195"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES" id="yui_3_18_1_1_1761525160693_194"><span data-ccp-parastyle="Default" id="yui_3_18_1_1_1761525160693_193">Tabla de verdad:</span></span> </strong><br /><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">Nuevamente la cantidad de combinaciones posibles de las variables independientes (los pulsadores a y b) es 4.</span> <br /><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">Para este caso, la tabla de verdad que corresponde es:</span> </span></span></p>
+<p role="heading" aria-level="3" xml:lang="ES-ES" lang="ES-ES" paraid="1653592640" paraeid="{d74945e0-91f0-4fa2-a87b-41540b09c75e}{215}"><span data-contrast="none" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3"><img src="img10.png" alt="tabla6" width="530" height="246" style="display: block; margin-left: auto; margin-right: auto;" /></span></span></p>
+<p role="heading" aria-level="3" xml:lang="ES-ES" lang="ES-ES" paraid="1653592640" paraeid="{d74945e0-91f0-4fa2-a87b-41540b09c75e}{215}"><span data-contrast="none" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><b>Expresión algebraica: <br /></b></span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">Definimos esta conexión de pulsadores como </span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">producto lógico</span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"> y para representarla algebraicamente elegimos el signo u operador suma “.”:</span> </span></span></p>
+<p role="heading" aria-level="3" xml:lang="ES-ES" lang="ES-ES" paraid="1653592640" paraeid="{d74945e0-91f0-4fa2-a87b-41540b09c75e}{215}"><span data-contrast="none" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3"><img src="img11.png" alt="formula2" width="250" height="111" style="display: block; margin-left: auto; margin-right: auto;" /></span></span></p>
+<p role="heading" aria-level="3" xml:lang="ES-ES" lang="ES-ES" paraid="1653592640" paraeid="{d74945e0-91f0-4fa2-a87b-41540b09c75e}{215}" style="text-align: justify;"><span data-contrast="none" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3"><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><strong>Compuerta Lógica:</strong></span> <br />Para el PRODUCTO LÓGICO de dos variables de nuestro ejemplo, la COMPUERTA LÓGICA AND que se utiliza es: </span></span></p>
+<p role="heading" aria-level="3" xml:lang="ES-ES" lang="ES-ES" paraid="1653592640" paraeid="{d74945e0-91f0-4fa2-a87b-41540b09c75e}{215}"></p>
+<p role="heading" aria-level="3" xml:lang="ES-ES" lang="ES-ES" paraid="1653592640" paraeid="{d74945e0-91f0-4fa2-a87b-41540b09c75e}{215}"><span data-contrast="none" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3"><img src="img10.png" alt="tabla7" width="530" height="246" style="display: block; margin-left: auto; margin-right: auto;" /></span></span></p>
+<p role="heading" aria-level="3" xml:lang="ES-ES" lang="ES-ES" paraid="1653592640" paraeid="{d74945e0-91f0-4fa2-a87b-41540b09c75e}{215}"><span data-contrast="none" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3"><img src="img13.png" alt="circuito7" width="287" height="117" style="display: block; margin-left: auto; margin-right: auto;" /></span></span></p>
+<p role="heading" aria-level="3" xml:lang="ES-ES" lang="ES-ES" paraid="1653592640" paraeid="{d74945e0-91f0-4fa2-a87b-41540b09c75e}{215}"><strong style="font-size: 1.05em;"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES" style="font-size: 1.05em;"><span data-ccp-parastyle="Default" class="">NEGACIÓN</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}" class="" style="font-size: 1.05em;"> </span></strong></p>
+<div>
+<div>
+<p paraid="931339212" paraeid="{9080b378-68a5-48cc-8db0-7142e4547bf5}{112}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">Nota: </span><span data-ccp-parastyle="Default">Si bien la negación no es estrictamente una operación</span><span data-ccp-parastyle="Default"> analizaremos en esta sección cómo implementar la función en un circuito eléctrico.</span></span><br /><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"></span></p>
+</div>
+<div>
+<p paraid="1003364211" paraeid="{9080b378-68a5-48cc-8db0-7142e4547bf5}{126}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">En este caso el pulsador se conecta en paralelo con la lámpara y se ha agregado un resistor en serie:</span></span> </p>
+<p paraid="1003364211" paraeid="{9080b378-68a5-48cc-8db0-7142e4547bf5}{126}"><img src="img14.png" alt="circuitonegacion" width="550" height="318" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p paraid="1003364211" paraeid="{9080b378-68a5-48cc-8db0-7142e4547bf5}{126}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">Por el momento no nos preocupemos por el resistor y analicemos cómo funciona ló</span><span data-ccp-parastyle="Default">gicamente el circuito.</span></span><span> </span><br /><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">En este caso si el pulsador está abierto, es como si no </span><span data-ccp-parastyle="Default">existiera</span><span data-ccp-parastyle="Default"> en el circuito, por lo </span><span data-ccp-parastyle="Default">tanto</span><span data-ccp-parastyle="Default"> la corriente circula por el resistor </span><span data-ccp-parastyle="Default">y </span><span data-ccp-parastyle="Default">la lámpara y ésta se enciende. </span></span><span> </span><br /><span data-contrast="none" xml:lang="EN-US" lang="EN-US"></span><span> </span><br /><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">El circuito que queda “</span></span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">para a = 0</span></span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">” es:</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"> </span></p>
+<p paraid="1003364211" paraeid="{9080b378-68a5-48cc-8db0-7142e4547bf5}{126}"><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"><img src="img15.png" alt="circuitonegacion2" width="408" height="215" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p paraid="1003364211" paraeid="{9080b378-68a5-48cc-8db0-7142e4547bf5}{126}" style="text-align: justify;"><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">Por otra parte, si se presiona el pulsador éste se cierra y funciona como un puente en paralelo con la lámpara. </span> <br /><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">El circuito “</span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">para a = 1</span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">” sería:</span></span></p>
+<p paraid="1003364211" paraeid="{9080b378-68a5-48cc-8db0-7142e4547bf5}{126}"><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><img src="img16.png" alt="circuitonegacion3" width="544" height="296" style="display: block; margin-left: auto; margin-right: auto;" /></span></span></p>
+<p paraid="1003364211" paraeid="{9080b378-68a5-48cc-8db0-7142e4547bf5}{126}" style="text-align: justify;"><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">En este caso, al cerrar el pulsador se ha “cortocircuitado” a la lámpara y por ésta no circula corriente. Su tensión es cero y por lo tanto está apagada. <br />La función del resistor es evitar que la fuente V quede en cortocircuito. <br />En próximas unidades del curso estudiaremos cómo realizar una negación mediante elementos auxiliares que eviten la necesidad de incorporar este resistor. </span></span></p>
+<p paraid="1003364211" paraeid="{9080b378-68a5-48cc-8db0-7142e4547bf5}{126}"><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"><img src="img17.png" alt="circuitonegacion4" width="227" height="192" style="float: left;" /><img src="img18.png" alt="circuitonegacion6" width="285" height="204" style="float: left;" /></span></p>
+<p><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Subtitle" class=""><strong><span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"></span></span></strong></span></span></p>
+<p><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Subtitle" class=""><strong><span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"></span></span></strong></span></span></p>
+<p><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Subtitle" class=""><strong><span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"></span></span></strong></span></span></p>
+<p><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Subtitle" class=""><strong><span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"></span></span></strong></span></span></p>
+<p><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Subtitle" class=""><strong><span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"></span></span></strong></span></span></p>
+<p><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Subtitle" class=""><strong><span><span data-contrast="none" xml:lang="EN-US" lang="EN-US">Tabla de verdad</span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><b>: <br /></b></span></span></strong>En este caso vemos que la tabla de verdad es:</span></span></p>
+</div>
+<h4></h4>
+<h4><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Subtitle" class=""><strong><img src="img19.png" alt="tablanegacion" width="373" height="167" style="display: block; margin-left: auto; margin-right: auto;" /></strong></span></span></h4>
+<div>
+<p paraid="532820614" paraeid="{903695c5-a4c3-4e10-b0df-71119ad3a9e5}{41}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">Ya que cuando el estado del pulsador está abierto (a=0), la lámpara está encendida (z=1) y viceversa.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"> <br /><br /></span></p>
+</div>
+<div>
+<p paraid="1551363335" paraeid="{903695c5-a4c3-4e10-b0df-71119ad3a9e5}{55}"><span><strong><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES">Expresión algebraica</span></strong><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><b>: <br /></b></span></span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">Para representar la NEGACIÓN en </span><span data-ccp-parastyle="Default">una expresión algebraica se usa el siguiente signo u operador: </span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"> </span></p>
+<p paraid="1551363335" paraeid="{903695c5-a4c3-4e10-b0df-71119ad3a9e5}{55}"><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"><img src="img20.png" alt="formulanegacion" width="209" height="71" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p paraid="1551363335" paraeid="{903695c5-a4c3-4e10-b0df-71119ad3a9e5}{55}"><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"><strong><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES">Compuerta Lógica:</span> </strong><br /><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Para la NEGACIÓN, la </span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">COMPUERTA</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"> </span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">LÓGICA NOT</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"> que se utiliza es:</span> <br /><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"></span> </span></p>
+</div>
+<h4><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Subtitle" class=""><strong><img src="img21.png" alt="compuertanegacion" width="369" height="171" style="display: block; margin-left: auto; margin-right: auto;" /></strong></span></span></h4>
+<div>
+<h4><strong><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="Default" class="">PULSADORES</span></span></strong><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}" class=""> </span></h4>
+</div>
+<div>
+<p paraid="1120461679" paraeid="{903695c5-a4c3-4e10-b0df-71119ad3a9e5}{139}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">Los pulsadores en industria se clasifican en:</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"> </span><span style="font-size: 1.05em;"> </span></p>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="-" data-font="Calibri" data-listid="29" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Calibri&quot;,&quot;469769242&quot;:[9675],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;-&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="2" role="listitem">
+<p paraid="1885909146" paraeid="{903695c5-a4c3-4e10-b0df-71119ad3a9e5}{149}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">Pulsadores NA (normalmente abierto), que al pr</span><span data-ccp-parastyle="Default">esionarse cierran sus contactos.</span></span> <br /><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">Comunmente utilizados como pulsadores de marcha o inicio de un proceso.</span></span> <br /><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559685&quot;:567,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="-" data-font="Calibri" data-listid="29" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Calibri&quot;,&quot;469769242&quot;:[9675],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;-&quot;,&quot;469777815&quot;:&quot;multilevel&quot;}" aria-setsize="-1" data-aria-posinset="3" data-aria-level="2" role="listitem">
+<p paraid="2068574608" paraeid="{903695c5-a4c3-4e10-b0df-71119ad3a9e5}{159}"><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">Y Pulsadores </span><span data-ccp-parastyle="Default">NC</span><span data-ccp-parastyle="Default"> (normalmente cerrados), que al presionarse abren sus contactos.<br /></span></span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">En general utilizados como pulsadores de parada o detención de un proceso.</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559685&quot;:567,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"> </span></p>
+</li>
+</ul>
+<p><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559685&quot;:567,&quot;335559739&quot;:0,&quot;335559740&quot;:240}"><img src="img22.png" alt="pulsador1" width="172" height="243" /><img src="img23.png" alt="pulsador2" width="204" height="253" /></span></p>
+<div>
+<p paraid="880282358" paraeid="{903695c5-a4c3-4e10-b0df-71119ad3a9e5}{191}"><span><strong><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="Default" class="">Pulsador NA</span></span><span class=""> / </span><span aria-hidden="true" class=""></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US" class=""></span><span class=""></span><span aria-hidden="true" class=""></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US" class=""></span><span class=""></span><span aria-hidden="true" class=""></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US" class=""></span><span class=""></span><span aria-hidden="true" class=""></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US" class=""></span><span class=""></span><span aria-hidden="true" class=""></span><span data-contrast="none" xml:lang="EN-US" lang="EN-US"><span data-ccp-parastyle="Default" class="">Pulsador NC</span></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559685&quot;:1134,&quot;335559739&quot;:0,&quot;335559740&quot;:240}" class=""> </span></strong></span> </p>
+</div>
+<div>
+<p paraid="2085176300" paraeid="{903695c5-a4c3-4e10-b0df-71119ad3a9e5}{209}"><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559685&quot;:993,&quot;335559739&quot;:0,&quot;335559740&quot;:240}">E</span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">s importante comprender que el uso de un pulsador NC en lugar de un pulsador NA modifica por completo el funcionamiento de un circuito.</span></span> <br /><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">En el último </span><span data-ccp-parastyle="Default">circuito</span><span data-ccp-parastyle="Default"> por ejemplo, se lograría la función NEGACIÓN directamente mediante el uso de un pulsador NC en serie con la lámpara.</span></span> </p>
+<p paraid="2085176300" paraeid="{903695c5-a4c3-4e10-b0df-71119ad3a9e5}{209}"><img src="img24.png" alt="circuitopulsador1" width="339" height="185" /><img src="img25.png" alt="circuitopulsador2" width="289" height="189" /></p>
+<p paraid="2085176300" paraeid="{903695c5-a4c3-4e10-b0df-71119ad3a9e5}{209}"><img src="img26.png" alt="formulapulsador" width="163" height="68" /><img src="img27.png" alt="tablapulsador1" width="325" height="145" /><img src="img28.png" alt="tablapulsador2" width="406" height="184" /></p>
+</div>
+</div>
+<h3><span data-contrast="auto" xml:lang="ES-ES" lang="ES-ES" style="color: #000000;"><span data-ccp-parastyle="Subtitle" class=""><strong>REVISIÓN COMPUERTAS LÓGICAS:</strong></span></span></h3>
+</div>
+<div>
+<p xml:lang="ES-ES" lang="ES-ES" paraid="346721508" paraeid="{d74945e0-91f0-4fa2-a87b-41540b09c75e}{156}"><span data-contrast="none" xml:lang="ES-AR" lang="ES-AR"></span><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">Las compuertas lógicas surgieron para representar circuitos integrados electrónicos, sin </span><span data-ccp-parastyle="Default">embargo</span><span data-ccp-parastyle="Default"> son símbolos que se utilizan para representar las operaciones y funciones lógicas “independientemente de su implementación”.</span></span> <br /><span data-contrast="none" xml:lang="ES-ES" lang="ES-ES"><span data-ccp-parastyle="Default">Es decir que se pueden aplicar a distintas tecnologías: electrónica, eléctrica, neumática, hidráulica, etc.<br /><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Tienen entradas y generalmente una salida. Las salidas de una compuertas pueden conectarse a las entradas a otras compuertas formando un circuito que se llama “circuito lógico”.</span> <br /><br /></span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"></span></p>
+</div>
+<div>
+<p role="heading" aria-level="3" xml:lang="ES-ES" lang="ES-ES" paraid="462491658" paraeid="{d74945e0-91f0-4fa2-a87b-41540b09c75e}{163}"><em><span data-contrast="none" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3">¿Cómo funcionan?</span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;201341983&quot;:0,&quot;335559738&quot;:281,&quot;335559739&quot;:281,&quot;335559740&quot;:240}"> <br /></span></em><span data-contrast="none" xml:lang="ES-AR" lang="ES-AR">Reciben </span><span data-contrast="none" xml:lang="ES-AR" lang="ES-AR">una o más señales de entrada</span><span data-contrast="none" xml:lang="ES-AR" lang="ES-AR"> (0 o 1) y entregan una </span><span data-contrast="none" xml:lang="ES-AR" lang="ES-AR">salida lógica</span><span data-contrast="none" xml:lang="ES-AR" lang="ES-AR">, también 0 o 1, según el tipo de operación (AND, OR, NOT, etc.).</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</div>
+<div>
+<p xml:lang="ES-ES" lang="ES-ES" paraid="1172785546" paraeid="{d74945e0-91f0-4fa2-a87b-41540b09c75e}{178}"><span data-contrast="none" xml:lang="ES-AR" lang="ES-AR">Se pueden implementar:</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="32" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559683&quot;:0,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1" role="listitem">
+<p xml:lang="ES-ES" lang="ES-ES" paraid="974853933" paraeid="{d74945e0-91f0-4fa2-a87b-41540b09c75e}{185}"><span data-contrast="none" xml:lang="ES-AR" lang="ES-AR">🧠 En lógica cableada (hardware)</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="32" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559683&quot;:0,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1" role="listitem">
+<p xml:lang="ES-ES" lang="ES-ES" paraid="126242830" paraeid="{d74945e0-91f0-4fa2-a87b-41540b09c75e}{201}"><span data-contrast="none" xml:lang="ES-AR" lang="ES-AR">💾 En programación (PLC, Arduino, etc.)</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</li>
+</ul>
+</div>
+<div>
+<ul role="list">
+<li data-leveltext="" data-font="Symbol" data-listid="32" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559683&quot;:0,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="3" data-aria-level="1" role="listitem">
+<p xml:lang="ES-ES" lang="ES-ES" paraid="1675890098" paraeid="{d74945e0-91f0-4fa2-a87b-41540b09c75e}{208}"><span data-contrast="none" xml:lang="ES-AR" lang="ES-AR">📐 En diagramas de escalera (ladder)</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> <br /></span></p>
+</li>
+</ul>
+</div>
+<p role="heading" aria-level="3" xml:lang="ES-ES" lang="ES-ES" paraid="1653592640" paraeid="{d74945e0-91f0-4fa2-a87b-41540b09c75e}{215}"><span data-contrast="none" xml:lang="ES-AR" lang="ES-AR"><span data-ccp-parastyle="heading 3">Tipos comunes de compuertas lógicas:</span></span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;201341983&quot;:0,&quot;335559738&quot;:281,&quot;335559739&quot;:281,&quot;335559740&quot;:240}"> </span></p>
+</div>
+<div>
+<div>
+<div id="{67c28e0b-d1c0-412b-aa84-f39d474cc2d6}{230}" aria-hidden="true"></div>
+<table border="1" data-tablestyle="MsoNormalTable" data-tablelook="1696" aria-rowcount="7"><caption></caption>
+<tbody>
+<tr role="row" aria-rowindex="1">
+<th scope="col">
+<div>
+<div>
+<p xml:lang="ES-ES" lang="ES-ES" paraid="120384096" paraeid="{95980b7d-8f44-4f0b-8cad-de632052d8ce}{39}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Compuerta</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335551550&quot;:2,&quot;335551620&quot;:2,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</th>
+<th scope="col">
+<div>
+<div>
+<p xml:lang="ES-ES" lang="ES-ES" paraid="387729650" paraeid="{95980b7d-8f44-4f0b-8cad-de632052d8ce}{45}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Operación</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335551550&quot;:2,&quot;335551620&quot;:2,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</th>
+<th scope="col">
+<div>
+<div>
+<p xml:lang="ES-ES" lang="ES-ES" paraid="1791182623" paraeid="{95980b7d-8f44-4f0b-8cad-de632052d8ce}{51}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Ejemplo práctico en automatización</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335551550&quot;:2,&quot;335551620&quot;:2,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</th>
+</tr>
+<tr role="row" aria-rowindex="2">
+<td role="rowheader" data-celllook="4096">
+<div>
+<div>
+<p xml:lang="ES-ES" lang="ES-ES" paraid="1812356267" paraeid="{95980b7d-8f44-4f0b-8cad-de632052d8ce}{57}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">AND</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+<td data-celllook="0">
+<div>
+<div>
+<p xml:lang="ES-ES" lang="ES-ES" paraid="760807949" paraeid="{95980b7d-8f44-4f0b-8cad-de632052d8ce}{63}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Salida es 1 solo si todas las entradas son 1</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+<td data-celllook="16">
+<div>
+<div>
+<p xml:lang="ES-ES" lang="ES-ES" paraid="308047417" paraeid="{95980b7d-8f44-4f0b-8cad-de632052d8ce}{69}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Arranca una máquina si el botón está presionado </span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">y</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"> la tapa está cerrada</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+</tr>
+<tr role="row" aria-rowindex="3">
+<td role="rowheader" data-celllook="4096">
+<div>
+<div>
+<p xml:lang="ES-ES" lang="ES-ES" paraid="1867786530" paraeid="{95980b7d-8f44-4f0b-8cad-de632052d8ce}{75}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">OR</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+<td data-celllook="0">
+<div>
+<div>
+<p xml:lang="ES-ES" lang="ES-ES" paraid="557403340" paraeid="{95980b7d-8f44-4f0b-8cad-de632052d8ce}{81}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Salida es 1 si al menos una entrada es 1</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+<td data-celllook="16">
+<div>
+<div>
+<p xml:lang="ES-ES" lang="ES-ES" paraid="720974831" paraeid="{95980b7d-8f44-4f0b-8cad-de632052d8ce}{87}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Activa una alarma si hay presión </span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">o</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"> temperatura alta</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+</tr>
+<tr role="row" aria-rowindex="4">
+<td role="rowheader" data-celllook="4096">
+<div>
+<div>
+<p xml:lang="ES-ES" lang="ES-ES" paraid="1035931536" paraeid="{95980b7d-8f44-4f0b-8cad-de632052d8ce}{93}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">NOT</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+<td data-celllook="0">
+<div>
+<div>
+<p xml:lang="ES-ES" lang="ES-ES" paraid="415208605" paraeid="{95980b7d-8f44-4f0b-8cad-de632052d8ce}{99}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Invierte la entrada (0 → 1, 1 → 0)</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+<td data-celllook="16">
+<div>
+<div>
+<p xml:lang="ES-ES" lang="ES-ES" paraid="562684941" paraeid="{95980b7d-8f44-4f0b-8cad-de632052d8ce}{105}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Activa un extractor </span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">cuando no hay</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"> ventilación</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+</tr>
+<tr role="row" aria-rowindex="5">
+<td role="rowheader" data-celllook="4096">
+<div>
+<div>
+<p xml:lang="ES-ES" lang="ES-ES" paraid="1927192899" paraeid="{95980b7d-8f44-4f0b-8cad-de632052d8ce}{111}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">NAND</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+<td data-celllook="0">
+<div>
+<div>
+<p xml:lang="ES-ES" lang="ES-ES" paraid="989238367" paraeid="{95980b7d-8f44-4f0b-8cad-de632052d8ce}{117}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Inverso de AND</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+<td data-celllook="16">
+<div>
+<div>
+<p xml:lang="ES-ES" lang="ES-ES" paraid="10807840" paraeid="{95980b7d-8f44-4f0b-8cad-de632052d8ce}{123}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Seguridad: si </span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">no</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"> se cumplen todas las condiciones, apaga</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+</tr>
+<tr role="row" aria-rowindex="6">
+<td role="rowheader" data-celllook="4096">
+<div>
+<div>
+<p xml:lang="ES-ES" lang="ES-ES" paraid="1084794381" paraeid="{95980b7d-8f44-4f0b-8cad-de632052d8ce}{129}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">NOR</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+<td data-celllook="0">
+<div>
+<div>
+<p xml:lang="ES-ES" lang="ES-ES" paraid="2078761031" paraeid="{95980b7d-8f44-4f0b-8cad-de632052d8ce}{135}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Inverso de OR</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+<td data-celllook="16">
+<div>
+<div>
+<p xml:lang="ES-ES" lang="ES-ES" paraid="1489298838" paraeid="{95980b7d-8f44-4f0b-8cad-de632052d8ce}{141}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Apaga todo si </span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">ninguna</span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR"> condición está activa</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+</tr>
+<tr role="row" aria-rowindex="7">
+<td role="rowheader" data-celllook="4352">
+<div>
+<div>
+<p xml:lang="ES-ES" lang="ES-ES" paraid="1450022984" paraeid="{95980b7d-8f44-4f0b-8cad-de632052d8ce}{147}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">XOR</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+<td data-celllook="256">
+<div>
+<div>
+<p xml:lang="ES-ES" lang="ES-ES" paraid="916794549" paraeid="{95980b7d-8f44-4f0b-8cad-de632052d8ce}{153}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Salida es 1 si las entradas son diferentes</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+<td data-celllook="272">
+<div>
+<div>
+<p xml:lang="ES-ES" lang="ES-ES" paraid="1059357277" paraeid="{95980b7d-8f44-4f0b-8cad-de632052d8ce}{159}"><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">Permite que una luz se encienda con </span><span data-contrast="auto" xml:lang="ES-AR" lang="ES-AR">dos interruptores cruzados</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:0,&quot;335559739&quot;:0}"> </span></p>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div>
+<p xml:lang="ES-ES" lang="ES-ES" paraid="2071282360" paraeid="{95980b7d-8f44-4f0b-8cad-de632052d8ce}{166}"><span data-contrast="none" xml:lang="ES-AR" lang="ES-AR">Mira la siguiente presentación donde desarrollamos las tablas de verdad y un circuito esquemático de ejemplo para cada compuerta lógica.</span></p>
+<div>
+<p xml:lang="ES-ES" lang="ES-ES" paraid="2071282360" paraeid="{95980b7d-8f44-4f0b-8cad-de632052d8ce}{166}"><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;335559738&quot;:240,&quot;335559739&quot;:240}"> </span></p>
+</div>
+<div>
+<figure class="exe-figure exe-media position-center" style="width: 800px;"><iframe width="800" height="400" src="https://www.canva.com/design/DAGj4SuJXmc/m9cJxpWpBJplh39jYJhFAQ/view?embed" data-mce-fragment="1"></iframe>
+<figcaption class="figcaption"><span class="title"><em> </em></span></figcaption>
+</figure>
+<span data-contrast="none" xml:lang="ES-AR" lang="ES-AR"><a href="https://www.canva.com/design/DAGj4SuJXmc/m9cJxpWpBJplh39jYJhFAQ/view?utm_content=DAGj4SuJXmc&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">U2_4_Compuertas_lógicas</a><span> de Cursoscenet</span></span></div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="01_introduccin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="03_implementacin_neumtica.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">© 2026 - Zeballos Silvia</footer></div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>
