@@ -1,2 +1,2 @@
-# automatizacion
+# automatización
 automatización industrial
