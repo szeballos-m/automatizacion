@@ -3,7 +3,7 @@
 <instance xmlns="http://www.exelearning.org/content/v0.3" reference="4" version="0.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemalocation="http://www.exelearning.org/content/v0.3 content.xsd" class="exe.engine.package.Package">
  <dictionary>
   <string role="key" value="_title"></string>
-  <unicode value="Automatizacion"></unicode>
+  <unicode value="Automatización y Control"></unicode>
   <string role="key" value="idevices"></string>
   <list></list>
   <string role="key" value="_addPagination"></string>
@@ -69,13 +69,13 @@
   <string role="key" value="_intendedEndUserRoleType"></string>
   <unicode value="learner"></unicode>
   <string role="key" value="_isChanged"></string>
-  <bool value="0"></bool>
+  <bool value="1"></bool>
   <string role="key" value="_isTemplate"></string>
   <bool value="0"></bool>
   <string role="key" value="_lang"></string>
   <unicode value="es"></unicode>
   <string role="key" value="_learningResourceType"></string>
-  <unicode value="guided reading"></unicode>
+  <unicode value="self assessment"></unicode>
   <string role="key" value="_levelNames"></string>
   <list>
    <unicode value="Tema"></unicode>
@@ -1004,7 +1004,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="524"></int>
+                        <int value="605"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -1018,7 +1018,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="10_112_2.7"></unicode>
+                      <unicode value="10_112_2.8"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="20">
                        <dictionary>
@@ -1029,7 +1029,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="1.1_Industria_2.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\1.1_Industria_2.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\1.1_Industria_2.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="127f2f0585942c6cfb8bbb274d415e1d"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -1058,7 +1058,7 @@ learning tasks."></unicode>
                  <string role="key" value="intlinks_to_anchors"></string>
                  <dictionary></dictionary>
                  <string role="key" value="nextImageId"></string>
-                 <int value="8"></int>
+                 <int value="9"></int>
                  <string role="key" value="parentNode"></string>
                  <reference key="19"></reference>
                 </dictionary>
@@ -1308,7 +1308,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="1.4.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\1.4.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\1.4.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="f9fca8194813317f1afcd49ee6cc2cf4"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -1331,7 +1331,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="1.4Thumbnail.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\1.4Thumbnail.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\1.4Thumbnail.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="a146a55738c391bd5612404d4b166b0a"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -1384,7 +1384,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="1.2.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\1.2.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\1.2.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="b041c54a5aee7a45ea44068093bd5511"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -1407,7 +1407,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="1.2Thumbnail.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\1.2Thumbnail.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\1.2Thumbnail.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="25f233528114c9873d606dea71e9ced9"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -1460,7 +1460,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="1.3.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\1.3.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\1.3.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="7cd49de6a2dfeeef128bea89f7279da7"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -1483,7 +1483,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="1.3Thumbnail.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\1.3Thumbnail.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\1.3Thumbnail.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="a0f94b7e971f3260c5fb7306d29f50f5"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -1779,7 +1779,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="600"></int>
+                        <int value="607"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -1793,7 +1793,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="13_115_2.0"></unicode>
+                      <unicode value="13_115_2.4"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="35">
                        <dictionary>
@@ -1804,7 +1804,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="image_(2)1.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp7ej5e5.eXe\\previews\\allyourbase\\image_(2)1.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\image_(2)1.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="d8169a745976c0c301a48d996dec51cb"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -1831,7 +1831,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="601"></int>
+                        <int value="608"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -1845,7 +1845,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="13_115_2.1"></unicode>
+                      <unicode value="13_115_2.5"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="36">
                        <dictionary>
@@ -1856,7 +1856,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="image_(2)2.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp7ej5e5.eXe\\previews\\allyourbase\\image_(2)2.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\image_(2)2.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="7efb35174fcd73a3373695b68bf36a37"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -1883,7 +1883,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="602"></int>
+                        <int value="609"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -1897,7 +1897,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="13_115_2.2"></unicode>
+                      <unicode value="13_115_2.6"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="37">
                        <dictionary>
@@ -1908,7 +1908,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="image_(2)3.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp7ej5e5.eXe\\previews\\allyourbase\\image_(2)3.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\image_(2)3.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="b3aeb4eeaeb00a94f48b5fa9c76a0b84"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -1935,7 +1935,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="603"></int>
+                        <int value="610"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -1949,7 +1949,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="13_115_2.3"></unicode>
+                      <unicode value="13_115_2.7"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="38">
                        <dictionary>
@@ -1960,7 +1960,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="image_(2)4.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp7ej5e5.eXe\\previews\\allyourbase\\image_(2)4.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\image_(2)4.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="d9d13031cd46227b22d76b75dc0347e2"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -1989,7 +1989,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                  <string role="key" value="intlinks_to_anchors"></string>
                  <dictionary></dictionary>
                  <string role="key" value="nextImageId"></string>
-                 <int value="4"></int>
+                 <int value="8"></int>
                  <string role="key" value="parentNode"></string>
                  <reference key="23"></reference>
                 </dictionary>
@@ -2246,7 +2246,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="2.1.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\2.1.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\2.1.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="c130c8130612d55c79c7bea81ae18d6f"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2269,7 +2269,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="2.1Thumbnail.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\2.1Thumbnail.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\2.1Thumbnail.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="34e6c21b913064a1d6e539a3acf1bce1"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2322,7 +2322,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="2.2.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\2.2.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\2.2.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="8fbdf3e99b3c1923e3c4851961c39fbd"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2345,7 +2345,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="2.2Thumbnail.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\2.2Thumbnail.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\2.2Thumbnail.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="d9ec9b08385e5b3803ed24d76d8065ff"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2398,7 +2398,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="2.3.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\2.3.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\2.3.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="e0fb64a4ad2c4a418c4bb53ab63f1def"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2421,7 +2421,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="2.3Thumbnail.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\2.3Thumbnail.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\2.3Thumbnail.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="9ecb9a3c5a892c7ddc2d4ce0d84bcdba"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2474,7 +2474,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="2.4.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\2.4.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\2.4.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="839a6401b7966d8aba3120585a684201"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2497,7 +2497,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="2.4Thumbnail.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\2.4Thumbnail.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\2.4Thumbnail.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="8fe2a8f166a625d1085e5ec907fd9e2a"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2550,7 +2550,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="2.5.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\2.5.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\2.5.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="9658d20027cd4c851126c04540405d4a"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2573,7 +2573,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="2.5Thumbnail.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\2.5Thumbnail.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\2.5Thumbnail.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="792d6e250d1ac388b242de7eb08c4efa"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2626,7 +2626,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="2.6.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\2.6.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\2.6.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="d186e3be9fc7b01b085020eb044ee2df"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2649,7 +2649,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="2.6Thumbnail.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\2.6Thumbnail.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\2.6Thumbnail.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="93b3177e942ce1b9497f1a20c532abf9"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2702,7 +2702,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="2.7.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\2.7.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\2.7.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="53e602b3ac8609e512ee71799dc0625e"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -2725,7 +2725,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="2.7Thumbnail.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\2.7Thumbnail.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\2.7Thumbnail.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="d6c5bfba029032c99c359cb25b0ca122"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3025,7 +3025,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="4.1.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\4.1.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\4.1.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="9758432064dea838b1952cdc5ea6bbf1"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3048,7 +3048,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="4.1Thumbnail.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\4.1Thumbnail.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\4.1Thumbnail.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="deff1428156898cfea41fb053c0730fd"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3101,7 +3101,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="4.2.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\4.2.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\4.2.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="c4c5f58c320ef0e2187d7ebf5e935957"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3124,7 +3124,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="4.2Thumbnail.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\4.2Thumbnail.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\4.2Thumbnail.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="7016d9d8e96b044d0d7b47ae5039f959"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3177,7 +3177,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="4.3.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\4.3.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\4.3.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="ace7261bcfeb3fc97c94ef3cf79e9fa5"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3200,7 +3200,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="4.3Thumbnail.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\4.3Thumbnail.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\4.3Thumbnail.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="50646a4216451448f88fc47d1150e2c0"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3253,7 +3253,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="4.4.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\4.4.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\4.4.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="7c112e8d0042bb4d6f0e4f30000f5452"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3276,7 +3276,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="4.4Thumbnail.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\4.4Thumbnail.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\4.4Thumbnail.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="7c0e56fcaf3afde3c96c4e53506446a2"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3329,7 +3329,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="4.5.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\4.5.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\4.5.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="ac0843baaf6abf1bd2d4ca1b042a00bf"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3352,7 +3352,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="4.5Thumbnail.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\4.5Thumbnail.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\4.5Thumbnail.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="91f7e6422ce7ff2e080a07335153c636"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3650,7 +3650,7 @@ una válvula de entrada de combustible.
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="604"></int>
+                        <int value="611"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -3664,7 +3664,7 @@ una válvula de entrada de combustible.
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="16_118_2.0"></unicode>
+                      <unicode value="16_118_2.1"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="75">
                        <dictionary>
@@ -3675,7 +3675,7 @@ una válvula de entrada de combustible.
                         <string role="key" value="_storageName"></string>
                         <string value="image_(4)1.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp7ej5e5.eXe\\previews\\allyourbase\\image_(4)1.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\image_(4)1.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="a0654d6ecd4acac9d00b76a0eca3846a"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3704,7 +3704,7 @@ una válvula de entrada de combustible.
                  <string role="key" value="intlinks_to_anchors"></string>
                  <dictionary></dictionary>
                  <string role="key" value="nextImageId"></string>
-                 <int value="1"></int>
+                 <int value="2"></int>
                  <string role="key" value="parentNode"></string>
                  <reference key="60"></reference>
                 </dictionary>
@@ -3829,7 +3829,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="5.1.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\5.1.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\5.1.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="e9b77687f276286e4783caba11705486"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3852,7 +3852,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="5.1Thumbnail.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\5.1Thumbnail.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\5.1Thumbnail.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="8281d8410c527f68148f8f3b4e2d7dd1"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3905,7 +3905,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="5.2.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\5.2.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\5.2.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="917e02d193a75575a1e54596a8d6b58e"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3928,7 +3928,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="5.2Thumbnail.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\5.2Thumbnail.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\5.2Thumbnail.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="46ffa0cef9ee0aa7d87151eeb0c1b9fe"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -3981,7 +3981,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="5.3.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\5.3.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\5.3.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="99330d74542bcaaf0eadae572322414b"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -4004,7 +4004,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="5.3Thumbnail.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\5.3Thumbnail.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\5.3Thumbnail.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="549f94e446a015c2a8fe9393e271e0e6"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -4057,7 +4057,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="5.5.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\5.5.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\5.5.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="63ef5ccc2106fc141953a76136921a77"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -4080,7 +4080,7 @@ these in a gallery context rather then individually.&lt;/p&gt;"></unicode>
                      <string role="key" value="_storageName"></string>
                      <string value="5.5Thumbnail.png"></string>
                      <string role="key" value="_userName"></string>
-                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\5.5Thumbnail.png"></string>
+                     <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\5.5Thumbnail.png"></string>
                      <string role="key" value="checksum"></string>
                      <string value="f98be1f6e9d91021288b92fd9f37d698"></string>
                      <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -5728,7 +5728,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="529"></int>
+                        <int value="615"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -5742,7 +5742,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.175"></unicode>
+                      <unicode value="35_126_2.204"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="105">
                        <dictionary>
@@ -5753,7 +5753,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img10.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img10.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img10.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="9e40eaaae632711f6d15d89992bad75b"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -5780,7 +5780,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="530"></int>
+                        <int value="616"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -5794,7 +5794,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.176"></unicode>
+                      <unicode value="35_126_2.205"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="106">
                        <dictionary>
@@ -5805,7 +5805,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img10.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img10.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img10.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="9e40eaaae632711f6d15d89992bad75b"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -5832,7 +5832,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="532"></int>
+                        <int value="618"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -5846,7 +5846,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.177"></unicode>
+                      <unicode value="35_126_2.206"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="107">
                        <dictionary>
@@ -5857,7 +5857,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img11.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img11.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img11.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="c4e1baea16664f49cf1adc4b5c257c9b"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -5884,7 +5884,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="539"></int>
+                        <int value="625"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -5898,7 +5898,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.178"></unicode>
+                      <unicode value="35_126_2.207"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="108">
                        <dictionary>
@@ -5909,7 +5909,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img13.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img13.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img13.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="c6195e5070313edaea38a20811a8f9dc"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -5936,7 +5936,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="542"></int>
+                        <int value="628"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -5950,7 +5950,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.179"></unicode>
+                      <unicode value="35_126_2.208"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="109">
                        <dictionary>
@@ -5961,7 +5961,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img14.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img14.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img14.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="15ffc3171de19bd2dd35256a7ba023cb"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -5988,7 +5988,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="543"></int>
+                        <int value="629"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -6002,7 +6002,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.180"></unicode>
+                      <unicode value="35_126_2.209"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="110">
                        <dictionary>
@@ -6013,7 +6013,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img15.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img15.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img15.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="a19bc6c169eb1f61a8f126bf4513c302"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -6040,7 +6040,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="544"></int>
+                        <int value="630"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -6054,7 +6054,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.181"></unicode>
+                      <unicode value="35_126_2.210"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="111">
                        <dictionary>
@@ -6065,7 +6065,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img16.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img16.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img16.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="6c507fe71ce2989b741c695ef7a4ebe5"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -6092,7 +6092,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="545"></int>
+                        <int value="631"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -6106,7 +6106,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.182"></unicode>
+                      <unicode value="35_126_2.211"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="112">
                        <dictionary>
@@ -6117,7 +6117,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img17.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img17.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img17.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="5798e7fa097394ef1387dd97d60affc4"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -6144,7 +6144,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="547"></int>
+                        <int value="633"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -6158,7 +6158,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.183"></unicode>
+                      <unicode value="35_126_2.212"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="113">
                        <dictionary>
@@ -6169,7 +6169,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img18.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img18.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img18.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="c41bb673265cd2e3f4ce41c12117963e"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -6196,7 +6196,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="549"></int>
+                        <int value="635"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -6210,7 +6210,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.184"></unicode>
+                      <unicode value="35_126_2.213"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="114">
                        <dictionary>
@@ -6221,7 +6221,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img19.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img19.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img19.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="7e149ff5f8410c9831e4d41858705c8d"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -6248,7 +6248,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="552"></int>
+                        <int value="638"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -6262,7 +6262,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.185"></unicode>
+                      <unicode value="35_126_2.214"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="115">
                        <dictionary>
@@ -6273,7 +6273,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img20.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img20.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img20.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="c0883abe376310db47c5f0dbe9fbe162"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -6300,7 +6300,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="555"></int>
+                        <int value="641"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -6314,7 +6314,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.186"></unicode>
+                      <unicode value="35_126_2.215"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="116">
                        <dictionary>
@@ -6325,7 +6325,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img21.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img21.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img21.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="8b2c00e192f48b7f5eec0ad8d2d52f7d"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -6352,7 +6352,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="556"></int>
+                        <int value="642"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -6366,7 +6366,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.187"></unicode>
+                      <unicode value="35_126_2.216"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="117">
                        <dictionary>
@@ -6377,7 +6377,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img22.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img22.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img22.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="9b817f77fb0c8e11c655ce6217edb235"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -6404,7 +6404,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="558"></int>
+                        <int value="644"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -6418,7 +6418,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.188"></unicode>
+                      <unicode value="35_126_2.217"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="118">
                        <dictionary>
@@ -6429,7 +6429,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img23.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img23.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img23.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="4575e3bee8d7f182404dbe13c0aa61a9"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -6456,7 +6456,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="560"></int>
+                        <int value="646"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -6470,7 +6470,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.189"></unicode>
+                      <unicode value="35_126_2.218"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="119">
                        <dictionary>
@@ -6481,7 +6481,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img24.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img24.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img24.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="80b76169271a15de7e6b4920976ddeed"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -6508,7 +6508,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="561"></int>
+                        <int value="647"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -6522,7 +6522,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.190"></unicode>
+                      <unicode value="35_126_2.219"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="120">
                        <dictionary>
@@ -6533,7 +6533,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img25.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img25.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img25.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="20d10cd2b2902bffa7813424694c7238"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -6560,7 +6560,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="564"></int>
+                        <int value="650"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -6574,7 +6574,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.191"></unicode>
+                      <unicode value="35_126_2.220"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="121">
                        <dictionary>
@@ -6585,7 +6585,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img26.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img26.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img26.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="f6b307120b0530df7a046672588c072a"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -6612,7 +6612,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="566"></int>
+                        <int value="652"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -6626,7 +6626,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.192"></unicode>
+                      <unicode value="35_126_2.221"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="122">
                        <dictionary>
@@ -6637,7 +6637,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img27.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img27.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img27.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="2e51709be072e06f36368dd988e63edf"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -6664,7 +6664,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="567"></int>
+                        <int value="653"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -6678,7 +6678,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.193"></unicode>
+                      <unicode value="35_126_2.222"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="123">
                        <dictionary>
@@ -6689,7 +6689,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img28.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img28.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img28.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="407ebcfa1c10575a2adb4d7b66a5a398"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -6716,7 +6716,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="570"></int>
+                        <int value="656"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -6730,7 +6730,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.194"></unicode>
+                      <unicode value="35_126_2.223"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="124">
                        <dictionary>
@@ -6741,7 +6741,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img32.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img32.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img32.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="ef7120326b72708471f373d93e952c44"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -6768,7 +6768,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="571"></int>
+                        <int value="657"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -6782,7 +6782,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.195"></unicode>
+                      <unicode value="35_126_2.224"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="125">
                        <dictionary>
@@ -6793,7 +6793,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img33.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img33.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img33.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="7061629243df2a97d2b1646ff5bcb786"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -6820,7 +6820,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="572"></int>
+                        <int value="658"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -6834,7 +6834,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.196"></unicode>
+                      <unicode value="35_126_2.225"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="126">
                        <dictionary>
@@ -6845,7 +6845,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img34.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img34.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img34.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="f5f72f0182354cec0703b69d1f9fec0a"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -6872,7 +6872,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="573"></int>
+                        <int value="659"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -6886,7 +6886,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.197"></unicode>
+                      <unicode value="35_126_2.226"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="127">
                        <dictionary>
@@ -6897,7 +6897,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img35.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img35.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img35.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="61493b53ca0fe92baece30e27786ec25"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -6924,7 +6924,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="574"></int>
+                        <int value="660"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -6938,7 +6938,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.198"></unicode>
+                      <unicode value="35_126_2.227"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="128">
                        <dictionary>
@@ -6949,7 +6949,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img36.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img36.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img36.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="f0ef7079d22d8a829c9a7de91cff1ad3"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -6976,7 +6976,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="577"></int>
+                        <int value="663"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -6990,7 +6990,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.199"></unicode>
+                      <unicode value="35_126_2.228"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="129">
                        <dictionary>
@@ -7001,7 +7001,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img5.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img5.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img5.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="07598d1607cb32083fddeb6acb13c9fd"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -7028,7 +7028,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="580"></int>
+                        <int value="666"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -7042,7 +7042,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.200"></unicode>
+                      <unicode value="35_126_2.229"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="130">
                        <dictionary>
@@ -7053,7 +7053,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img6.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img6.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img6.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="2c42aa9406169ae9d31e03ae42a82106"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -7080,7 +7080,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="582"></int>
+                        <int value="668"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -7094,7 +7094,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.201"></unicode>
+                      <unicode value="35_126_2.230"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="131">
                        <dictionary>
@@ -7105,7 +7105,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img7.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img7.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img7.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="206447f09c2672219e2a88e697096969"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -7132,7 +7132,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="584"></int>
+                        <int value="670"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -7146,7 +7146,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.202"></unicode>
+                      <unicode value="35_126_2.231"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="132">
                        <dictionary>
@@ -7157,7 +7157,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img8.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img8.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img8.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="a460e147d5a767d005587ac025629167"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -7184,7 +7184,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="586"></int>
+                        <int value="672"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -7198,7 +7198,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="35_126_2.203"></unicode>
+                      <unicode value="35_126_2.232"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="133">
                        <dictionary>
@@ -7209,7 +7209,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img9.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img9.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img9.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="4d987a970a659f478f52d5f5ca47320a"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -7238,7 +7238,7 @@ learning tasks."></unicode>
                  <string role="key" value="intlinks_to_anchors"></string>
                  <dictionary></dictionary>
                  <string role="key" value="nextImageId"></string>
-                 <int value="204"></int>
+                 <int value="233"></int>
                  <string role="key" value="parentNode"></string>
                  <reference key="104"></reference>
                 </dictionary>
@@ -7482,7 +7482,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="531"></int>
+                        <int value="617"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -7496,7 +7496,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="36_109_2.19"></unicode>
+                      <unicode value="36_109_2.23"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="137">
                        <dictionary>
@@ -7507,7 +7507,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img11.1.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img11.1.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img11.1.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="e3749a6fde8a37d3258e8186af2f86ac"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -7534,7 +7534,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="534"></int>
+                        <int value="620"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -7548,7 +7548,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="36_109_2.20"></unicode>
+                      <unicode value="36_109_2.24"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="138">
                        <dictionary>
@@ -7559,7 +7559,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img12.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img12.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img12.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="5879196458f3e028628189cf705e41bd"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -7586,7 +7586,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="535"></int>
+                        <int value="621"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -7600,7 +7600,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="36_109_2.21"></unicode>
+                      <unicode value="36_109_2.25"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="139">
                        <dictionary>
@@ -7611,7 +7611,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img13.1.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img13.1.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img13.1.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="f4859b0d201779742d6289d53d1fdf25"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -7638,7 +7638,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="536"></int>
+                        <int value="622"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -7652,7 +7652,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="36_109_2.22"></unicode>
+                      <unicode value="36_109_2.26"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="140">
                        <dictionary>
@@ -7663,7 +7663,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img13.1.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img13.1.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img13.1.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="f4859b0d201779742d6289d53d1fdf25"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -7692,7 +7692,7 @@ learning tasks."></unicode>
                  <string role="key" value="intlinks_to_anchors"></string>
                  <dictionary></dictionary>
                  <string role="key" value="nextImageId"></string>
-                 <int value="23"></int>
+                 <int value="27"></int>
                  <string role="key" value="parentNode"></string>
                  <reference key="136"></reference>
                 </dictionary>
@@ -10613,7 +10613,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="526"></int>
+                        <int value="612"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -10627,7 +10627,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="47_115_2.45"></unicode>
+                      <unicode value="47_115_2.56"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="170">
                        <dictionary>
@@ -10638,7 +10638,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img0.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img0.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img0.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="51718fcd7f5f51e3b6e2da028641b3aa"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -10665,7 +10665,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="527"></int>
+                        <int value="613"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -10679,7 +10679,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="47_115_2.46"></unicode>
+                      <unicode value="47_115_2.57"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="171">
                        <dictionary>
@@ -10690,7 +10690,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img1.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img1.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img1.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="c55c292f3db493ea73681911647c6441"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -10717,7 +10717,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="533"></int>
+                        <int value="619"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -10731,7 +10731,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="47_115_2.47"></unicode>
+                      <unicode value="47_115_2.58"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="172">
                        <dictionary>
@@ -10742,7 +10742,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img12.1.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img12.1.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img12.1.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="04c436708f25d41bad50a07ddb8d50ae"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -10769,7 +10769,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="537"></int>
+                        <int value="623"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -10783,7 +10783,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="47_115_2.48"></unicode>
+                      <unicode value="47_115_2.59"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="173">
                        <dictionary>
@@ -10794,7 +10794,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img13.2.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img13.2.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img13.2.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="1483f4a8256c67dceb0f81e71e7bb08c"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -10821,7 +10821,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="540"></int>
+                        <int value="626"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -10835,7 +10835,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="47_115_2.49"></unicode>
+                      <unicode value="47_115_2.60"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="174">
                        <dictionary>
@@ -10846,7 +10846,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img14.1.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img14.1.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img14.1.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="d7a8dca7033ff197d47517bca7fdf5fb"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -10873,7 +10873,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="550"></int>
+                        <int value="636"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -10887,7 +10887,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="47_115_2.50"></unicode>
+                      <unicode value="47_115_2.61"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="175">
                        <dictionary>
@@ -10898,7 +10898,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img2.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img2.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img2.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="7957fb9e358346d6fcde2a162dd9a638"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -10925,7 +10925,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="569"></int>
+                        <int value="655"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -10939,7 +10939,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="47_115_2.51"></unicode>
+                      <unicode value="47_115_2.62"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="176">
                        <dictionary>
@@ -10950,7 +10950,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img3.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img3.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img3.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="d1761ee874d1a2447484642de19e8d48"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -10977,7 +10977,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="578"></int>
+                        <int value="664"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -10991,7 +10991,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="47_115_2.52"></unicode>
+                      <unicode value="47_115_2.63"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="177">
                        <dictionary>
@@ -11002,7 +11002,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img6.1.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img6.1.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img6.1.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="50f4f5ab822596eb530173b1a88bfa0b"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -11029,7 +11029,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="581"></int>
+                        <int value="667"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -11043,7 +11043,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="47_115_2.53"></unicode>
+                      <unicode value="47_115_2.64"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="178">
                        <dictionary>
@@ -11054,7 +11054,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img7.1.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img7.1.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img7.1.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="b878b6b3147f78d7e3382b4c4dc0545d"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -11081,7 +11081,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="583"></int>
+                        <int value="669"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -11095,7 +11095,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="47_115_2.54"></unicode>
+                      <unicode value="47_115_2.65"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="179">
                        <dictionary>
@@ -11106,7 +11106,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img8.1.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img8.1.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img8.1.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="e14ae5ed8ee601a39ebdd5151c320eef"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -11133,7 +11133,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="585"></int>
+                        <int value="671"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -11147,7 +11147,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="47_115_2.55"></unicode>
+                      <unicode value="47_115_2.66"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="180">
                        <dictionary>
@@ -11158,7 +11158,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img9.1.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img9.1.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img9.1.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="a9e6aa1b9e74f423006f8802e927414a"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -11187,7 +11187,7 @@ learning tasks."></unicode>
                  <string role="key" value="intlinks_to_anchors"></string>
                  <dictionary></dictionary>
                  <string role="key" value="nextImageId"></string>
-                 <int value="56"></int>
+                 <int value="67"></int>
                  <string role="key" value="parentNode"></string>
                  <reference key="169"></reference>
                 </dictionary>
@@ -11910,7 +11910,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="538"></int>
+                        <int value="624"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -11924,7 +11924,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="51_109_2.37"></unicode>
+                      <unicode value="51_109_2.49"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="190">
                        <dictionary>
@@ -11935,7 +11935,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img13.3.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img13.3.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img13.3.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="9a6a67719ff9014320f73bd77326596b"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -11962,7 +11962,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="541"></int>
+                        <int value="627"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -11976,7 +11976,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="51_109_2.38"></unicode>
+                      <unicode value="51_109_2.50"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="191">
                        <dictionary>
@@ -11987,7 +11987,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img14.2.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img14.2.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img14.2.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="d3e5042bc7ee035b1f8d5fc8af99cecb"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -12014,7 +12014,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="546"></int>
+                        <int value="632"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -12028,7 +12028,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="51_109_2.39"></unicode>
+                      <unicode value="51_109_2.51"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="192">
                        <dictionary>
@@ -12039,7 +12039,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img18.1.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img18.1.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img18.1.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="0594a1767115ea38304f05c75f689c05"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -12066,7 +12066,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="548"></int>
+                        <int value="634"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -12080,7 +12080,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="51_109_2.40"></unicode>
+                      <unicode value="51_109_2.52"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="193">
                        <dictionary>
@@ -12091,7 +12091,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img19.1.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img19.1.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img19.1.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="c5c7d1b0148acf9788894e28bd957074"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -12118,7 +12118,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="551"></int>
+                        <int value="637"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -12132,7 +12132,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="51_109_2.41"></unicode>
+                      <unicode value="51_109_2.53"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="194">
                        <dictionary>
@@ -12143,7 +12143,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img20.1.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img20.1.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img20.1.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="4dfe7ba5511fb23424eba697544b60f2"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -12170,7 +12170,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="553"></int>
+                        <int value="639"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -12184,7 +12184,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="51_109_2.42"></unicode>
+                      <unicode value="51_109_2.54"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="195">
                        <dictionary>
@@ -12195,7 +12195,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img21.1.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img21.1.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img21.1.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="8c9a71203cf1e3ed8540e66eefb1dab1"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -12222,7 +12222,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="554"></int>
+                        <int value="640"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -12236,7 +12236,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="51_109_2.43"></unicode>
+                      <unicode value="51_109_2.55"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="196">
                        <dictionary>
@@ -12247,7 +12247,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img21.2.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img21.2.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img21.2.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="6992ef874efa6d34ff89e85119d22840"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -12274,7 +12274,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="557"></int>
+                        <int value="643"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -12288,7 +12288,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="51_109_2.44"></unicode>
+                      <unicode value="51_109_2.56"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="197">
                        <dictionary>
@@ -12299,7 +12299,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img23.1.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img23.1.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img23.1.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="655b1d6611372fd8f1aca709e909fbb1"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -12326,7 +12326,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="559"></int>
+                        <int value="645"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -12340,7 +12340,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="51_109_2.45"></unicode>
+                      <unicode value="51_109_2.57"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="198">
                        <dictionary>
@@ -12351,7 +12351,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img24.1.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img24.1.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img24.1.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="dfaec77dc644222ca85659d9d1506083"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -12378,7 +12378,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="562"></int>
+                        <int value="648"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -12392,7 +12392,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="51_109_2.46"></unicode>
+                      <unicode value="51_109_2.58"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="199">
                        <dictionary>
@@ -12403,7 +12403,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img26.1.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img26.1.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img26.1.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="41d3183cb0977a9595de2e210974fb1f"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -12430,7 +12430,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="563"></int>
+                        <int value="649"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -12444,7 +12444,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="51_109_2.47"></unicode>
+                      <unicode value="51_109_2.59"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="200">
                        <dictionary>
@@ -12455,7 +12455,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img26.2.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img26.2.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img26.2.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="9bbdc3e3f4aa48ce6bb10f2de0156309"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -12482,7 +12482,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="565"></int>
+                        <int value="651"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -12496,7 +12496,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="51_109_2.48"></unicode>
+                      <unicode value="51_109_2.60"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="201">
                        <dictionary>
@@ -12507,7 +12507,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img27.1.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img27.1.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img27.1.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="7046c35861e735a4fd1d244ef4089c36"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -12536,7 +12536,7 @@ learning tasks."></unicode>
                  <string role="key" value="intlinks_to_anchors"></string>
                  <dictionary></dictionary>
                  <string role="key" value="nextImageId"></string>
-                 <int value="49"></int>
+                 <int value="61"></int>
                  <string role="key" value="parentNode"></string>
                  <reference key="189"></reference>
                 </dictionary>
@@ -14922,7 +14922,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="525"></int>
+                        <int value="606"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -14936,7 +14936,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="58_115_2.2"></unicode>
+                      <unicode value="58_115_2.3"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="226">
                        <dictionary>
@@ -14947,7 +14947,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="Grabacion_de_pantalla_2025-04-27_225633.mp4"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\Grabacion_de_pantalla_2025-04-27_225633.mp4"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\Grabacion_de_pantalla_2025-04-27_225633.mp4"></string>
                         <string role="key" value="checksum"></string>
                         <string value="0e05d076ef0f4695f48cec1cfcb2691b"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -14976,7 +14976,7 @@ learning tasks."></unicode>
                  <string role="key" value="intlinks_to_anchors"></string>
                  <dictionary></dictionary>
                  <string role="key" value="nextImageId"></string>
-                 <int value="3"></int>
+                 <int value="4"></int>
                  <string role="key" value="parentNode"></string>
                  <reference key="225"></reference>
                 </dictionary>
@@ -15261,7 +15261,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="528"></int>
+                        <int value="614"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -15275,7 +15275,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="59_116_2.10"></unicode>
+                      <unicode value="59_116_2.15"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="230">
                        <dictionary>
@@ -15286,7 +15286,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img10.1.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img10.1.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img10.1.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="aed1898150e271090ba5510c369b382f"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -15313,7 +15313,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="568"></int>
+                        <int value="654"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -15327,7 +15327,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="59_116_2.11"></unicode>
+                      <unicode value="59_116_2.16"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="231">
                        <dictionary>
@@ -15338,7 +15338,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img3.1.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img3.1.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img3.1.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="7a7737a1a61258c7fe741c2016ff7ca7"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -15365,7 +15365,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="575"></int>
+                        <int value="661"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -15379,7 +15379,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="59_116_2.12"></unicode>
+                      <unicode value="59_116_2.17"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="232">
                        <dictionary>
@@ -15390,7 +15390,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img4.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img4.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img4.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="8fc56c754f5dcc61b680dbf573f3ee39"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -15417,7 +15417,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="576"></int>
+                        <int value="662"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -15431,7 +15431,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="59_116_2.13"></unicode>
+                      <unicode value="59_116_2.18"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="233">
                        <dictionary>
@@ -15442,7 +15442,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img5.1.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img5.1.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img5.1.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="4e839e51ba21de86f72d639535d04a30"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -15469,7 +15469,7 @@ learning tasks."></unicode>
                       <instance class="exe.engine.field.TextField">
                        <dictionary>
                         <string role="key" value="_id"></string>
-                        <int value="579"></int>
+                        <int value="665"></int>
                         <string role="key" value="_idevice"></string>
                         <none></none>
                         <string role="key" value="_instruc"></string>
@@ -15483,7 +15483,7 @@ learning tasks."></unicode>
                        </dictionary>
                       </instance>
                       <string role="key" value="_id"></string>
-                      <unicode value="59_116_2.14"></unicode>
+                      <unicode value="59_116_2.19"></unicode>
                       <string role="key" value="_imageResource"></string>
                       <instance class="exe.engine.resource.Resource" reference="234">
                        <dictionary>
@@ -15494,7 +15494,7 @@ learning tasks."></unicode>
                         <string role="key" value="_storageName"></string>
                         <string value="img6.2.png"></string>
                         <string role="key" value="_userName"></string>
-                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmp4eorsh\\img6.2.png"></string>
+                        <string value="c:\\users\\silvia\\appdata\\local\\temp\\tmpfagghd\\img6.2.png"></string>
                         <string role="key" value="checksum"></string>
                         <string value="3685847122c00f5dac3f15aeddcd9e82"></string>
                         <string role="key" value="exe.engine.resource.Resource.persistenceVersion"></string>
@@ -15523,7 +15523,7 @@ learning tasks."></unicode>
                  <string role="key" value="intlinks_to_anchors"></string>
                  <dictionary></dictionary>
                  <string role="key" value="nextImageId"></string>
-                 <int value="15"></int>
+                 <int value="20"></int>
                  <string role="key" value="parentNode"></string>
                  <reference key="229"></reference>
                 </dictionary>
@@ -15683,7 +15683,7 @@ learning tasks."></unicode>
     <string role="key" value="subject"></string>
     <unicode value=""></unicode>
     <string role="key" value="title"></string>
-    <unicode value="Automatizacion"></unicode>
+    <unicode value="Automatización y Control"></unicode>
     <string role="key" value="type"></string>
     <unicode value=""></unicode>
    </dictionary>
@@ -15893,7 +15893,7 @@ learning tasks."></unicode>
             <string role="key" value="value"></string>
             <none></none>
             <string role="key" value="valueOf_"></string>
-            <string value="narrative text"></string>
+            <string value="self assessment"></string>
            </dictionary>
           </instance>
          </dictionary>
@@ -16022,7 +16022,7 @@ learning tasks."></unicode>
            <string role="key" value="language"></string>
            <string value="es"></string>
            <string role="key" value="valueOf_"></string>
-           <string value="Automatizacion"></string>
+           <string value="Automatizaci\xc3\xb3n y Control"></string>
           </dictionary>
          </instance>
         </list>
@@ -16453,7 +16453,7 @@ learning tasks."></unicode>
             <string role="key" value="value"></string>
             <none></none>
             <string role="key" value="valueOf_"></string>
-            <string value="guided reading"></string>
+            <string value="self assessment"></string>
            </dictionary>
           </instance>
          </dictionary>
@@ -16582,7 +16582,7 @@ learning tasks."></unicode>
            <string role="key" value="language"></string>
            <string value="es"></string>
            <string role="key" value="valueOf_"></string>
-           <string value="Automatizacion"></string>
+           <string value="Automatizaci\xc3\xb3n y Control"></string>
           </dictionary>
          </instance>
         </list>
