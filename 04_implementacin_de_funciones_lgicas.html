@@ -15,11 +15,16 @@
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-	</head>
+	<style>
+#siteFooter {
+    font-size: 0.8em;
+    line-height: 1.2;
+}
+</style></head>
 <body class="exe-web-site" id="exe-node-23"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
-<header id="header"  style="background-image: url(automat2.jpg); background-repeat: repeat-x;"><div id="headerContent">Automatización y Control</div></header>
+<header id="header" ><div id="headerContent">Automatización y Control</div></header>
 <nav id="siteNav">
 <ul>
    <li><a href="index.html" class="daddy main-node">Presentación</a></li>
@@ -88,38 +93,26 @@
 <p style="text-align: justify;"><span lang="ES">Como se ve en el esquema, como el contacto NC cierra la rama del circuito de Z2, la misma inicia encendida aún sin haber presionado el Pulsador A.</span></p>
 <p><span lang="ES"><img src="img3.png" width="613" height="487" alt="circuitoFL3" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
 <p><span lang="ES">Si presionamos el Pulsador A, los contactos asociados a la bobina cambian su estado: el NA pasa a cerrarse, y el NC pasa a abrirse.<br />Las lámparas cambian de estado, encendiéndose Z1 y apagándose Z2.<br /><br />Conseguimos:</span></p>
-<p><img src="img6.1.png" alt="tbl1" width="150" height="34" role="presentation" class="img-fluid atto_image_button_text-bottom" style="display: block; margin-left: auto; margin-right: auto;" /><b><span lang="ES"></span></b></p>
-<p></p>
-<p><b><span lang="ES"> <img src="https://cenet.inet.edu.ar/pluginfile.php/42917/mod_page/content/5/image.png" alt="" width="300" height="155" role="presentation" class="img-fluid atto_image_button_text-bottom" style="float: left;" /><img src="https://cenet.inet.edu.ar/pluginfile.php/42917/mod_page/content/5/image%20%281%29.png" alt="" width="259" height="100" role="presentation" class="img-fluid atto_image_button_text-bottom" /></span></b></p>
-<p><b><span lang="ES"></span></b></p>
-<p><span lang="ES"> </span></p>
-<h5><span style="font-size: 12pt;"><b><span lang="EN-US" class="">Función AND y NAND </span></b></span><span lang="EN-US"><span class="" style="font-size: 12pt;">(“NOT AND”)</span><b></b></span></h5>
+<p style="text-align: center;"><img src="img18.2.png" width="601" height="241" alt="función NOT" /></p>
+<p><span style="font-size: 12pt;"><b><span lang="EN-US" class="">Función AND y NAND </span></b></span><span lang="EN-US"><span class="" style="font-size: 12pt;">(“NOT AND”)</span><b></b></span></p>
 <p><span lang="ES">Diseñemos nuevos circuitos que nos permitan implementar las funciones básicas estudiadas en la unidad anterior.<br /><br />Si colocamos dos pulsadores en serie A y B, que alimenten la bobina K1, estamos en presencia de un PRODUCTO LÓGICO o función AND para la alimentación de la bobina, y por tanto también de la lámpara Z1.<br /></span></p>
 <p><span lang="ES"><img src="img7.1.png" width="573" height="482" alt="circuitoNA" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
 <p><span lang="ES"><span>Vemos que Z1 sólo encenderá en caso de presionarse los pulsadores A y B en simultáneo.</span><br /><span>Y como utilizamos un contacto NC de la misma bobina para Z2, dicha lámpara sólo apagará en esas mismas condiciones, permaneciendo encendida en cualquier otro estado.</span></span></p>
 <p><span lang="ES"><span><img src="img8.1.png" width="579" height="495" alt="circuitoNAND2" style="display: block; margin-left: auto; margin-right: auto;" /></span></span></p>
 <p><span lang="ES"><span><img src="img9.1.png" width="373" height="218" alt="tblNANd" style="display: block; margin-left: auto; margin-right: auto;" /></span></span></p>
-<p><span lang="ES">Obtenemos una función AND para Z1, y una función NOT AND ó también llamada NAND para Z2:<br /><br /></span></p>
-<p></p>
-<p><img src="https://cenet.inet.edu.ar/pluginfile.php/42917/mod_page/content/5/image%20%282%29.png" alt="" role="presentation" class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><span lang="ES">Obtenemos una función AND para Z1, y una función NOT AND ó también llamada NAND para Z2:</span></p>
+<p><span lang="ES"><br /><img src="img17.2.png" width="653" height="388" alt="función AND" style="display: block; margin-left: auto; margin-right: auto;" /></span><span lang="ES"></span></p>
 <p><span lang="ES">En este último caso, la unión de la compuerta AND y la compuerta NOT, se puede representar directamente con una nueva compuerta NAND que representa el mismo funcionamiento:</span></p>
-<p><span lang="ES"> <img src="https://cenet.inet.edu.ar/pluginfile.php/42917/mod_page/content/5/image%20%283%29.png" alt="" role="presentation" class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
-<p><span lang="ES"> </span></p>
+<p><span lang="ES"> <img src="img16.1.png" width="335" height="94" alt="compuerta NAND" style="display: block; margin-left: auto; margin-right: auto;" /><img src="https://cenet.inet.edu.ar/pluginfile.php/42917/mod_page/content/5/image%20%283%29.png" alt="" role="presentation" class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
 <h5><span style="font-size: 12pt;"><b><span lang="EN-US" class="">Función OR y NOR </span></b><span lang="EN-US" class="">(“NOT OR”)</span></span></h5>
-<p><span lang="ES">Analicemos lo que sucedería al colocar dos pulsadores esta vez en paralelo alimentando la bobina K1.<br /><img src="img12.1.png" width="696" height="490" alt="circuitoOR" style="display: block; margin-left: auto; margin-right: auto;" /><br /></span></p>
+<p><span lang="ES">Analicemos lo que sucedería al colocar dos pulsadores esta vez en paralelo alimentando la bobina K1.<br /><img src="img12.1.png" width="662" height="466" alt="circuitoOR" style="display: block; margin-left: auto; margin-right: auto;" /><br /></span></p>
 <p><span lang="ES"><span>Obtenemos una SUMA LÓGICA ó Función OR para la lámpara Z1, ya que con cualquiera de los pulsadores A ó B presionados, alcanza para que Z1 encienda.</span><br /><span>Por su parte, al ser Z2 la negación del estado de la bobina (y en particular de Z1), decimos que Z2 está cumpliendo una función NOT OR, o bien NOR con los pulsadores A y B.</span></span></p>
-<p><span lang="ES"><span><img src="img13.2.png" width="716" height="485" alt="circuitoOR2" style="display: block; margin-left: auto; margin-right: auto;" /></span></span></p>
-<p><span lang="ES"><span><img src="img14.1.png" width="366" height="218" alt="tblOR" style="display: block; margin-left: auto; margin-right: auto;" /></span></span></p>
+<p><span lang="ES"><span><img src="img13.2.png" width="692" height="469" alt="circuitoOR2" style="display: block; margin-left: auto; margin-right: auto;" /></span></span></p>
+<p><span lang="ES"><span><img src="img17.2.png" width="678" height="403" alt="función OR Negada" style="display: block; margin-left: auto; margin-right: auto;" /></span></span></p>
 <p id="yui_3_18_1_1_1761700773202_150"><img src="https://cenet.inet.edu.ar/pluginfile.php/42917/mod_page/content/5/image%20%284%29.png" alt="" role="presentation" class="img-fluid" id="yui_3_18_1_1_1761700773202_149" style="display: block; margin-left: auto; margin-right: auto;" /></p>
-<p><img src="https://cenet.inet.edu.ar/pluginfile.php/42917/mod_page/content/5/image%20%285%29.png" alt="" role="presentation" class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" /></p>
-<p><span lang="ES"> </span></p>
-<p><span lang="ES"> </span></p>
-<p><span lang="ES">De forma análoga al caso anterior, la unión de la compuerta OR seguida de la compuerta NOT, se puede representar directamente con una nueva compuerta NOR que representa el mismo funcionamiento:</span></p>
-<p></p>
-<p><img src="https://cenet.inet.edu.ar/pluginfile.php/42917/mod_page/content/5/image%20%286%29.png" alt="" role="presentation" class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" /> </p>
-<p></p>
-
-<p><span lang="ES"> </span><span lang="ES"><span></span></span></p></div>
+<p><img src="https://cenet.inet.edu.ar/pluginfile.php/42917/mod_page/content/5/image%20%285%29.png" alt="" role="presentation" class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" /><span style="font-size: 1.1em;"></span><span style="font-size: 1.1em;">De forma análoga al caso anterior, la unión de la compuerta OR seguida de la compuerta NOT, se puede representar directamente con una nueva compuerta NOR que representa el mismo funcionamiento:</span></p>
+<p><img src="img17.1.png" width="305" height="97" alt="compuerta y función NOR" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><img src="https://cenet.inet.edu.ar/pluginfile.php/42917/mod_page/content/5/image%20%286%29.png" alt="" role="presentation" class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" /> <span lang="ES"></span><span lang="ES"><span></span></span></p></div>
 </div>
 </div>
 </div>

@@ -15,11 +15,16 @@
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-	</head>
+	<style>
+#siteFooter {
+    font-size: 0.8em;
+    line-height: 1.2;
+}
+</style></head>
 <body class="exe-web-site" id="exe-node-26"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
-<header id="header"  style="background-image: url(automat2.jpg); background-repeat: repeat-x;"><div id="headerContent">Automatización y Control</div></header>
+<header id="header" ><div id="headerContent">Automatización y Control</div></header>
 <nav id="siteNav">
 <ul>
    <li><a href="index.html" class="daddy main-node">Presentación</a></li>
@@ -80,21 +85,21 @@
 <div class="iDevice_content_wrapper">
 <div id="ta51_109_2" class="block iDevice_content">
 <div class="exe-text"><p id="yui_3_18_1_1_1761952098886_132" style="text-align: justify;"><span lang="ES">Recordemos el proceso industrial de separación de cajas por altura que estudiamos como aplicación al final de la última unidad.</span></p>
-<p><span lang="ES"><br /></span><span lang="ES"><img src="https://cenet.inet.edu.ar/pluginfile.php/42920/mod_page/content/6/image.png" alt="" role="presentation" class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" /><br /></span></p>
-<p></p>
+<p><span lang="ES"><img src="img21.1.png" width="749" height="204" alt="cinta transportadora" style="display: block; margin-left: auto; margin-right: auto;" /></span><span lang="ES"><img src="https://cenet.inet.edu.ar/pluginfile.php/42920/mod_page/content/6/image.png" alt="" role="presentation" class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" /><br /></span></p>
+<p><img src="img22.1.png" width="363" height="425" alt="cinta transportadora 2" style="display: block; margin-left: auto; margin-right: auto;" /></p>
 <p><img src="https://cenet.inet.edu.ar/pluginfile.php/42920/mod_page/content/6/image%20%281%29.png" alt="" role="presentation" class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" /></p>
 <p><span lang="ES">Las<span> </span><strong>condiciones de funcionamiento</strong><span> </span>del sistema de Cintas transportadoras en "T" eran:<br /></span></p>
 <ul>
 <li><span lang="ES">Se alimenta la cinta transportadora principal con dos tipos de cajas: “cajas altas” o “cajas bajas”.<br /><br /></span></li>
 <li><span lang="ES">Al final de esta cinta se tiene un sistema de dos sensores ópticos tipo barrera, “S_ALTO” y “S_BAJO”, que permiten detectar la altura de la caja que llega.<br /><br /></span></li>
-<li>Detectada el tipo de caja en “caja alta” ó “baja”, se activa una de las dos cintas transportadoras secundarias según corresponda, separando las cajas altas hacia un lado, y las cajas bajas hacia el otro.<br /><br /> <img src="https://cenet.inet.edu.ar/pluginfile.php/42920/mod_page/content/6/image%20%282%29.png" alt="" width="1000" height="357" role="presentation" class="img-fluid atto_image_button_text-bottom" style="color: #333333; font-size: 1.05em;" /></li>
+<li>Detectada el tipo de caja en “caja alta” ó “baja”, se activa una de las dos cintas transportadoras secundarias según corresponda, separando las cajas altas hacia un lado, y las cajas bajas hacia el otro.<br /><br /> <img src="img23.2.png" width="724" height="287" alt="condiciones" /></li>
 </ul>
 <p><span lang="ES"> </span>La tabla de verdad del sistema, considerando una alarma en caso de falla de sensado era: </p>
-<p><img src="https://cenet.inet.edu.ar/pluginfile.php/42920/mod_page/content/6/image%20%283%29.png" alt="" width="800" height="209" role="presentation" class="img-fluid atto_image_button_text-bottom" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><img src="img22.1.png" width="333" height="390" alt="tabla de verdad del sistema" style="display: block; margin-left: auto; margin-right: auto;" /></p>
 <p><span lang="ES">Antes de continuar con la implementación con lógica cableada,<span> </span><strong>es necesario conocer la simbología y el conexionado de los sensores ópticos<span> </span></strong>a fin de poder representarlos en los esquemas eléctricos.</span></p>
 <p>Hay una gran variedad de sensores ópticos, y cada uno tiene su forma de conectarse en función del tipo de sensor que sea. Nosotros vamos a considerar que los sensores utilizados en la aplicación son de<span> </span><strong>3 hilos</strong><span> </span>(3 cables de conexión).</p>
 <p><span lang="ES"><br />Su simbología es:</span></p>
-<p><span lang="ES"><img src="img21.1.png" width="246" height="249" alt="imagensimbologia" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span lang="ES"><img src="img22.1.png" width="305" height="357" alt="simbología sensor" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
 <p id="yui_3_18_1_1_1761952098886_139"><span lang="ES" id="yui_3_18_1_1_1761952098886_138"><img src="img23.1.png" />  Representa que el sensor es un sensor de proximidad (no requiere contacto para sensar).</span></p>
 <p><span lang="ES"><br /><img src="img26.2.png" width="158" height="55" alt="imgdiodo" />  Representa un diodo emisor de luz, y por tanto que es de tipo óptico.<br /> <br /><br />Y los 3 hilos o conexiones codificados por color corresponden a:</span></p>
 <ul>
@@ -112,10 +117,9 @@
 </li>
 </ul>
 <p><span lang="ES">La activación de M1 se daba de acuerdo a la siguiente función:</span></p>
-<p><strong><span lang="ES"><img width="330" height="193" src="img26.1.png" v:shapes="Imagen_x0020_18" alt="imgtabl" style="display: block; margin-left: auto; margin-right: auto;" /></span></strong></p>
-<p><span lang="ES"> <img src="https://cenet.inet.edu.ar/pluginfile.php/42920/mod_page/content/6/image%20%284%29.png" alt="" width="250" height="410" role="presentation" class="img-fluid atto_image_button_text-bottom" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span lang="ES"><br /><img src="img22.1.png" width="312" height="365" alt="activación M1" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
 <p><span lang="ES"><span>La implementación con relés será:</span></span></p>
-<p><span lang="ES"><img src="img14.2.png" width="832" height="429" alt="circuitomotor1" style="display: block; margin-left: auto; margin-right: auto;" /></span><span lang="ES"></span></p>
+<p><span lang="ES"><img src="img14.2.png" width="709" height="366" alt="circuitomotor1" style="display: block; margin-left: auto; margin-right: auto;" /></span><span lang="ES"></span></p>
 <p><span lang="ES"><span lang="EN-US">Donde los dos sensores se alimentan por separado, y activan respectivamente las bobinas de relés K_ALTO y K_BAJO.<br /></span><span lang="ES" id="yui_3_18_1_1_1761952098886_146">Dos contactos NA de cada bobina se conectan en serie en el circuito de potencia, logrando que el motor M1 sólo se encienda si ambos sensores detectan presencia.<br /><br />Se cumple la función AND buscada: </span> <img width="214" height="44" src="img27.1.png" v:shapes="Imagen_x0020_21" alt="formula" /></span></p>
 <p><span lang="ES"></span></p>
 <ul>
@@ -124,10 +128,8 @@
 </li>
 </ul>
 <p><span lang="ES">Para el motor M2 de la cinta que traslada las cajas bajas, recordemos que la tabla de verdad y función lógica corresponden a:</span></p>
-<p><span lang="ES"> <img src="img21.2.png" width="330" height="191" alt="tblmotor2" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
-<p id="yui_3_18_1_1_1761952098886_151" style="text-align: center;"><span lang="ES" id="yui_3_18_1_1_1761952098886_150"><br /><img src="https://cenet.inet.edu.ar/pluginfile.php/42920/mod_page/content/6/image%20%286%29.png" alt="" role="presentation" class="img-fluid" id="yui_3_18_1_1_1761952098886_149" width="473" height="210" /></span></p>
-<p style="text-align: left;"><span lang="ES"><span>Por lo que el circuito con relés quedaría:</span></span></p>
-<p><img src="img13.3.png" width="712" height="400" alt="circuitomotor2" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><span lang="ES"> </span><span lang="ES" id="yui_3_18_1_1_1761952098886_150"><img src="img21.1.png" width="589" height="160" alt="motor 2" style="display: block; margin-left: auto; margin-right: auto;" /></span><span lang="ES"><span>Por lo que el circuito con relés quedaría:</span></span></p>
+<p><img src="img13.3.png" width="671" height="377" alt="circuitomotor2" style="display: block; margin-left: auto; margin-right: auto;" /></p>
 <p><span lang="ES">Aquí se observa que utilizamos un NC de K_ALTO en el circuito de potencia.<br />Esto implica que el motor M2, sólo podría funcionar si S_ALTO no está detectando (el contacto NC de K_ALTO permanece cerrado), y al mismo tiempo S_BAJO sí está detectando caja (el contacto NA de K_BAJO cierra).<br /><br />Está condición, y ninguna otra, es la que necesitamos para que M2 funcione según nuestra tabla.<br /><br /></span></p>
 <ul>
 <li>
@@ -135,12 +137,12 @@
 </li>
 </ul>
 <p><span lang="ES">Por último, implementemos también la alarma, considerándola un indicador luminoso que enciende al dectectar un error en la detección de los sensores.<br /><br />Si recordamos el análisis que habíamos realizado, teníamos que:</span></p>
-<p><span lang="ES"> <img src="https://cenet.inet.edu.ar/pluginfile.php/42920/mod_page/content/6/image%20%287%29.png" alt="" role="presentation" class="img-fluid" width="688" height="496" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
-<p><br /><span lang="ES"></span></p>
+<p><span lang="ES"> <img src="img20.2.png" width="563" height="249" alt="autoretención alarma" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><img src="img21.1.png" width="599" height="163" alt="circuito alarma" style="display: block; margin-left: auto; margin-right: auto;" /><br /><span lang="ES"></span></p>
 <p>Presentemos directamente el<span> </span><strong><span class="">circuito completo</span></strong>, con todas las cargas conectadas:<span> </span><span class=""><strong>M1</strong></span>,<span> </span><strong><span class="">M2</span></strong><span> </span>y<span> </span><strong><span class="">ALARMA</span></strong>:</p>
-<h5><img src="https://cenet.inet.edu.ar/pluginfile.php/42920/mod_page/content/6/image%20%288%29.png" style="display: block; margin-left: auto; margin-right: auto;" /></h5>
+<h5><img src="img21.1.png" width="684" height="186" alt="circuito completo" style="display: block; margin-left: auto; margin-right: auto;" /></h5>
 <p><span lang="ES">Que cumple con las condiciones de la tabla de verdad completa:<br />(<strong><span class="">En el circuito se muestra la primera condición S_ALTO = 0, y S_BAJO = 0</span></strong>)<br /><br /></span></p>
-<p><img src="https://cenet.inet.edu.ar/pluginfile.php/42920/mod_page/content/6/image%20%289%29.png" alt="" width="800" height="209" role="presentation" class="img-fluid atto_image_button_text-bottom" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><img src="img21.1.png" width="684" height="186" alt="tabla de verdad del circuito" style="display: block; margin-left: auto; margin-right: auto;" /></p>
 <h5><span class="">Verifiquemos las otras condiciones:</span></h5>
 <ul>
 <li><strong><span lang="ES" class="">Para S_ALTO = 0 y S_BAJO = 1, se enciende sólo M2 = 1:</span></strong></li>
@@ -151,9 +153,8 @@
 <ul>
 <li><strong><span lang="ES" class="">Y, por último, para S_ALTO = 1 y S_BAJO = 1, se enciende sólo M1 = 1:<br /><br /></span></strong></li>
 </ul>
-<p><strong><span lang="EN-US"><img src="img20.1.png" alt="circuitoultcond" width="941" height="385" role="presentation" class="img-fluid atto_image_button_text-bottom" style="display: block; margin-left: auto; margin-right: auto;" /></span><span lang="ES"></span></strong></p>
+<p><strong><span lang="EN-US"><img src="img20.1.png" alt="circuitoultcond" width="856" height="351" role="presentation" class="img-fluid atto_image_button_text-bottom" style="display: block; margin-left: auto; margin-right: auto;" /></span><span lang="ES"></span></strong></p>
 <p><span lang="ES"> </span></p>
-
 <p><span lang="ES"> </span></p></div>
 </div>
 </div>

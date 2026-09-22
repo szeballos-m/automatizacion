@@ -15,11 +15,16 @@
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-	</head>
+	<style>
+#siteFooter {
+    font-size: 0.8em;
+    line-height: 1.2;
+}
+</style></head>
 <body class="exe-web-site" id="exe-node-32"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
-<header id="header"  style="background-image: url(automat2.jpg); background-repeat: repeat-x;"><div id="headerContent">Automatización y Control</div></header>
+<header id="header" ><div id="headerContent">Automatización y Control</div></header>
 <nav id="siteNav">
 <ul>
    <li><a href="index.html" class="daddy main-node">Presentación</a></li>
@@ -82,11 +87,10 @@
 <div class="exe-text"><h4><strong><span lang="ES" class="">Implementación con PLC</span></strong></h4>
 <p style="text-align: justify;"><span lang="ES">Trabajemos nuevamente sobre la aplicación de separación de cajas por altura con la que venimos ejemplificando la aplicación de contenidos al final de cada unidad. Esta vez veremos cómo sería la implementación del proceso utilizando como elemento de control un PLC.<br /><br />Es importante aclarar que el objetivo de la sección (y de todo el curso) es hacer una introducción y dar nociones básicas de cómo sería esta implementación, tanto a nivel conexionado de los componentes (hardware), como de programación del controlador (software). Quedarán aspectos técnicos a evaluar en cursos específicos de Programación de PLC.<br /><br /></span></p>
 <p><span lang="ES">Recordemos la tabla de verdad de la aplicación y su implementación con Lógica Cableada:<br /></span></p>
-<p id="yui_3_18_1_1_1762633189314_169"><span lang="ES"><br /></span><img src="https://cenet.inet.edu.ar/pluginfile.php/42932/mod_page/content/3/image.png" alt="" width="800" height="211" role="presentation" class="img-fluid atto_image_button_text-bottom" id="yui_3_18_1_1_1762633189314_167" style="display: block; margin-left: auto; margin-right: auto;" /></p>
-<p></p>
-<p><img src="https://cenet.inet.edu.ar/pluginfile.php/42932/mod_page/content/3/image%20%282%29.png" alt="" role="presentation" class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p id="yui_3_18_1_1_1762633189314_169"><span lang="ES"><img src="img10.3.png" width="714" height="186" alt="tabla lógica cableada" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span lang="ES"><img src="img10.3.png" width="890" height="360" alt="circuitos correspondientes" /></span></p>
 <p style="text-align: justify;"><span lang="ES">Tenemos que implementar esta lógica de funcionamiento con un PLC.<br /><br />Para el ejemplo trabajemos con un<span> </span><strong>PLC Schneider modelo M221</strong>, aunque podría por supuesto ser cualquier otro. El software para realizar la programación de este equipo es el que ya hemos mencionado en secciones anteriores:<span> </span><strong>EcoStruxure Machine Expert - Basic<br /><br /></strong></span></p>
-<p><span lang="ES"><img src="https://cenet.inet.edu.ar/pluginfile.php/42932/mod_page/content/3/image%20%283%29.png" alt="" role="presentation" class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" /><br /></span></p>
+<p><span lang="ES"><img src="img11.3.png" width="463" height="444" alt="EcoStruxure" style="display: block; margin-left: auto; margin-right: auto;" /><img src="https://cenet.inet.edu.ar/pluginfile.php/42932/mod_page/content/3/image%20%283%29.png" alt="" role="presentation" class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" /><br /></span></p>
 <p style="text-align: justify;"><span lang="ES">El equipo de la figura tiene como referencia<span> </span><strong>TM221C24R / Relay OUT.<br /></strong>Es decir, en particular este equipo posee:</span></p>
 <ul>
 <li><span lang="ES">TM221 refiere al modelo M221</span></li>
@@ -96,12 +100,12 @@
 </ul>
 <p></p>
 <p><span lang="ES">Diferenciamos las partes del mismo en la siguiente figura:<br /><br /></span></p>
-<p><span lang="ES"><img width="567" height="493" src="img3.1.png" v:shapes="Imagen_x0020_1" alt="plc" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span lang="ES"><img width="543" height="472" src="img3.1.png" v:shapes="Imagen_x0020_1" alt="plc" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
 <p style="text-align: justify;"><span lang="ES">Observamos que tiene 14 entradas digitales en la parte superior, y 10 salidas digitales a relé en la parte inferior. El PLC tiene leds indicadores que encienden cuando alguna de las entradas se activa (llega señal de 24Vcc a bornera), o bien por programa el PLC activa alguna de las salidas.<br /><br />En la parte inferior tenemos las borneras de alimentación, este equipo debe alimentarse a 220Vca. Por otro lado, el PLC tiene una fuente interna que entrega 24Vcc con borneras en la parte superior izquierda.</span></p>
 <h5><span style="font-size: 12pt;"><strong><span lang="ES"><span class="">Conexionado del PLC</span></span></strong></span></h5>
 <p style="text-align: justify;"><span lang="ES">Comencemos con el conexionado de entradas.<br /><br />Sólo implementaremos lo que habíamos desarrollado en Lógica Cableada, es decir, tenemos como entradas únicamente a los sensores ópticos que denominamos<strong><span> </span>S_ALTO</strong><span> </span>y<strong><span> </span>S_BAJO</strong><span> </span>(en una aplicación real también tendríamos pulsadores de inicio y parada, pulsadores de emergencia, otros sensores de proceso y seguridad, etc).</span></p>
 <p style="text-align: justify;"><span lang="ES">Antes que nada, conectamos a 220Vca la alimentación del equipo.<br />Y luego, utilizamos la fuente interna del PLC para conectar los dos sensores ópticos de tres hilos, recordando que el código de colores corresponde a:<span> </span><strong>BROWN = +24Vcc<span> </span></strong>/<span> </span><strong>BLUE = GND (Ov)</strong>.<br /><br />Observamos estas conexiones en la figura.<br /><br /></span></p>
-<p><img width="567" height="692" src="img4.png" v:shapes="Imagen_x0020_3" alt="conexionadoPLC" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><img width="536" height="654" src="img4.png" v:shapes="Imagen_x0020_3" alt="conexionadoPLC" style="display: block; margin-left: auto; margin-right: auto;" /></p>
 <p id="yui_3_18_1_1_1762633189314_173" style="text-align: justify;"><span>Las salidas de los sensores ópticos las conectaremos a las entradas del PLC.<br /></span><span>Podemos elegir cualquier entrada, tomaremos para el ejemplo que <strong>S_ALTO</strong> será la primera entrada <strong>I0</strong>, y <strong>S_BAJO</strong> la segunda entrada <strong>I1</strong>.</span></p>
 <p><span lang="ES"><br />El conexionado queda entonces:</span></p>
 <p><span lang="ES"><img width="567" height="673" src="img5.1.png" v:shapes="Imagen_x0020_4" alt="conexionadoSalidas" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
@@ -125,71 +129,71 @@
 <p style="text-align: justify;"><span lang="ES"> </span></p>
 <h5 style="text-align: justify;"><span style="font-size: 12pt;"><span lang="ES" class="">Programación del PLC</span></span></h5>
 <p style="text-align: justify;"><span>Nos toca ahora realizar la programación del equipo para que se cumpla la lógica de funcionamiento que ya habíamos logrado en lógica con relés. Volvamos a recordar aquel esquema:</span></p>
-<p><span lang="ES"> </span></p>
+<p><span lang="ES"> <img src="img12.3.png" width="890" height="334" alt="esquema con relés" /></span></p>
 <p><img src="https://cenet.inet.edu.ar/pluginfile.php/42932/mod_page/content/3/image%20%284%29.png" alt="" role="presentation" class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" /></p>
 <p style="text-align: justify;"><span>Ya hemos realizado el conexionado de los sensores que figuran en el circuito de mando de la izquierda. Recordemos que tenemos asociadas las entradas y salidas de acuerdo a:</span></p>
 <p></p>
 <div>
-<table border="1" cellspacing="0" cellpadding="0" style="margin-left: auto; margin-right: auto;" width="810" height="211"><caption></caption>
+<table border="1" cellspacing="0" cellpadding="0" style="margin-left: auto; margin-right: auto;" width="745" height="195"><caption></caption>
 <tbody>
 <tr>
-<th scope="col" style="width: 226.797px; text-align: center;">
+<th scope="col" style="width: 208.764px; text-align: center;">
 <p><strong><span lang="ES">Entradas digitales</span></strong></p>
 </th>
-<th scope="col" style="width: 205.344px; text-align: center;">
+<th scope="col" style="width: 189.361px; text-align: center;">
 <p><strong><span lang="ES">S_ALTO</span></strong></p>
 </th>
-<th scope="col" style="width: 183.828px; text-align: center;">
+<th scope="col" style="width: 168.537px; text-align: center;">
 <p><strong><span lang="ES">I0</span></strong></p>
 </th>
-<th scope="col" style="width: 184.031px; text-align: center;">
+<th scope="col" style="width: 169.247px; text-align: center;">
 <p><strong><span lang="ES">%I0.0</span></strong></p>
 </th>
 </tr>
 <tr>
-<td style="width: 226.797px; text-align: center;">
+<td style="width: 208.764px; text-align: center;">
 <p><strong><span lang="ES">S_BAJO</span></strong></p>
 </td>
-<td style="width: 205.344px; text-align: center;">
+<td style="width: 189.361px; text-align: center;">
 <p><strong><span lang="ES">I1</span></strong></p>
 </td>
-<td style="width: 183.828px; text-align: center;">
+<td style="width: 168.537px; text-align: center;">
 <p><strong><span lang="ES">%I0.1</span></strong></p>
 </td>
 </tr>
 <tr>
-<td rowspan="3" style="width: 226.797px; text-align: center;">
+<td rowspan="3" style="width: 208.764px; text-align: center;">
 <p><strong><span lang="ES">Salidas digitales</span></strong></p>
 </td>
-<td style="width: 205.344px; text-align: center;">
+<td style="width: 189.361px; text-align: center;">
 <p><strong><span lang="ES">M1</span></strong></p>
 </td>
-<td style="width: 183.828px; text-align: center;">
+<td style="width: 168.537px; text-align: center;">
 <p><strong><span lang="ES">Q0</span></strong></p>
 </td>
-<td style="width: 184.031px; text-align: center;">
+<td style="width: 169.247px; text-align: center;">
 <p><strong><span lang="ES">%Q0.0</span></strong></p>
 </td>
 </tr>
 <tr>
-<td style="width: 205.344px; text-align: center;">
+<td style="width: 189.361px; text-align: center;">
 <p><strong><span lang="ES">M2</span></strong></p>
 </td>
-<td style="width: 183.828px; text-align: center;">
+<td style="width: 168.537px; text-align: center;">
 <p><strong><span lang="ES">Q1</span></strong></p>
 </td>
-<td style="width: 184.031px; text-align: center;">
+<td style="width: 169.247px; text-align: center;">
 <p><strong><span lang="ES">%Q0.1</span></strong></p>
 </td>
 </tr>
 <tr>
-<td style="width: 205.344px; text-align: center;">
+<td style="width: 189.361px; text-align: center;">
 <p><strong><span lang="ES">ALARMA</span></strong></p>
 </td>
-<td style="width: 183.828px; text-align: center;">
+<td style="width: 168.537px; text-align: center;">
 <p><strong><span lang="ES">Q2</span></strong></p>
 </td>
-<td style="width: 184.031px; text-align: center;">
+<td style="width: 169.247px; text-align: center;">
 <p><strong><span lang="ES">%Q0.2</span></strong></p>
 </td>
 </tr>
@@ -203,15 +207,9 @@
 <p><span lang="ES"> </span></p>
 <p style="text-align: justify;"><span lang="ES">El programa resulta muy sencillo, pero con este direccionamiento propio del PLC es dificil de seguir y comprender la lógica de funcionamiento. Aún siendo un circuito básico tenemos que estar recordando qué componente se conecta a qué entrada ó a qué salida.</span></p>
 <p style="text-align: justify;"><span lang="ES">Utilizando las herramientas de notación del software, y lo que se denomina “direccionamiento simbólico” de entradas y salidas, podemos documentar mejor el programa para un mejor entendimiento:<br /></span></p>
-<p><span lang="ES"> </span></p>
-<p><span lang="ES"><img src="https://cenet.inet.edu.ar/pluginfile.php/42932/mod_page/content/3/image%20%285%29.png" alt="" role="presentation" class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" /><br /></span></p>
-<p><span lang="ES"> </span></p>
-<p style="text-align: justify;"><span lang="ES">Ahora sí podemos entender mejor la lógica de funcionamiento: cada entrada y salida tiene la descripción ó “símbolo” que venimos utilizando, dimos nombre a cada “Rung” ó línea de programa, y agregamos comentarios para recordar la forma en la que depende cada salida al estado de cada entrada de acuerdo a la tabla de verdad del principio.</span></p>
-<p><span lang="ES"> </span></p>
-<p><img src="https://cenet.inet.edu.ar/pluginfile.php/42932/mod_page/content/3/image%20%286%29.png" alt="" width="800" height="209" role="presentation" class="img-fluid atto_image_button_text-bottom" style="display: block; margin-left: auto; margin-right: auto;" /></p>
-<p></p>
-<p><span lang="ES"></span></p>
-
+<p><span lang="ES"> <img src="img13.5.png" width="645" height="242" alt="entradas-salidas" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+<p><span lang="ES"><img src="https://cenet.inet.edu.ar/pluginfile.php/42932/mod_page/content/3/image%20%285%29.png" alt="" role="presentation" class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" /><img src="img14.4.png" width="770" height="308" alt="activación de M1" style="display: block; margin-left: auto; margin-right: auto;" /><br /></span></p>
+<p><span lang="ES"> </span><span lang="ES">Ahora sí podemos entender mejor la lógica de funcionamiento: cada entrada y salida tiene la descripción ó “símbolo” que venimos utilizando, dimos nombre a cada “Rung” ó línea de programa, y agregamos comentarios para recordar la forma en la que depende cada salida al estado de cada entrada de acuerdo a la tabla de verdad del principio.</span><span lang="ES"><img src="img15.1.png" width="674" height="184" alt="tabla de verdad inicial" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
 <p style="text-align: justify;"><span lang="ES">Quedan muchos detalles por ver y estudiar, pero podemos decir en este momento, que habiendo analizado una aplicación industrial y logrado encontrar la lógica de funcionamiento necesaria para cada actuador que interviene en el proceso, hemos podido desarrollar dos soluciones, la primera implementando con Lógica Cableada y circuitos con relé, y en este segundo caso que terminados de presentar, desarrollando en Lógica Programa un programa en lenguaje Ladder de un PLC Schneider sobre el que previamente habíamos esquematizado la manera de conectar entradas y salidas digitales.</span></p></div>
 </div>
 </div>
